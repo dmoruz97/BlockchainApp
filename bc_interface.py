@@ -15,7 +15,7 @@ blockchain = Blockchain()
 @app.route('/new_transaction', methods=['POST'])
 def new_transaction():
     tx_data = request.get_json()
-    required_fields = ["TRANSACTIONID", "YEAR", "DAY_OF_WEEK", "FLIGHT_DATE", "OP_CARRIER_FL_NUM", "OP_CARRIER_AIRLINE_ID", "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST", "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED", "AIR_TIME"]
+    required_fields = ["TRANSACTIONID", "YEAR", "DAY_OF_WEEK", "FL_DATE", "OP_CARRIER_AIRLINE_ID", "OP_CARRIER_FL_NUM", "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST", "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED", "AIR_TIME"]
 
     for field in required_fields:
         if not tx_data.get(field):
@@ -47,3 +47,4 @@ def mine_unconfirmed_transactions():
 @app.route('/pending_tx')
 def get_pending_tx():
     return json.dumps(blockchain.unconfirmed_transactions)
+

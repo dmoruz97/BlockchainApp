@@ -10,17 +10,27 @@ def read_csv():
         csv_reader = csv.reader(csv_file, delimiter=',')
         count_row = 0
         for row in csv_reader:
-            if (count_row != 0):
-                rows.append(row)
+            if (count_row == 0):
+                header = row
+            else:
+                t = {}
+                for i, value in enumerate(row):
+                    t[header[i]] = value
+                rows.append(t)
             count_row = count_row + 1
 
     print("Total rows in CSV: {}".format(len(rows)))
     return rows
 
 
+# FROM TERMINAL:
+# export FLASK_APP=bc_interface.py
+# flask run
+
 if __name__ == "__main__":
-    transactions = read_csv()
+    transactions = read_csv()   # Each transaction is in JSON form (key => value)
 
     for t in transactions:
-        print()
+        print(t)
+        break
         # invia transazione a interfaccia
