@@ -1,12 +1,10 @@
 from flask import Flask, request
 import requests
-import node_server.Blockchain
+from node_server import Blockchain
 import time
 import json
 
 # Initialize flask application
-from node_server import Blockchain
-
 app =  Flask(__name__)
 
 # Initialize a blockchain object.
@@ -17,7 +15,7 @@ blockchain = Blockchain()
 @app.route('/new_transaction', methods=['POST'])
 def new_transaction():
     tx_data = request.get_json()
-    required_fields = ["author", "content"]
+    required_fields = ["TRANSACTIONID", "YEAR", "DAY_OF_WEEK", "FLIGHT_DATE", "OP_CARRIER_FL_NUM", "OP_CARRIER_AIRLINE_ID", "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST", "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED", "AIR_TIME"]
 
     for field in required_fields:
         if not tx_data.get(field):
