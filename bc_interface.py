@@ -5,7 +5,7 @@ import time
 import json
 
 # Initialize flask application
-app =  Flask(__name__)
+app = Flask(__name__)
 
 # Initialize a blockchain object.
 blockchain = Blockchain()
