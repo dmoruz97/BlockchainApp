@@ -11,11 +11,14 @@ app = Flask(__name__)
 blockchain = Blockchain()
 
 
-# Send a new transaction
+# Add a new transaction
 @app.route('/new_transaction', methods=['POST'])
 def new_transaction():
     tx_data = request.get_json()
-    required_fields = ["TRANSACTIONID", "YEAR", "DAY_OF_WEEK", "FL_DATE", "OP_CARRIER_AIRLINE_ID", "OP_CARRIER_FL_NUM", "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST", "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED", "AIR_TIME"]
+    required_fields = ["TRANSACTION_ID", "YEAR", "DAY_OF_WEEK", "FL_DATE", "OP_CARRIER_AIRLINE_ID", "OP_CARRIER_FL_NUM",
+                       "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST",
+                       "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED",
+                       "AIR_TIME"]
 
     for field in required_fields:
         if not tx_data.get(field):
@@ -27,6 +30,35 @@ def new_transaction():
 
     return "Success", 201
 
+
+# Retrieve a transaction based on the transaction_id
+@app.route('/get_transaction', methods=['GET'])
+def get_transaction_by_id():
+    t = {}
+    for block in blockchain.chain:
+        for transaction in block.transactions:
+            if transaction["TRANSACTION_ID"] == request.args.get('id_transaction'):
+                t = transaction
+                break
+
+    if t == {}:
+        return "Transaction absent"
+    else:
+        return t
+
+
+# Retrieve all the transaction of a block
+@app.route('/get_all_transaction', methods=['GET'])
+def get_all_transaction():
+    transactions = []
+    for block in blockchain.chain:
+        if block.index == request.args.get('id_block'):
+            transactions = block.transactions
+            break
+
+    return transactions
+
+
 # Get a copy of the chain
 @app.route('/chain', methods=['GET'])
 def get_chain():
@@ -36,6 +68,7 @@ def get_chain():
     return json.dumps({"length": len(chain_data),
                        "chain": chain_data})
 
+
 # Mine unconfirmed transactions
 @app.route('/mine', methods=['GET'])
 def mine_unconfirmed_transactions():
@@ -44,7 +77,7 @@ def mine_unconfirmed_transactions():
         return "No transactions to mine"
     return "Block #{} is mined.".format(result)
 
+
 @app.route('/pending_tx')
 def get_pending_tx():
     return json.dumps(blockchain.unconfirmed_transactions)
-
