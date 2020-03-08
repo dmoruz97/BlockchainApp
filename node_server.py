@@ -2,6 +2,9 @@ from hashlib import sha256
 import json
 import time
 
+from flask import Flask, request
+
+
 # BLOCK #
 class Block:
     def __init__(self, index, transactions, timestamp, previous_hash):
@@ -88,3 +91,126 @@ class Blockchain:
 
         self.unconfirmed_transactions = []
         return new_block.index
+
+
+# Initialize flask application
+app = Flask(__name__)
+
+# the node's copy of blockchain (Initialize a blockchain object)
+blockchain = Blockchain()
+blockchain.create_genesis_block()
+
+# the address to other participating members of the network
+peers = set()
+
+
+# Retrieve a transaction based on the transaction_id
+@app.route('/get_transaction', methods=['GET'])
+def get_transaction_by_id():
+    t = {}
+    for block in blockchain.chain:
+        for transaction in block.transactions:
+            if transaction["TRANSACTION_ID"] == request.args.get('id_transaction'):
+                t = transaction
+                break
+
+    if t == {}:
+        return "Transaction absent"
+    else:
+        return t
+
+
+# Retrieve all the transaction of a block
+@app.route('/get_all_transaction_in_block', methods=['GET'])
+def get_all_transaction():
+    transactions = []
+    for block in blockchain.chain:
+        if block.index == request.args.get('id_block'):
+            transactions = block.transactions
+            break
+
+    if transactions == []:
+        return "No transactions in this block"
+    else:
+        return transactions
+
+
+# Endpoint to add a new transaction
+@app.route('/new_transaction', methods=['POST'])
+def new_transaction():
+    tx_data = request.get_json()
+    required_fields = ["TRANSACTION_ID", "YEAR", "DAY_OF_WEEK", "FL_DATE", "OP_CARRIER_AIRLINE_ID", "OP_CARRIER_FL_NUM",
+                       "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST",
+                       "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED",
+                       "AIR_TIME"]
+
+    for field in required_fields:
+        if not tx_data.get(field):
+            return "Invlaid transaction data", 404
+
+    tx_data["timestamp"] = time.time()
+
+    blockchain.add_new_transaction(tx_data)
+
+    return "Success", 201
+
+
+# Endpoint to get a copy of the chain
+@app.route('/chain', methods=['GET'])
+def get_chain():
+    chain_data = []
+    for block in blockchain.chain:
+        chain_data.append(block.__dict__)
+    return json.dumps({"length": len(chain_data),
+                       "chain": chain_data})
+
+
+# Endpoint to mine unconfirmed transactions
+@app.route('/mine', methods=['GET'])
+def mine_unconfirmed_transactions():
+    result = blockchain.mine()
+    if not result:
+        return "No transactions to mine"
+    return "Block #{} is mined.".format(result)
+
+
+# endpoint to add new peers to the network.
+@app.route('/add_nodes', methods=['POST'])
+def register_new_peers():
+    nodes = request.get_json()
+    if not nodes:
+        return "Invalid data", 400
+    for node in nodes:
+        peers.add(node)
+
+    return "Success", 201
+
+
+# endpoint to add a block mined by someone else to
+# the node's chain. The block is first verified by the node
+# and then added to the chain.
+@app.route('/add_block', methods=['POST'])
+def validate_and_add_block():
+    block_data = request.get_json()
+    block = Block(block_data["index"],
+                  block_data["transactions"],
+                  block_data["timestamp",
+                  block_data["previous_hash"]])
+
+    proof = block_data['hash']
+    added = blockchain.add_block(block, proof)
+
+    if not added:
+        return "The block was discarded by the node", 400
+
+    return "Block added to the chain", 201
+
+
+# endpoint to query unconfirmed transactions
+@app.route('/pending_tx')
+def get_pending_tx():
+    return json.dumps(blockchain.unconfirmed_transactions)
+
+
+# Uncomment this line if you want to specify the port number in the code
+# app.run(debug=True, port=8000)

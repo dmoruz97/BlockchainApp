@@ -1,7 +1,12 @@
 import csv
 import json
-from urllib.parse import urlencode
 import requests
+import time
+import threading
+
+from app import app
+
+
 
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
@@ -16,34 +21,55 @@ def read_csv():
                 header = row
                 del header[-1]  # due to an empty column read at the last of each row
             else:
-                t = {}
-                t["TRANSACTION_ID"] = count_row
+                transaction = {"TRANSACTION_ID": count_row}
                 for i, value in enumerate(row[:-1], 0):
-                    t[header[i]] = value
-                rows.append(t)
+                    transaction[header[i]] = value
+                rows.append(transaction)
             count_row = count_row + 1
 
     print("Total rows in CSV: {}".format(len(rows)))
     return rows
 
 
+# Thread that mines every minute
+def mine():
+    while True:
+        r = requests.get('http://127.0.0.1:8000/mine')
+        print(r.text)
+        time.sleep(60)
+
+
 # FROM TERMINAL:
-# export FLASK_APP=bc_interface.py
-# flask run
+# export FLASK_APP=node_server.py
+# flask run --port 8000
+
+if __name__ == "__init__":
+    app.run(debug=True, port=8000)
 
 if __name__ == "__main__":
-    transactions = read_csv()   # Each transaction is in JSON form (key => value)
+
+    # Start thread to mine
+    t = threading.Thread(target=mine)
+    t.start()
+
+    # Read transaction from CSV file (Each transaction is in JSON form (key => value))
+    transactions = read_csv()
 
     # Add transaction to blockchain
     headers = {'Content-type': 'application/json'}
     for t in transactions:
         data = json.dumps(t)
-        response = requests.post('http://127.0.0.1:5000/new_transaction', headers=headers, data=data)
+        response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
         break
 
     # Get transaction by id
     params = {'id_transaction': '1'}
-    response = requests.get('http://127.0.0.1:5000/get_transaction', params=params)
+    response = requests.get('http://127.0.0.1:8000/get_transaction', params=params)
     print(response.url)
     print(response.text)
     print(response.status_code)
+
+    # Get transaction by id
+    params = {'id_block': '1'}
+    response = requests.get('http://127.0.0.1:8000/get_all_transaction_in_block', params=params)
+    print(response.text)
