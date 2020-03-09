@@ -1,7 +1,7 @@
 from hashlib import sha256
 import json
 import time
-import pickle
+import os
 
 from flask import Flask, request
 
@@ -20,14 +20,36 @@ class Block:
         block_string = json.dumps(self.__dict__, sort_keys=True)
         return sha256(block_string.encode()).hexdigest()
 
+    # Saves to file the block
     def save_to_file(self):
-        filehandler = open("blocks/block{}".format(self.index), 'w')
-        pickle.dump(self, filehandler)
-        print("Block {} saved to file".format(self.index))
+        if not os.path.isfile("blocks/block{}.json".format(self.index)):
+            json_block = self.to_json()
 
-    def load_to_file(self):
-        filehandler = open("blocks/block{}".format(self.index), 'r')
-        return pickle.load(filehandler)
+            with open("blocks/block{}.json".format(self.index), 'w') as f:
+                json.dump(json_block, f)
+
+            print("Block #{} saved to file".format(self.index))
+        else:
+            print("File with block already exists!")
+
+    # Loads from file the block
+    def load_from_file(self):
+        if os.path.isfile("blocks/block{}.json".format(self.index)):
+            with open("blocks/block{}.json".format(self.index), 'r') as f:
+                return json.load(f)
+        else:
+            print("File with block not found!")
+
+    # Returns block in JSON format
+    def to_json(self):
+        return json.dumps(
+            {"index": self.index,
+             "transactions": self.transactions,
+             "timestamp": self.timestamp,
+             "previous_has": self.previous_hash,
+             "nonce": self.nonce
+             })
+
 
 # BLOCKCHAIN #
 class Blockchain:
