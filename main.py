@@ -13,14 +13,16 @@ def add_transaction_to_blockchain():
     # Read transaction from CSV file (each transaction is in JSON form (key => value))
     transactions = read_csv()
 
+    count = 0
     for t in transactions:
         data = json.dumps(t)
-        print(data)
-
         response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
         print(response)
 
-        break
+        if count == 10:
+            break
+
+        count = count+1
 
     r = requests.get('http://127.0.0.1:8000/mine')
     print(r.text)

@@ -30,13 +30,31 @@ def fetch_posts():
         posts = sorted(content, key=lambda k: k['timestamp'], reverse=True)
 
 
+def fetch_blockchain():
+    get_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+    response = requests.get(get_chain_address)
+    if response.status_code == 200:
+        chain = json.loads(response.content)
+        return chain["chain"], chain["length"]
+
+
 # Main endpoint
 @app.route('/', methods=['GET'])
 def index():
-    fetch_posts()
+    chain, length = fetch_blockchain()
     return render_template('index.html',
-                           title='YourNet: Decentralized'
-                                 'content sharing',
+                           title='Blockchain',
+                           number_of_block=length,
+                           genesis_block=chain[0],
+                           node_address=CONNECTED_NODE_ADDRESS)
+
+
+# Main endpoint
+@app.route('/old', methods=['GET'])
+def index_old():
+    fetch_posts()
+    return render_template('index2.html',
+                           title='Blockchain index',
                            posts=posts,
                            node_address=CONNECTED_NODE_ADDRESS,
                            readable_time=timestamp_to_string)
