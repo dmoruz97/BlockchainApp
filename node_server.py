@@ -5,6 +5,7 @@ import time
 from flask import Flask, request
 
 
+
 # BLOCK #
 class Block:
     def __init__(self, index, transactions, timestamp, previous_hash):
@@ -108,12 +109,11 @@ peers = set()
 @app.route('/get_transaction', methods=['GET'])
 def get_transaction_by_id():
     t = {}
+    t_id=request.args.get('id_transaction')
     for block in blockchain.chain:
         for transaction in block.transactions:
-            if transaction["TRANSACTION_ID"] == request.args.get('id_transaction'):
+            if transaction["TRANSACTION_ID"] == int(t_id):
                 t = transaction
-                break
-
     if t == {}:
         return "Transaction absent"
     else:
@@ -149,7 +149,6 @@ def new_transaction():
             return "Invlaid transaction data", 404
 
     tx_data["timestamp"] = time.time()
-
     blockchain.add_new_transaction(tx_data)
 
     return "Success", 201
@@ -192,10 +191,7 @@ def register_new_peers():
 @app.route('/add_block', methods=['POST'])
 def validate_and_add_block():
     block_data = request.get_json()
-    block = Block(block_data["index"],
-                  block_data["transactions"],
-                  block_data["timestamp",
-                  block_data["previous_hash"]])
+    block = Block(block_data["index"],block_data["transactions"],block_data["timestamp"],block_data["previous_hash"])
 
     proof = block_data['hash']
     added = blockchain.add_block(block, proof)
@@ -213,4 +209,4 @@ def get_pending_tx():
 
 
 # Uncomment this line if you want to specify the port number in the code
-# app.run(debug=True, port=8000)
+app.run(debug=True, port=8000)

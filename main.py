@@ -1,12 +1,9 @@
-import csv
 import json
 import requests
 import time
 import threading
-
+import csv
 from app import app
-
-
 
 
 # Function that reads the CSV file and return a list of the rows inside it
@@ -35,9 +32,43 @@ def read_csv():
 # Thread that mines every minute
 def mine():
     while True:
+        print("Mining")
         r = requests.get('http://127.0.0.1:8000/mine')
         print(r.text)
-        time.sleep(60)
+        time.sleep(1)
+
+# Start thread to mine
+t = threading.Thread(target=mine)
+#t.start()
+
+# Read transaction from CSV file (Each transaction is in JSON form (key => value))
+transactions = read_csv()
+
+# Add transaction to blockchain
+headers = {'Content-type': 'application/json'}
+for t in transactions:
+    data = json.dumps(t)
+    print(data)
+
+    response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
+    print(response)
+
+    break
+r = requests.get('http://127.0.0.1:8000/mine')
+print(r.text)
+time.sleep(1)
+
+# Get transaction by id
+params = {'id_transaction': '1'}
+response = requests.get('http://127.0.0.1:8000/get_transaction', params=params)
+print(response.url)
+print(response.text)
+print(response.status_code)
+
+# Get transaction by id
+params = {'id_block': '1'}
+response = requests.get('http://127.0.0.1:8000/get_all_transaction_in_block', params=params)
+print(response.text)
 
 
 # TO RUN BLOCKCHAIN ON PORT 8000:
@@ -49,31 +80,3 @@ def mine():
 
 # CTRL+C to suspend view of Flask and to see messages from our main
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
-    # Start thread to mine
-    t = threading.Thread(target=mine)
-    t.start()
-
-    # Read transaction from CSV file (Each transaction is in JSON form (key => value))
-    transactions = read_csv()
-
-    # Add transaction to blockchain
-    headers = {'Content-type': 'application/json'}
-    for t in transactions:
-        data = json.dumps(t)
-        response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
-        break
-
-    # Get transaction by id
-    params = {'id_transaction': '1'}
-    response = requests.get('http://127.0.0.1:8000/get_transaction', params=params)
-    print(response.url)
-    print(response.text)
-    print(response.status_code)
-
-    # Get transaction by id
-    params = {'id_block': '1'}
-    response = requests.get('http://127.0.0.1:8000/get_all_transaction_in_block', params=params)
-    print(response.text)
