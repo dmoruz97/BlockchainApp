@@ -37,9 +37,13 @@ def mine():
         print(r.text)
         time.sleep(1)
 
+
+# *** START OF MAIN *** #
+app.run(debug=True)
+
 # Start thread to mine
 t = threading.Thread(target=mine)
-#t.start()
+t.start()
 
 # Read transaction from CSV file (Each transaction is in JSON form (key => value))
 transactions = read_csv()
@@ -65,7 +69,7 @@ print(response.url)
 print(response.text)
 print(response.status_code)
 
-# Get transaction by id
+# Get all transaction of a block (given id)
 params = {'id_block': '1'}
 response = requests.get('http://127.0.0.1:8000/get_all_transaction_in_block', params=params)
 print(response.text)

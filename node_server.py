@@ -5,7 +5,6 @@ import time
 from flask import Flask, request
 
 
-
 # BLOCK #
 class Block:
     def __init__(self, index, transactions, timestamp, previous_hash):
@@ -19,6 +18,7 @@ class Block:
     def compute_hash(self):
         block_string = json.dumps(self.__dict__, sort_keys=True)
         return sha256(block_string.encode()).hexdigest()
+
 
 # BLOCKCHAIN #
 class Blockchain:
