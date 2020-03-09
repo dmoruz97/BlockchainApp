@@ -6,6 +6,7 @@ from flask import render_template, redirect, request
 
 from app import app
 
+
 # Node in the blockchain network that our application will communicate with to fetch and add data.
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
@@ -30,7 +31,7 @@ def fetch_posts():
 
 
 # Main endpoint
-@app.route('/')
+@app.route('/', methods=['GET'])
 def index():
     fetch_posts()
     return render_template('index.html',
@@ -45,11 +46,9 @@ def index():
 @app.route('/submit', methods=['POST'])
 def submit_textarea():
     post_content = request.form["content"]
-    author = request.form["author"]
 
     post_object = {
-        'author': author,
-        'content': post_content,
+        'content': post_content
     }
 
     # Submit a transaction

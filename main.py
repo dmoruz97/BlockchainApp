@@ -8,6 +8,7 @@ from app import app
 
 
 
+
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
     csv_file = "656211699_T_ONTIME_REPORTING.csv"
@@ -39,14 +40,17 @@ def mine():
         time.sleep(60)
 
 
-# FROM TERMINAL:
+# TO RUN BLOCKCHAIN ON PORT 8000:
 # export FLASK_APP=node_server.py
 # flask run --port 8000
 
-if __name__ == "__init__":
-    app.run(debug=True, port=8000)
+# TO RUN APP (from another terminal):
+# python main.py
+
+# CTRL+C to suspend view of Flask and to see messages from our main
 
 if __name__ == "__main__":
+    app.run(debug=True)
 
     # Start thread to mine
     t = threading.Thread(target=mine)
