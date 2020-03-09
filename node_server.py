@@ -1,6 +1,7 @@
 from hashlib import sha256
 import json
 import time
+import pickle
 
 from flask import Flask, request
 
@@ -19,11 +20,20 @@ class Block:
         block_string = json.dumps(self.__dict__, sort_keys=True)
         return sha256(block_string.encode()).hexdigest()
 
+    def save_to_file(self):
+        filehandler = open("blocks/block{}".format(self.index), 'w')
+        pickle.dump(self, filehandler)
+        print("Block {} saved to file".format(self.index))
+
+    def load_to_file(self):
+        filehandler = open("blocks/block{}".format(self.index), 'r')
+        return pickle.load(filehandler)
 
 # BLOCKCHAIN #
 class Blockchain:
     # difficulty of our PoW algorithm
     difficulty = 2
+    MAX_TRANSACTIONS_PER_BLOCK = 1000
 
     def __init__(self):
         self.unconfirmed_transactions = []  # data yet to get into Blockchain
@@ -77,29 +87,38 @@ class Blockchain:
 
     # Interfaces to add the pending transaction to the Blockchain, by adding them to the block and compute the PoW
     def mine(self):
-        if not self.unconfirmed_transactions:
+        if not self.unconfirmed_transactions:   # There are no transactions to be mined
             return False
+
+        if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:   # There too much transactions to be mined for a block
+            transactions_temp = self.unconfirmed_transactions[:self.MAX_TRANSACTIONS_PER_BLOCK]
+        else:
+            transactions_temp = self.unconfirmed_transactions
 
         last_block = self.last_block
 
         new_block = Block(index=last_block.index + 1,
-                          transactions=self.unconfirmed_transactions,
+                          transactions=transactions_temp,
                           timestamp=time.time(),
                           previous_hash=last_block.hash)
+        new_block.save_to_file()
 
         proof = self.proof_of_work(new_block)
         self.add_block(new_block, proof)
 
-        self.unconfirmed_transactions = []
+        if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:
+            self.unconfirmed_transactions = self.unconfirmed_transactions[self.MAX_TRANSACTIONS_PER_BLOCK+1:]
+        else:
+            self.unconfirmed_transactions = []
+
         return new_block.index
 
 
 # Initialize flask application
 app = Flask(__name__)
 
-# the node's copy of blockchain (Initialize a blockchain object)
+# the node's copy of Blockchain (Initialize a Blockchain object)
 blockchain = Blockchain()
-blockchain.create_genesis_block()
 
 # the address to other participating members of the network
 peers = set()
@@ -110,6 +129,7 @@ peers = set()
 def get_transaction_by_id():
     t = {}
     t_id=request.args.get('id_transaction')
+
     for block in blockchain.chain:
         for transaction in block.transactions:
             if transaction["TRANSACTION_ID"] == int(t_id):
@@ -124,6 +144,7 @@ def get_transaction_by_id():
 @app.route('/get_all_transaction_in_block', methods=['GET'])
 def get_all_transaction():
     transactions = []
+
     for block in blockchain.chain:
         if block.index == request.args.get('id_block'):
             transactions = block.transactions
@@ -146,7 +167,7 @@ def new_transaction():
 
     for field in required_fields:
         if not tx_data.get(field):
-            return "Invlaid transaction data", 404
+            return "Invalid transaction data", 404
 
     tx_data["timestamp"] = time.time()
     blockchain.add_new_transaction(tx_data)

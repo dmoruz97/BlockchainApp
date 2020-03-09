@@ -10,7 +10,7 @@ from app import app
 def add_transaction_to_blockchain():
     headers = {'Content-type': 'application/json'}
 
-    # Read transaction from CSV file (Each transaction is in JSON form (key => value))
+    # Read transaction from CSV file (each transaction is in JSON form (key => value))
     transactions = read_csv()
 
     for t in transactions:
@@ -24,6 +24,7 @@ def add_transaction_to_blockchain():
 
     r = requests.get('http://127.0.0.1:8000/mine')
     print(r.text)
+
 
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
@@ -54,7 +55,7 @@ def mine():
         print("Mining")
         r = requests.get('http://127.0.0.1:8000/mine')
         print(r.text)
-        time.sleep(1)
+        time.sleep(60)  # mining invoked every minute
 
 
 # *** START OF MAIN *** #
