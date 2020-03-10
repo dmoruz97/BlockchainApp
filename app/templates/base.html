@@ -21,8 +21,8 @@
     </head>
     <body>
         <div class="container-fluid">
-            <a href="/index">Home</a>
-            <a href="/add_record">Add new record</a>
+            <a href="index">Home</a>
+            <a href="{{ url_for('add_record') }}">Add new record</a>
             <a href="/query_status">Query status of a flight</a>
             <a href="/query_delay">Query average delay of a flight</a>
             <a href="/count_flight">Count flights connecting two cities</a>

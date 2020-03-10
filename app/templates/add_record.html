@@ -1,0 +1,75 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{title}}</h2>
+    <form method="post" action="/add_record">
+        <label for="transaction_id">TRANSACTION ID</label>
+        <input type="number" name="transaction_id" id="transaction_id" required><br>
+
+        <label for="year">YEAR</label>
+        <input type="number" name="year" id="year" min="1900" max="2020" step="1" required><br>
+
+        <label for="day_of_week">DAY OF WEEK</label>
+        <input type="number" name="day_of_week" id="day_of_week" min="1" max="7" step="1" required><br>
+
+        <label for="flight_date">FLIGHT DATE</label>
+        <input type="date" name="flight_date" id="flight_date" required><br>
+
+        <label for="op_carrier_fl_num">OP CARRIER FL NUM</label>
+        <input type="number" name="op_carrier_fl_num" id="op_carrier_fl_num" required><br>
+
+        <label for="op_carrier_airline_id">OP CARRIER AIRLINE ID</label>
+        <input type="number" name="op_carrier_airline_id" id="op_carrier_airline_id" required><br>
+
+        <label for="original_airport_id">ORIGIN AIRPORT ID</label>
+        <input type="number" name="original_airport_id" id="original_airport_id" required><br>
+
+        <label for="origin">ORIGIN</label>
+        <input type="text" name="origin" id="origin" required><br>
+
+        <label for="origin_city_name">ORIGIN CITY NAME</label>
+        <input type="text" name="origin_city_name" id="origin_city_name" required><br>
+
+        <label for="origin_state_nm">ORIGIN STATE NM</label>
+        <input type="text" name="origin_state_nm" id="origin_state_nm" required><br>
+
+        <label for="dest_airport_id">DEST AIRPORT ID</label>
+        <input type="number" name="dest_airport_id" id="dest_airport_id" required><br>
+
+        <label for="dest">DEST</label>
+        <input type="text" name="dest" id="dest" required><br>
+
+        <label for="dest_city_name">DEST CITY NAME</label>
+        <input type="text" name="dest_city_name" id="dest_city_name" required><br>
+
+        <label for="dest_state_nm">DEST STATE NM</label>
+        <input type="text" name="dest_state_nm" id="dest_state_nm" required><br>
+
+        <label for="dep_time">DEP TIME</label>
+        <input type="time" name="dep_time" id="dep_time" required><br>
+
+        <label for="dep_delay">DEP DELAY</label>
+        <input type="number" name="dep_delay" id="dep_delay" required><br>
+
+        <label for="arr_time">ARR TIME</label>
+        <input type="time" name="arr_time" id="arr_time" required><br>
+
+        <label for="arr_delay">ARR DELAY</label>
+        <input type="number" name="arr_delay" id="arr_delay" required><br>
+
+        <label>CANCELLED</label>
+        <label for="cancelled_yes">SI</label>
+        <input type="radio" name="cancelled" id="cancelled_yes" value="1" required>
+        <label for="cancelled_no">NO</label>
+        <input type="radio" name="cancelled" id="cancelled_no" value="0" required><br>
+
+        <label for="air_time">AIR TIME <small>(in minute)</small></label>
+        <input type="number" name="air_time" id="air_time" required>
+
+        <br><br>
+        <button type="submit" class="btn btn-primary">CONFIRM</button>
+    </form>
+    <h3 style="color: #FF0000;">{{success}}</h3>
+
+{% endblock %}
