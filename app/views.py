@@ -59,6 +59,29 @@ def index_old():
                            node_address=CONNECTED_NODE_ADDRESS,
                            readable_time=timestamp_to_string)
 
+# Route for query status (point 4.2 of the assignment)
+@app.route('/query_status', methods=['GET'])
+def query_status():
+    return render_template('query_status.html',
+                           title='Query status of a flight'
+                          )
+
+
+# Endpoint to get the status
+# @params:
+# - date
+# - op_carrier_airline_id
+@app.route('/get_status_from_airline_and_date', methods=['POST'])
+def get_status_from_airline_and_date():
+
+    # date with the schema: yyyy-mm-dd
+    date = request.form["date"]
+    op_carrier_airline_id = request.form["op_carrier_airline_id"]
+
+    # search status
+
+    # Return to the homepage
+    return redirect('/')
 
 # Endpoint to create a new transaction via our application
 @app.route('/submit', methods=['POST'])

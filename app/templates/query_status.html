@@ -1,0 +1,17 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{title}}</h2>
+    <form method="post" action="/get_status_from_airline_and_date">
+        <label for="op_carrier_airline_id">OP_CARRIER_AIRLINE_ID</label><br>
+        <input type="number" name="op_carrier_airline_id" id="op_carrier_airline_id" required>
+        <br><br>
+        <label for="date">DATE</label><br>
+        <input type="date" name="date" id="date" required>
+        <br><br><br><br>
+        <button type="submit">Conferma</button>
+    </form>
+
+
+{% endblock %}
