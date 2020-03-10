@@ -75,13 +75,30 @@ def query_status():
 def get_status_from_airline_and_date():
 
     # date with the schema: yyyy-mm-dd
+    global status
     date = request.form["date"]
     op_carrier_airline_id = request.form["op_carrier_airline_id"]
 
     # search status
+    copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+    response = requests.get(copy_chain_address)
+    blockchain = response.json()
 
-    # Return to the homepage
-    return redirect('/')
+    print(blockchain)
+
+    find = False
+
+    for block in blockchain['chain']:
+        for transaction in block['transactions']:
+            if transaction['date'] == date and transaction['op_carrier_airline_id']:
+                status = transaction.status
+                find = True
+
+    if find:
+        return status
+    else:
+        return "null"
+
 
 # Endpoint to create a new transaction via our application
 @app.route('/submit', methods=['POST'])
