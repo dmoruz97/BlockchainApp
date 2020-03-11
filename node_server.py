@@ -186,6 +186,7 @@ def new_transaction():
                        "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST",
                        "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED",
                        "AIR_TIME"]
+    print(tx_data)
 
     for field in required_fields:
         if not tx_data.get(field):
