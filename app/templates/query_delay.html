@@ -1,0 +1,22 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+    <h2>{{title}}</h2>
+    <form method="post" action="/query_delay">
+        <label for="op_carrier_fl_num">OP CARRIER FL NUM</label>
+        <input type="number" name="op_carrier_fl_num" id="op_carrier_fl_num" required><br>
+
+        <label for="start_time">START TIME</label>
+        <input type="date" name="start_time" id="start_time" placeholder="yyyy-mm-dd" required><br>
+
+        <label for="end_time">END TIME</label>
+        <input type="date" name="end_time" id="end_time" placeholder="yyyy-mm-dd" required><br>
+
+        <br><br>
+        <button type="submit" class="btn btn-primary">CONFIRM</button>
+    </form>
+    <br>
+    <h4 style="color: #FF0000;">{{ delay }}</h4>
+
+{% endblock %}

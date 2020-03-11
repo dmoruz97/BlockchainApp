@@ -50,6 +50,7 @@ def index_old():
 
 
 # Main endpoint
+@app.route('/index', methods=['GET'])
 @app.route('/', methods=['GET'])
 def index():
     chain, length = fetch_blockchain()
@@ -111,6 +112,50 @@ def add_record():
         return response.text
 
 
+# Query the average delay of a flight carrier in a certain interval of time (point 4.3 of the assignment)
+@app.route('/query_delay', methods=['GET', 'POST'])
+def query_delay():
+    if request.method == 'GET':
+        if 'delay' in request.args:
+            delay = request.args.get('delay')
+        else:
+            delay = ""
+
+        return render_template('query_delay.html',
+                               title='Query delay',
+                               delay=delay)
+
+    if request.method == 'POST':
+        carrier = request.form.get("op_carrier_fl_num")
+        start_time = request.form.get("start_time")
+        end_time = request.form.get("end_time")
+
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
+
+        count: int = 0
+        total_delay = 0
+
+        for block in blockchain['chain']:
+            for transaction in block['transactions']:
+                if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
+                    if transaction["ARR_DELAY"] > 0:    # There are also ARR_DELAY negative (flight arrived in advance)
+                        count = count+1
+                        total_delay = total_delay + transaction["ARR_DELAY"]    # Considered only the arrival delay
+
+        if count != 0:
+            average_delay = total_delay/count
+            info = 'Average delay: {} seconds'.format(average_delay)
+        else:
+            info = 'No matches!'
+
+        params = {'delay': info}
+        response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
+
+        return response.text
+
+
 # Route for query status (point 4.2 of the assignment)
 @app.route('/query_status', methods=['GET'])
 def query_status():
@@ -150,7 +195,6 @@ def get_status_from_airline_and_date():
         return status
     else:
         return "null"
-
 
 
 # Endpoint to create a new transaction via our application
