@@ -25,7 +25,7 @@ class Block:
         if not os.path.isfile("blocks/block{}.json".format(self.index)):
             json_block = self.to_json()
 
-            with open("blocks/block{}.json".format(self.index), 'w') as f:
+            with open("blocks/block{}.json".format(self.index), 'w+') as f:
                 json.dump(json_block, f)
 
             print("Block #{} saved to file".format(self.index))
