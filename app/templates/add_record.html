@@ -11,10 +11,10 @@
         <input type="number" name="year" id="year" min="1900" max="2020" step="1" required><br>
 
         <label for="day_of_week">DAY OF WEEK</label>
-        <input type="number" name="day_of_week" id="day_of_week" min="1" max="7" step="1" required><br>
+        <input type="number" name="day_of_week" id="day_of_week" min="1" max="7" step="1" value="1" required>&nbsp;&nbsp;&nbsp;<small>From 1 (Sunday) to 7 (Saturday)</small><br>
 
         <label for="flight_date">FLIGHT DATE</label>
-        <input type="date" name="flight_date" id="flight_date" required><br>
+        <input type="date" name="flight_date" id="flight_date" placeholder="yyyy-mm-dd" required><br>
 
         <label for="op_carrier_fl_num">OP CARRIER FL NUM</label>
         <input type="number" name="op_carrier_fl_num" id="op_carrier_fl_num" required><br>
@@ -47,29 +47,30 @@
         <input type="text" name="dest_state_nm" id="dest_state_nm" required><br>
 
         <label for="dep_time">DEP TIME</label>
-        <input type="time" name="dep_time" id="dep_time" required><br>
+        <input type="time" name="dep_time" id="dep_time" placeholder="HoursMinutes" required><br>
 
         <label for="dep_delay">DEP DELAY</label>
-        <input type="number" name="dep_delay" id="dep_delay" required><br>
+        <input type="number" name="dep_delay" id="dep_delay" placeholder="min.sec" required><br>
 
         <label for="arr_time">ARR TIME</label>
-        <input type="time" name="arr_time" id="arr_time" required><br>
+        <input type="time" name="arr_time" id="arr_time" placeholder="HoursMinutes" required><br>
 
         <label for="arr_delay">ARR DELAY</label>
-        <input type="number" name="arr_delay" id="arr_delay" required><br>
+        <input type="number" name="arr_delay" id="arr_delay" placeholder="min.sec" required><br>
 
         <label>CANCELLED</label>
-        <label for="cancelled_yes">SI</label>
+        <label for="cancelled_yes">si</label>
         <input type="radio" name="cancelled" id="cancelled_yes" value="1" required>
-        <label for="cancelled_no">NO</label>
+        <label for="cancelled_no">no</label>
         <input type="radio" name="cancelled" id="cancelled_no" value="0" required><br>
 
-        <label for="air_time">AIR TIME <small>(in minute)</small></label>
-        <input type="number" name="air_time" id="air_time" required>
+        <label for="air_time">AIR TIME</label>
+        <input type="number" name="air_time" id="air_time" placeholder="min.sec" required>
 
         <br><br>
         <button type="submit" class="btn btn-primary">CONFIRM</button>
     </form>
-    <h3 style="color: #FF0000;">{{success}}</h3>
+    <br>
+    <h4 style="color: #FF0000;">{{ success }}</h4>
 
 {% endblock %}
