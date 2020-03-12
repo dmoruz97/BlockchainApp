@@ -6,7 +6,7 @@
 
 {% block content %}
     <h2>{{title}}</h2>
-    <form action="/get_status_from_airline_and_date" method="POST">
+    <form action="/query_status" method="POST">
         <label for="op_carrier_airline_id">OP_CARRIER_AIRLINE_ID</label><br>
         <input type="number" name="op_carrier_airline_id" id="op_carrier_airline_id" required>
         <br><br>

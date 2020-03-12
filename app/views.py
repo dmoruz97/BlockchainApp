@@ -4,6 +4,7 @@ import json
 import requests
 from flask import render_template, redirect, request, url_for
 
+from utils import get_number_of_flights
 from app import app
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
@@ -155,40 +156,72 @@ def query_delay():
         return response.text
 
 
-# Route for query status (point 4.2 of the assignment)
-@app.route('/query_status', methods=['GET'])
-def query_status():
-    return render_template('query_status.html',
-                           title='Query status of a flight'
-                           )
-
 
 # Endpoint to get the status
 # @params:
 # - date
 # - op_carrier_airline_id
-@app.route('/get_status_from_airline_and_date', methods=['POST'])
-def get_status_from_airline_and_date():
-    # date with the schema: yyyy-mm-dd
-    status = "No matches!"
-    date = request.form["date"]
-    op_carrier_airline_id = request.form["op_carrier_airline_id"]
+@app.route('/query_status', methods=['GET','POST'])
+def query_status():
+    if request.method == "POST":
+        # date with the schema: yyyy-mm-dd
+        status = "No matches!"
+        date = request.form["date"]
+        op_carrier_airline_id = request.form["op_carrier_airline_id"]
 
-    # search status
-    copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-    response = requests.get(copy_chain_address)
-    blockchain = response.json()
+        # search status
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
 
-    for block in blockchain['chain']:
-        for transaction in block['transactions']:
-            if transaction['date'] == date and transaction['op_carrier_airline_id']:
-                status = transaction.status
+        for block in blockchain['chain']:
+            for transaction in block['transactions']:
+                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_AIRLINE_ID'] == op_carrier_airline_id:
+                    status = transaction.status
 
-    return render_template('query_status.html',
-                           title='Query status of a flight',
-                           result=status
-                           )
+        return render_template('query_status.html',
+                               title='Query status of a flight',
+                               result=status
+                               )
 
+    if request.method == "GET":
+        return render_template('query_status.html',
+                               title='Query status of a flight'
+                               )
+
+
+
+# Endpoint to get the number of flight connecting A to B
+# @params:
+# - first date
+# - second date
+# - first city
+# - second city
+@app.route('/count_flight', methods=['POST'])
+def count_flights():
+    if request.method == "POST":
+        # date with the schema: yyyy-mm-dd
+        status = "No matches!"
+        first_date = request.form["first_date"]
+        second_date = request.form["second_date"]
+        first_city = request.form["first_city"]
+        second_city = request.form["second_city"]
+
+        # search status
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
+
+        n_flights = get_number_of_flights(first_date, second_date, first_city, second_city, blockchain)
+
+        return render_template('count_flights.html',
+                               title='Flights connecting city A to city B',
+                               result=status
+                               )
+    if request.method == "GET":
+        return render_template('count_fights.html',
+                               title='Flights connecting city A to city B'
+                               )
 
 # Endpoint to create a new transaction via our application
 @app.route('/submit', methods=['POST'])
