@@ -6,7 +6,6 @@ from flask import render_template, redirect, request, url_for
 
 from app import app
 
-
 # Node in the blockchain network that our application will communicate with to fetch and add data.
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
@@ -134,18 +133,18 @@ def query_delay():
         response = requests.get(copy_chain_address)
         blockchain = response.json()
 
-        count: int = 0
+        count = 0
         total_delay = 0
 
         for block in blockchain['chain']:
             for transaction in block['transactions']:
                 if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
-                    if transaction["ARR_DELAY"] > 0:    # There are also ARR_DELAY negative (flight arrived in advance)
-                        count = count+1
-                        total_delay = total_delay + transaction["ARR_DELAY"]    # Considered only the arrival delay
+                    if transaction["ARR_DELAY"] > 0:  # There are also ARR_DELAY negative (flight arrived in advance)
+                        count = count + 1
+                        total_delay = total_delay + transaction["ARR_DELAY"]  # Considered only the arrival delay
 
         if count != 0:
-            average_delay = total_delay/count
+            average_delay = total_delay / count
             info = 'Average delay: {} seconds'.format(average_delay)
         else:
             info = 'No matches!'
@@ -161,7 +160,7 @@ def query_delay():
 def query_status():
     return render_template('query_status.html',
                            title='Query status of a flight'
-                          )
+                           )
 
 
 # Endpoint to get the status
@@ -170,9 +169,8 @@ def query_status():
 # - op_carrier_airline_id
 @app.route('/get_status_from_airline_and_date', methods=['POST'])
 def get_status_from_airline_and_date():
-
     # date with the schema: yyyy-mm-dd
-    global status
+    status = "No matches!"
     date = request.form["date"]
     op_carrier_airline_id = request.form["op_carrier_airline_id"]
 
@@ -181,20 +179,15 @@ def get_status_from_airline_and_date():
     response = requests.get(copy_chain_address)
     blockchain = response.json()
 
-    print(blockchain)
-
-    find = False
-
     for block in blockchain['chain']:
         for transaction in block['transactions']:
             if transaction['date'] == date and transaction['op_carrier_airline_id']:
                 status = transaction.status
-                find = True
 
-    if find:
-        return status
-    else:
-        return "null"
+    return render_template('query_status.html',
+                           title='Query status of a flight',
+                           result=status
+                           )
 
 
 # Endpoint to create a new transaction via our application
