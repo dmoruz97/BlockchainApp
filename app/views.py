@@ -4,7 +4,6 @@ import json
 import requests
 from flask import render_template, redirect, request, url_for
 
-from utils import get_number_of_flights
 from app import app
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
@@ -197,7 +196,7 @@ def query_status():
 # - second date
 # - first city
 # - second city
-@app.route('/count_flight', methods=['POST'])
+@app.route('/count_flight', methods=['GET','POST'])
 def count_flights():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
@@ -212,9 +211,14 @@ def count_flights():
         response = requests.get(copy_chain_address)
         blockchain = response.json()
 
-        n_flights = get_number_of_flights(first_date, second_date, first_city, second_city, blockchain)
+        count = 0
+        for block in blockchain['chain']:
+            for transaction in block['transactions']:
+                if first_date <= transaction['FL_DATE'] <= second_date and transaction['DEST_CITY_NAME'] == second_city and transaction['ORIGIN_CITY_NAME'] == first_city:
+                    count += 1
+                    status = "Number of flights: " + count
 
-        return render_template('count_flights.html',
+        return render_template('count_fights.html',
                                title='Flights connecting city A to city B',
                                result=status
                                )
