@@ -7,8 +7,6 @@ from flask import render_template, redirect, request
 from app import app
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
-#from app.utils import get_number_of_flights
-
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
 posts = []
@@ -226,24 +224,6 @@ def count_flights():
         return render_template('count_fights.html',
                                title='Flights connecting city A to city B'
                                )
-
-
-# Endpoint to create a new transaction via our application
-@app.route('/submit', methods=['POST'])
-def submit_textarea():
-    post_content = request.form["content"]
-
-    post_object = {
-        'content': post_content
-    }
-
-    # Submit a transaction
-    new_tx_address = "{}/new_transaction".format(CONNECTED_NODE_ADDRESS)
-
-    requests.post(new_tx_address, json=post_object, headers={'Content-type': 'application/json'})
-
-    # Return to the homepage
-    return redirect('/')
 
 
 def timestamp_to_string(epoch_time):
