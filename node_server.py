@@ -8,12 +8,16 @@ from flask import Flask, request
 
 # BLOCK #
 class Block:
-    def __init__(self, index, transactions, timestamp, previous_hash):
+    def __init__(self, index, transactions = [], timestamp = time.time(), previous_hash = ""):
         self.index = index  # Unique ID of the block
         self.transactions = transactions    # List of transactions
         self.timestamp = timestamp  # Time of generation of the block
         self.previous_hash = previous_hash  # Hash of the previous block
         self.nonce = 0  # Number that increases each time until we get a hash that satisfies our constraint
+        self.hash = ""
+
+    def check_genesis(self):
+        return self.transactions == [] and self.index == 0 and self.previous_hash == ""
 
     # Returns the hash of the block
     def compute_hash(self):
@@ -22,33 +26,25 @@ class Block:
 
     # Saves to file the block
     def save_to_file(self):
-        if not os.path.isfile("blocks/block{}.json".format(self.index)):
-            json_block = self.to_json()
-
-            with open("blocks/block{}.json".format(self.index), 'w') as f:
-                json.dump(json_block, f)
-
-            print("Block #{} saved to file".format(self.index))
-        else:
-            print("File with block already exists!")
+        json_block = self.to_json()
+        with open("blocks/block{}.json".format(self.index), 'w+') as f:
+            json.dump(json_block, f)
+        print("Block #{} saved to file".format(self.index))
 
     # Loads from file the block
     def load_from_file(self):
         if os.path.isfile("blocks/block{}.json".format(self.index)):
             with open("blocks/block{}.json".format(self.index), 'r') as f:
-                return json.load(f)
+                __dict__ = json.load(f)
+                return True
+            return False
         else:
-            print("File with block not found!")
+            print("File {} with block not found!".format(self.index))
+            return False
 
     # Returns block in JSON format
     def to_json(self):
-        return json.dumps(
-            {"index": self.index,
-             "transactions": self.transactions,
-             "timestamp": self.timestamp,
-             "previous_has": self.previous_hash,
-             "nonce": self.nonce
-             })
+        return json.dumps(self.__dict__, sort_keys=True)
 
 
 # BLOCKCHAIN #
@@ -60,13 +56,36 @@ class Blockchain:
     def __init__(self):
         self.unconfirmed_transactions = []  # data yet to get into Blockchain
         self.chain = []
-        self.create_genesis_block()
+        self.load_blockchain()
 
-    # Generates the Genesis Block (with index: 0, previuos_hash: 0 and a valid hash)
+    def load_blockchain(self):
+        i = 0
+        found = True
+        while found:
+            if os.path.isfile("blocks/block{}.json".format(i)):
+                block = Block(i)
+                block.load_from_file()
+                if i == 0:
+                    if block.check_genesis():
+                        print("Found genesis")
+                        self.chain.append(block)
+                    else:
+                        found = False
+                else:
+                    found = self.add_block(block, block.hash)
+            else:
+                if i == 0:
+                    self.create_genesis_block()
+                found = False
+            i = i+1
+        print("Loaded {}".format(len(self.chain)))
+
+    # Generates the Genesis Block (with index: 0, previous_hash: 0 and a valid hash)
     def create_genesis_block(self):
         genesis_block = Block(0, [], time.time(), "0")
         genesis_block.hash = genesis_block.compute_hash()
         self.chain.append(genesis_block)
+        genesis_block.save_to_file()
 
     @property
     # Get the last block (Blockchain has always at least one block, the genesis block)

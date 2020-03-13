@@ -21,17 +21,22 @@
                 margin: auto;
                 text-align: center;
             }
+            a {
+                border: solid 1px #000000;
+                border-radius: 10px;
+                padding: 10px;
+            }
         </style>
 
     </head>
     <body>
-        <div class="container-fluid">
-            <a href="index">Home</a>
+        <div class="container-fluid"><br>
+            <a href="{{ url_for('index') }}">Home</a>
             <a href="{{ url_for('add_record') }}">Add new record</a>
-            <a href="/query_status">Query status of a flight</a>
-            <a href="/query_delay">Query average delay of a flight</a>
+            <a href="{{ url_for('query_status') }}">Query status of a flight</a>
+            <a href="{{ url_for('query_delay') }}">Query average delay of a flight</a>
             <a href="/count_flight">Count flights connecting two cities</a>
-
+            <br><br>
             {% block content %}{% endblock %}
         </div>
     </body>

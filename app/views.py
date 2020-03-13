@@ -4,8 +4,8 @@ import json
 import requests
 from flask import render_template, redirect, request, url_for
 
+from utils import get_number_of_flights
 from app import app
-
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
@@ -50,6 +50,7 @@ def index_old():
 
 
 # Main endpoint
+@app.route('/index', methods=['GET'])
 @app.route('/', methods=['GET'])
 def index():
     chain, length = fetch_blockchain()
@@ -72,82 +73,155 @@ def add_record():
         return render_template('add_record.html',
                                title='Add new record',
                                success=success)
-    else:
-        if request.method == 'POST':
-            tran = {"TRANSACTION_ID": request.form.get('transaction_id'),
-                    "YEAR": request.form.get('year'),
-                    "DAY_OF_WEEK": request.form.get('day_of_week'),
-                    "FL_DATE": request.form.get('flight_date'),
-                    "OP_CARRIER_AIRLINE_ID": request.form.get('op_carrier_airline_id'),
-                    "OP_CARRIER_FL_NUM": request.form.get('op_carrier_fl_num'),
-                    "ORIGIN_AIRPORT_ID": request.form.get('originial_airport_id'),
-                    "ORIGIN": request.form.get('origin'),
-                    "ORIGIN_CITY_NAME": request.form.get('origin_city_name'),
-                    "ORIGIN_STATE_NM": request.form.get('origin_state_nm'),
-                    "DEST_AIRPORT_ID": request.form.get('dest_airport_id'),
-                    "DEST": request.form.get('dest'),
-                    "DEST_CITY_NAME": request.form.get('dest_city_name'),
-                    "DEST_STATE_NM": request.form.get('dest_state_nm'),
-                    "DEP_TIME": request.form.get('dep_time'),
-                    "DEP_DELAY": request.form.get('dep_delay'),
-                    "ARR_TIME": request.form.get('arr_time'),
-                    "ARR_DELAY": request.form.get('arr_delay'),
-                    "CANCELLED": request.form.get('cancelled'),
-                    "AIR_TIME": request.form.get('ait_time')
-                    }
 
-            """data = json.dumps(tran)
-            headers = {'Content-type': 'application/json'}
-            response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
-            if response.status_code == 200:
-                params = {'success': 'Record successfuly added!'}
-                return redirect(url_for('add_record'))
-                requests.get('http://127.0.0.1:8000/add_record', params=params)"""
+    if request.method == 'POST':
+        tran = {"TRANSACTION_ID": request.form.get('transaction_id'),
+                "YEAR": request.form.get('year'),
+                "DAY_OF_WEEK": request.form.get('day_of_week'),
+                "FL_DATE": request.form.get('flight_date'),
+                "OP_CARRIER_AIRLINE_ID": request.form.get('op_carrier_airline_id'),
+                "OP_CARRIER_FL_NUM": request.form.get('op_carrier_fl_num'),
+                "ORIGIN_AIRPORT_ID": request.form.get('original_airport_id'),
+                "ORIGIN": request.form.get('origin'),
+                "ORIGIN_CITY_NAME": request.form.get('origin_city_name'),
+                "ORIGIN_STATE_NM": request.form.get('origin_state_nm'),
+                "DEST_AIRPORT_ID": request.form.get('dest_airport_id'),
+                "DEST": request.form.get('dest'),
+                "DEST_CITY_NAME": request.form.get('dest_city_name'),
+                "DEST_STATE_NM": request.form.get('dest_state_nm'),
+                "DEP_TIME": request.form.get('dep_time'),
+                "DEP_DELAY": request.form.get('dep_delay'),
+                "ARR_TIME": request.form.get('arr_time'),
+                "ARR_DELAY": request.form.get('arr_delay'),
+                "CANCELLED": request.form.get('cancelled'),
+                "AIR_TIME": request.form.get('air_time')
+                }
 
-            return json.dumps({"status": "success"}), 200
+        data = json.dumps(tran)
+        headers = {'Content-type': 'application/json'}
+        address = "{}/new_transaction".format(CONNECTED_NODE_ADDRESS)
+        response = requests.post(address, headers=headers, data=data)
+
+        if response.status_code == 201:
+            params = {'success': 'Record successfuly added!'}
+            response = requests.get('http://127.0.0.1:5000/add_record', params=params)
+        else:
+            params = {'success': 'Record NOT added!'}
+            response = requests.get('http://127.0.0.1:5000/add_record', params=params)
+
+        return response.text
 
 
-# Route for query status (point 4.2 of the assignment)
-@app.route('/query_status', methods=['GET'])
-def query_status():
-    return render_template('query_status.html',
-                           title='Query status of a flight'
-                          )
+# Query the average delay of a flight carrier in a certain interval of time (point 4.3 of the assignment)
+@app.route('/query_delay', methods=['GET', 'POST'])
+def query_delay():
+    if request.method == 'GET':
+        if 'delay' in request.args:
+            delay = request.args.get('delay')
+        else:
+            delay = ""
+
+        return render_template('query_delay.html',
+                               title='Query delay',
+                               delay=delay)
+
+    if request.method == 'POST':
+        carrier = request.form.get("op_carrier_fl_num")
+        start_time = request.form.get("start_time")
+        end_time = request.form.get("end_time")
+
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
+
+        count = 0
+        total_delay = 0
+
+        for block in blockchain['chain']:
+            for transaction in block['transactions']:
+                if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
+                    if transaction["ARR_DELAY"] > 0:  # There are also ARR_DELAY negative (flight arrived in advance)
+                        count = count + 1
+                        total_delay = total_delay + transaction["ARR_DELAY"]  # Considered only the arrival delay
+
+        if count != 0:
+            average_delay = total_delay / count
+            info = 'Average delay: {} seconds'.format(average_delay)
+        else:
+            info = 'No matches!'
+
+        params = {'delay': info}
+        response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
+
+        return response.text
+
 
 
 # Endpoint to get the status
 # @params:
 # - date
 # - op_carrier_airline_id
-@app.route('/get_status_from_airline_and_date', methods=['POST'])
-def get_status_from_airline_and_date():
+@app.route('/query_status', methods=['GET','POST'])
+def query_status():
+    if request.method == "POST":
+        # date with the schema: yyyy-mm-dd
+        status = "No matches!"
+        date = request.form["date"]
+        op_carrier_airline_id = request.form["op_carrier_airline_id"]
 
-    # date with the schema: yyyy-mm-dd
-    global status
-    date = request.form["date"]
-    op_carrier_airline_id = request.form["op_carrier_airline_id"]
+        # search status
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
 
-    # search status
-    copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-    response = requests.get(copy_chain_address)
-    blockchain = response.json()
+        for block in blockchain['chain']:
+            for transaction in block['transactions']:
+                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_AIRLINE_ID'] == op_carrier_airline_id:
+                    status = transaction.status
 
-    print(blockchain)
+        return render_template('query_status.html',
+                               title='Query status of a flight',
+                               result=status
+                               )
 
-    find = False
-
-    for block in blockchain['chain']:
-        for transaction in block['transactions']:
-            if transaction['date'] == date and transaction['op_carrier_airline_id']:
-                status = transaction.status
-                find = True
-
-    if find:
-        return status
-    else:
-        return "null"
+    if request.method == "GET":
+        return render_template('query_status.html',
+                               title='Query status of a flight'
+                               )
 
 
+
+# Endpoint to get the number of flight connecting A to B
+# @params:
+# - first date
+# - second date
+# - first city
+# - second city
+@app.route('/count_flight', methods=['POST'])
+def count_flights():
+    if request.method == "POST":
+        # date with the schema: yyyy-mm-dd
+        status = "No matches!"
+        first_date = request.form["first_date"]
+        second_date = request.form["second_date"]
+        first_city = request.form["first_city"]
+        second_city = request.form["second_city"]
+
+        # search status
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
+
+        n_flights = get_number_of_flights(first_date, second_date, first_city, second_city, blockchain)
+
+        return render_template('count_flights.html',
+                               title='Flights connecting city A to city B',
+                               result=status
+                               )
+    if request.method == "GET":
+        return render_template('count_fights.html',
+                               title='Flights connecting city A to city B'
+                               )
 
 # Endpoint to create a new transaction via our application
 @app.route('/submit', methods=['POST'])

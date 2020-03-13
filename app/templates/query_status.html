@@ -2,43 +2,21 @@
 {% extends "base.html" %}
 
 {% block head %}
-    <script>
-        function send_request(){
-            formData = {
-                "date" : $("#date").val(),
-                "op_carrier_airline_id" : $("#date").val()
-            };
-            $.ajax({
-                url: "/get_status_from_airline_and_date",
-                type: "post",
-                data: formData,
-                success: function(status) {
-                    if(status == "null"){
-                        $("#flight_not_found").removeAttr('hidden');
-                    } else {
-                        $("#flight_found").text("Status: " + status);
-                        $("#flight_found").removeAttr('hidden');
-                    }
-                }
-            });
-        }
-    </script>
 {% endblock %}
 
 {% block content %}
     <h2>{{title}}</h2>
-
+    <form action="/query_status" method="POST">
         <label for="op_carrier_airline_id">OP_CARRIER_AIRLINE_ID</label><br>
         <input type="number" name="op_carrier_airline_id" id="op_carrier_airline_id" required>
         <br><br>
         <label for="date">DATE</label><br>
         <input type="date" name="date" id="date" required>
-        <br><br><br><br>
+        <br><br>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </form>
 
-    <button onclick="send_request()">Conferma</button>
     <br><br>
-    <p style="color:red;" id="flight_not_found" hidden="true">Flight not found</p>
-    <br>
-    <p style="color:red;" id="flight_found" hidden="true"></p>
+    <p style="color:red;">{{result}}</p>
 
 {% endblock %}
