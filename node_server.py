@@ -14,7 +14,6 @@ class Block:
         self.timestamp = timestamp  # Time of generation of the block
         self.previous_hash = previous_hash  # Hash of the previous block
         self.nonce = 0  # Number that increases each time until we get a hash that satisfies our constraint
-        self.hash = ""
 
     def check_genesis(self):
         return self.transactions == [] and self.index == 0 and self.previous_hash == ""
@@ -35,7 +34,7 @@ class Block:
     def load_from_file(self):
         if os.path.isfile("blocks/block{}.json".format(self.index)):
             with open("blocks/block{}.json".format(self.index), 'r') as f:
-                __dict__ = json.load(f)
+                self.__dict__ = json.load(f)
                 return True
             return False
         else:
@@ -44,7 +43,13 @@ class Block:
 
     # Returns block in JSON format
     def to_json(self):
-        return json.dumps(self.__dict__, sort_keys=True)
+        return json.dumps({
+            "index": self.index, 
+            "transactions": self.transactions, 
+            "timestamp": self.timestamp,
+            "previous_hash": self.previous_hash,
+            "nonce" :self.nonce 
+        }, sort_keys=True)
 
 
 # BLOCKCHAIN #
@@ -72,7 +77,7 @@ class Blockchain:
                     else:
                         found = False
                 else:
-                    found = self.add_block(block, block.hash)
+                    found = self.add_block(block, block.compute_hash())
             else:
                 if i == 0:
                     self.create_genesis_block()
@@ -83,9 +88,10 @@ class Blockchain:
     # Generates the Genesis Block (with index: 0, previous_hash: 0 and a valid hash)
     def create_genesis_block(self):
         genesis_block = Block(0, [], time.time(), "0")
+        genesis_block.save_to_file()
         genesis_block.hash = genesis_block.compute_hash()
         self.chain.append(genesis_block)
-        genesis_block.save_to_file()
+        
 
     @property
     # Get the last block (Blockchain has always at least one block, the genesis block)
