@@ -123,9 +123,9 @@ class Blockchain:
                           transactions=transactions_temp,
                           timestamp=time.time(),
                           previous_hash=last_block.hash)
-        new_block.save_to_file()
 
         proof = self.proof_of_work(new_block)
+        new_block.save_to_file()
         self.add_block(new_block, proof)
 
         if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:
