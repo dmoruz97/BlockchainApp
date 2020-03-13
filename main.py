@@ -19,7 +19,7 @@ def add_transaction_to_blockchain():
         response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
         print(response)
 
-        if count == 10:
+        if count == 3000:
             break
 
         count = count+1
