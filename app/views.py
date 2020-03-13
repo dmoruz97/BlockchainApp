@@ -2,12 +2,13 @@ import datetime
 import json
 
 import requests
-from flask import render_template, redirect, request, url_for
+from flask import render_template, redirect, request
 
-from utils import get_number_of_flights
 from app import app
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
+from app.utils import get_number_of_flights
+
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
 posts = []

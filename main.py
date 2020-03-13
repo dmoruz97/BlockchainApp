@@ -17,15 +17,11 @@ def add_transaction_to_blockchain():
     for t in transactions:
         data = json.dumps(t)
         response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
-        print(response)
 
-        if count == 3000:
-            break
+        print(response)
 
         count = count+1
 
-    r = requests.get('http://127.0.0.1:8000/mine')
-    print(r.text)
 
 
 # Function that reads the CSV file and return a list of the rows inside it
@@ -57,7 +53,7 @@ def mine():
         print("Mining")
         r = requests.get('http://127.0.0.1:8000/mine')
         print(r.text)
-        time.sleep(60)  # mining invoked every minute
+        time.sleep(1)  # mining invoked every minute
 
 
 # *** START OF MAIN *** #
@@ -65,10 +61,11 @@ app.run(debug=True)
 
 # Start thread to mine
 t = threading.Thread(target=mine)
-t.start()
 
-add_transaction_to_blockchain()
+#add_transaction_to_blockchain()
+read_csv()
 
+#t.start()
 
 time.sleep(1)
 

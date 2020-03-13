@@ -73,6 +73,7 @@ class Blockchain:
                 if i == 0:
                     if block.check_genesis():
                         print("Found genesis")
+                        block.hash=block.compute_hash()
                         self.chain.append(block)
                     else:
                         found = False
@@ -110,6 +111,7 @@ class Blockchain:
 
         block.hash = proof
         self.chain.append(block)
+        print("added block{} with {} transactions".format(block.index,len(block.transactions)))
         return True
 
     # Checks if block_hash is a valid hash of the block and satisfies the difficult criteria
@@ -142,6 +144,7 @@ class Blockchain:
             transactions_temp = self.unconfirmed_transactions
 
         last_block = self.last_block
+        print("last index{}".format(last_block.index))
 
         new_block = Block(index=last_block.index + 1,
                           transactions=transactions_temp,
@@ -192,14 +195,14 @@ def get_all_transaction():
     transactions = []
 
     for block in blockchain.chain:
-        if block.index == request.args.get('id_block'):
+        if int(block.index) == int(request.args.get('id_block')):
             transactions = block.transactions
             break
 
     if transactions == []:
         return "No transactions in this block"
     else:
-        return transactions
+        return {"res" : transactions}
 
 
 # Endpoint to add a new transaction
