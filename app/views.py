@@ -7,7 +7,7 @@ from flask import render_template, redirect, request
 from app import app
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
-from app.utils import get_number_of_flights
+#from app.utils import get_number_of_flights
 
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
@@ -157,12 +157,11 @@ def query_delay():
         return response.text
 
 
-
 # Endpoint to get the status
 # @params:
 # - date
 # - op_carrier_airline_id
-@app.route('/query_status', methods=['GET','POST'])
+@app.route('/query_status', methods=['GET', 'POST'])
 def query_status():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
@@ -191,14 +190,13 @@ def query_status():
                                )
 
 
-
 # Endpoint to get the number of flight connecting A to B
 # @params:
 # - first date
 # - second date
 # - first city
 # - second city
-@app.route('/count_flight', methods=['GET','POST'])
+@app.route('/count_flight', methods=['GET', 'POST'])
 def count_flights():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
@@ -228,6 +226,7 @@ def count_flights():
         return render_template('count_fights.html',
                                title='Flights connecting city A to city B'
                                )
+
 
 # Endpoint to create a new transaction via our application
 @app.route('/submit', methods=['POST'])

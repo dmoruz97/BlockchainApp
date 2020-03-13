@@ -27,14 +27,14 @@ class Block:
     def save_to_file(self):
         json_block = self.to_json()
         with open("blocks/block{}.json".format(self.index), 'w+') as f:
-            json.dump(json_block, f,sort_keys=True)
+            json.dump(json_block, f, sort_keys=True)
         print("Block #{} saved to file".format(self.index))
 
     # Loads from file the block
     def load_from_file(self):
         if os.path.isfile("blocks/block{}.json".format(self.index)):
             with open("blocks/block{}.json".format(self.index), 'r') as f:
-                d=json.load(f)
+                d = json.load(f)
                 self.__dict__ = d 
                 return True
             return False
@@ -49,8 +49,9 @@ class Block:
             "transactions": self.transactions, 
             "timestamp": self.timestamp,
             "previous_hash": self.previous_hash,
-            "nonce" :self.nonce 
+            "nonce": self.nonce
         }
+
 
 # BLOCKCHAIN #
 class Blockchain:
@@ -177,7 +178,7 @@ peers = set()
 @app.route('/get_transaction', methods=['GET'])
 def get_transaction_by_id():
     t = {}
-    t_id=request.args.get('id_transaction')
+    t_id = request.args.get('id_transaction')
 
     for block in blockchain.chain:
         for transaction in block.transactions:

@@ -23,7 +23,6 @@ def add_transaction_to_blockchain():
         count = count+1
 
 
-
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
     csv_file = "656211699_T_ONTIME_REPORTING.csv"
@@ -53,7 +52,7 @@ def mine():
         print("Mining")
         r = requests.get('http://127.0.0.1:8000/mine')
         print(r.text)
-        time.sleep(1)  # mining invoked every minute
+        # time.sleep(60)  # mining invoked every minute
 
 
 # *** START OF MAIN *** #
@@ -62,12 +61,10 @@ app.run(debug=True)
 # Start thread to mine
 t = threading.Thread(target=mine)
 
-#add_transaction_to_blockchain()
+# add_transaction_to_blockchain()
+# t.start()
 read_csv()
 
-#t.start()
-
-time.sleep(1)
 
 # Get transaction by id
 params = {'id_transaction': '1'}
