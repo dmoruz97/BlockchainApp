@@ -16,7 +16,7 @@ class Block:
         self.nonce = 0  # Number that increases each time until we get a hash that satisfies our constraint
 
     def check_genesis(self):
-        return self.transactions == [] and self.index == 0 and self.previous_hash == ""
+        return self.transactions == [] and self.index == 0 and self.previous_hash == "0"
 
     # Returns the hash of the block
     def compute_hash(self):
@@ -27,14 +27,15 @@ class Block:
     def save_to_file(self):
         json_block = self.to_json()
         with open("blocks/block{}.json".format(self.index), 'w+') as f:
-            json.dump(json_block, f)
+            json.dump(json_block, f,sort_keys=True)
         print("Block #{} saved to file".format(self.index))
 
     # Loads from file the block
     def load_from_file(self):
         if os.path.isfile("blocks/block{}.json".format(self.index)):
             with open("blocks/block{}.json".format(self.index), 'r') as f:
-                self.__dict__ = json.load(f)
+                d=json.load(f)
+                self.__dict__ = d 
                 return True
             return False
         else:
@@ -43,14 +44,13 @@ class Block:
 
     # Returns block in JSON format
     def to_json(self):
-        return json.dumps({
+        return {
             "index": self.index, 
             "transactions": self.transactions, 
             "timestamp": self.timestamp,
             "previous_hash": self.previous_hash,
             "nonce" :self.nonce 
-        }, sort_keys=True)
-
+        }
 
 # BLOCKCHAIN #
 class Blockchain:
@@ -91,7 +91,6 @@ class Blockchain:
         genesis_block.save_to_file()
         genesis_block.hash = genesis_block.compute_hash()
         self.chain.append(genesis_block)
-        
 
     @property
     # Get the last block (Blockchain has always at least one block, the genesis block)
