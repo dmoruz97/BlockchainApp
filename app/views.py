@@ -158,14 +158,14 @@ def query_delay():
 # Endpoint to get the status
 # @params:
 # - date
-# - op_carrier_airline_id
+# - OP_CARRIER_FL_NUM
 @app.route('/query_status', methods=['GET', 'POST'])
 def query_status():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
         status = "No matches!"
         date = request.form["date"]
-        op_carrier_airline_id = request.form["op_carrier_airline_id"]
+        op_carrier_fl_num = request.form["op_carrier_fl_num"]
 
         # search status
         copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
@@ -174,7 +174,7 @@ def query_status():
 
         for block in blockchain['chain']:
             for transaction in block['transactions']:
-                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_AIRLINE_ID'] == op_carrier_airline_id:
+                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
                     status = transaction.status
 
         return render_template('query_status.html',
