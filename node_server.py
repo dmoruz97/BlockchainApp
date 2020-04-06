@@ -167,11 +167,8 @@ class Blockchain:
 # Initialize flask application
 app = Flask(__name__)
 
-# the node's copy of Blockchain (Initialize a Blockchain object)
+# Initialize the Blockchain object
 blockchain = Blockchain()
-
-# the address to other participating members of the network
-peers = set()
 
 
 # Retrieve a transaction based on the transaction_id
@@ -243,6 +240,12 @@ def mine_unconfirmed_transactions():
     return "Block #{} is mined.".format(result)
 
 
+# FOR PEERS [not yet implemented] #
+
+# the address to other participating members of the network
+peers = set()
+
+
 # endpoint to add new peers to the network.
 @app.route('/add_nodes', methods=['POST'])
 def register_new_peers():
@@ -278,5 +281,4 @@ def get_pending_tx():
     return json.dumps(blockchain.unconfirmed_transactions)
 
 
-# Uncomment this line if you want to specify the port number in the code
-app.run(debug=True, port=8000)
+app.run(debug=False, port=8000)

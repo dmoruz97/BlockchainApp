@@ -55,7 +55,7 @@ def index():
     chain, length = fetch_blockchain()
     return render_template('index.html',
                            title='Blockchain',
-                           number_of_block=length,
+                           number_of_blocks=length,
                            genesis_block=chain[0],
                            node_address=CONNECTED_NODE_ADDRESS)
 

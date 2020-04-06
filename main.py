@@ -60,10 +60,9 @@ app.run(debug=True)
 
 # Start thread to mine
 t = threading.Thread(target=mine)
+# t.start()
 
 # add_transaction_to_blockchain()
-# t.start()
-read_csv()
 
 
 # Get transaction by id
@@ -79,14 +78,10 @@ response = requests.get('http://127.0.0.1:8000/get_all_transaction_in_block', pa
 print(response.text)
 
 
-# TO RUN BLOCKCHAIN ON PORT 8000
+# RUN BLOCKCHAIN ON PORT 8000
 # python node_server.py
 
-# TO RUN APP (from another terminal):
+# RUN APP ON PORT 5000 (from another terminal):
 # python main.py
 
 # CTRL+C to suspend view of Flask and to see messages from our main
-
-"""TO RUN BLOCKCHAIN ON PORT 8000 (OLD METHOD)
-export FLASK_APP=node_server.py
-flask run --port 8000"""
