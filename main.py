@@ -5,24 +5,6 @@ import threading
 import csv
 from app import app
 
-
-# Add transaction to blockchain
-def add_transaction_to_blockchain():
-    headers = {'Content-type': 'application/json'}
-
-    # Read transaction from CSV file (each transaction is in JSON form (key => value))
-    transactions = read_csv()
-
-    count = 0
-    for t in transactions:
-        data = json.dumps(t)
-        response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
-
-        print(response)
-
-        count = count+1
-
-
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
     csv_file = "656211699_T_ONTIME_REPORTING.csv"
@@ -46,13 +28,30 @@ def read_csv():
     return rows
 
 
+# Add transaction to blockchain
+def add_transaction_to_blockchain():
+    headers = {'Content-type': 'application/json'}
+
+    # Read transaction from CSV file (each transaction is in JSON form (key => value))
+    transactions = read_csv()
+
+    count = 0
+    for t in transactions:
+        data = json.dumps(t)
+        response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
+
+        print(response)
+
+        count = count+1
+
+
 # Thread that mines every minute
 def mine():
     while True:
         print("Mining")
         r = requests.get('http://127.0.0.1:8000/mine')
         print(r.text)
-        # time.sleep(60)  # mining invoked every minute
+        time.sleep(60)  # mining invoked every minute (60 seconds)
 
 
 # *** START OF MAIN *** #
@@ -60,7 +59,7 @@ app.run(debug=True)
 
 # Start thread to mine
 t = threading.Thread(target=mine)
-# t.start()
+t.start()
 
 # add_transaction_to_blockchain()
 

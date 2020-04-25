@@ -105,6 +105,41 @@ def add_record():
         return response.text
 
 
+# Endpoint to get the status
+# @params:
+# - date
+# - OP_CARRIER_FL_NUM
+@app.route('/query_status', methods=['GET', 'POST'])
+def query_status():
+    if request.method == "POST":
+        # date with the schema: yyyy-mm-dd
+        status = "No matches!"
+        date = request.form["date"]
+        op_carrier_fl_num = request.form["op_carrier_fl_num"]
+
+        # search status
+        """
+        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        #response = requests.get(copy_chain_address)
+        #blockchain = response.json()
+
+        for block in blockchain['chain']:
+            for transaction in block['transactions']:
+                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
+                    status = transaction.status
+        """
+
+        global transactions
+        for transaction in transactions:
+            if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
+                status = transaction.status
+
+        return render_template('query_status.html', title='Query status of a flight', result=status)
+
+    if request.method == "GET":
+        return render_template('query_status.html', title='Query status of a flight')
+
+
 # Query the average delay of a flight carrier in a certain interval of time (point 4.3 of the assignment)
 @app.route('/query_delay', methods=['GET', 'POST'])
 def query_delay():
@@ -123,12 +158,12 @@ def query_delay():
         start_time = request.form.get("start_time")
         end_time = request.form.get("end_time")
 
-        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-        response = requests.get(copy_chain_address)
-        blockchain = response.json()
-
         count = 0
         total_delay = 0
+
+        """copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        response = requests.get(copy_chain_address)
+        blockchain = response.json()
 
         for block in blockchain['chain']:
             for transaction in block['transactions']:
@@ -136,10 +171,18 @@ def query_delay():
                     if transaction["ARR_DELAY"] > 0:  # There are also ARR_DELAY negative (flight arrived in advance)
                         count = count + 1
                         total_delay = total_delay + transaction["ARR_DELAY"]  # Considered only the arrival delay
+        """
+        global transactions
+        for transaction in transactions:
+            if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
+                arr_delay = int(float(transaction["ARR_DELAY"]))
+                if arr_delay > 0:  # There are also ARR_DELAY negative (flights arrived in advance)
+                    count = count + 1
+                    total_delay = total_delay + arr_delay  # Considered only the arrival delay
 
         if count != 0:
             average_delay = total_delay / count
-            info = 'Average delay: {} seconds'.format(average_delay)
+            info = 'Average delay: {0:.2f} seconds'.format(average_delay)
         else:
             info = 'No matches!'
 
@@ -147,39 +190,6 @@ def query_delay():
         response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
 
         return response.text
-
-
-# Endpoint to get the status
-# @params:
-# - date
-# - OP_CARRIER_FL_NUM
-@app.route('/query_status', methods=['GET', 'POST'])
-def query_status():
-    if request.method == "POST":
-        # date with the schema: yyyy-mm-dd
-        status = "No matches!"
-        date = request.form["date"]
-        op_carrier_fl_num = request.form["op_carrier_fl_num"]
-
-        # search status
-        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-        response = requests.get(copy_chain_address)
-        blockchain = response.json()
-
-        for block in blockchain['chain']:
-            for transaction in block['transactions']:
-                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
-                    status = transaction.status
-
-        return render_template('query_status.html',
-                               title='Query status of a flight',
-                               result=status
-                               )
-
-    if request.method == "GET":
-        return render_template('query_status.html',
-                               title='Query status of a flight'
-                               )
 
 
 # Endpoint to get the number of flight connecting A to B
@@ -198,26 +208,23 @@ def count_flights():
         first_city = request.form["first_city"]
         second_city = request.form["second_city"]
 
+        count = 0
+
         # search status
         copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
         response = requests.get(copy_chain_address)
         blockchain = response.json()
 
-        count = 0
         for block in blockchain['chain']:
             for transaction in block['transactions']:
                 if first_date <= transaction['FL_DATE'] <= second_date and transaction['DEST_CITY_NAME'] == second_city and transaction['ORIGIN_CITY_NAME'] == first_city:
                     count += 1
-                    status = "Number of flights: " + count
+                    status = "Number of flights: {}".format(count)
 
-        return render_template('count_fights.html',
-                               title='Flights connecting city A to city B',
-                               result=status
-                               )
+        return render_template('count_fights.html', title='Flights connecting city A to city B', result=status)
+
     if request.method == "GET":
-        return render_template('count_fights.html',
-                               title='Flights connecting city A to city B'
-                               )
+        return render_template('count_fights.html', title='Flights connecting city A to city B')
 
 
 def timestamp_to_string(epoch_time):
