@@ -8,7 +8,7 @@ from flask import Flask, request
 
 # BLOCK #
 class Block:
-    def __init__(self, index, transactions = [], timestamp = time.time(), previous_hash = ""):
+    def __init__(self, index, transactions=[], timestamp=time.time(), previous_hash=""):
         self.index = index  # Unique ID of the block
         self.transactions = transactions    # List of transactions
         self.timestamp = timestamp  # Time of generation of the block
@@ -55,8 +55,8 @@ class Block:
 
 # BLOCKCHAIN #
 class Blockchain:
-    # difficulty of our PoW algorithm
-    difficulty = 2
+
+    difficulty = 2  # difficulty of our PoW algorithm
     MAX_TRANSACTIONS_PER_BLOCK = 1000
 
     def __init__(self):
@@ -74,7 +74,7 @@ class Blockchain:
                 if i == 0:
                     if block.check_genesis():
                         print("Found genesis")
-                        block.hash=block.compute_hash()
+                        block.hash = block.compute_hash()
                         self.chain.append(block)
                     else:
                         found = False
@@ -84,8 +84,9 @@ class Blockchain:
                 if i == 0:
                     self.create_genesis_block()
                 found = False
+
             i = i+1
-        print("Loaded {}".format(len(self.chain)))
+        print("Loaded {} blocks".format(len(self.chain)))
 
     # Generates the Genesis Block (with index: 0, previous_hash: 0 and a valid hash)
     def create_genesis_block(self):
@@ -102,9 +103,9 @@ class Blockchain:
     # Adds a block to the chain after some verifications:
     # check PoW and if the previuos_hash matches with the hash of the last block in the chain
     def add_block(self, block, proof):
-        previous_hash = self.last_block.hash
+        last_hash = self.last_block.hash
 
-        if previous_hash != block.previous_hash:
+        if last_hash != block.previous_hash:
             return False
 
         if not self.is_valid_proof(block, proof):
@@ -112,13 +113,13 @@ class Blockchain:
 
         block.hash = proof
         self.chain.append(block)
-        print("added block{} with {} transactions".format(block.index,len(block.transactions)))
+        print("added block{} with {} transactions".format(block.index, len(block.transactions)))
+
         return True
 
     # Checks if block_hash is a valid hash of the block and satisfies the difficult criteria
     def is_valid_proof(self, block, block_hash):
-        return (block_hash.startswith('0' * Blockchain.difficulty) and
-                block_hash == block.compute_hash())
+        return (block_hash.startswith('0' * Blockchain.difficulty) and block_hash == block.compute_hash())
 
     # Functions that tries different values of nonce to get a hash which satisfies the difficulty criteria
     def proof_of_work(self, block):
@@ -145,7 +146,7 @@ class Blockchain:
             transactions_temp = self.unconfirmed_transactions
 
         last_block = self.last_block
-        print("last index{}".format(last_block.index))
+        print("Last index{}".format(last_block.index))
 
         new_block = Block(index=last_block.index + 1,
                           transactions=transactions_temp,
@@ -171,7 +172,27 @@ app = Flask(__name__)
 blockchain = Blockchain()
 
 
-# Retrieve a transaction based on the transaction_id
+### ENDPOINTS ###
+
+# Get a copy of the blockchain
+@app.route('/chain', methods=['GET'])
+def get_chain():
+    chain_data = []
+    for block in blockchain.chain:
+        chain_data.append(block.__dict__)
+    return json.dumps({"length": len(chain_data), "chain": chain_data})
+
+
+# Mine unconfirmed transactions
+@app.route('/mine', methods=['GET'])
+def mine_unconfirmed_transactions():
+    result = blockchain.mine()
+    if not result:
+        return "No transactions to mine"
+    return "Block #{} is mined.".format(result)
+
+
+# Retrieve a transaction with id_transaction
 @app.route('/get_transaction', methods=['GET'])
 def get_transaction_by_id():
     t = {}
@@ -187,7 +208,7 @@ def get_transaction_by_id():
         return t
 
 
-# Retrieve all the transaction of a block
+# Retrieve all the transactions of a block with id_block
 @app.route('/get_all_transaction_in_block', methods=['GET'])
 def get_all_transaction():
     transactions = []
@@ -203,7 +224,7 @@ def get_all_transaction():
         return {"res" : transactions}
 
 
-# Endpoint to add a new transaction
+# Add a new transaction
 @app.route('/new_transaction', methods=['POST'])
 def new_transaction():
     tx_data = request.get_json()
@@ -220,24 +241,6 @@ def new_transaction():
     blockchain.add_new_transaction(tx_data)
 
     return "Success", 201
-
-
-# Endpoint to get a copy of the chain
-@app.route('/chain', methods=['GET'])
-def get_chain():
-    chain_data = []
-    for block in blockchain.chain:
-        chain_data.append(block.__dict__)
-    return json.dumps({"length": len(chain_data), "chain": chain_data})
-
-
-# Endpoint to mine unconfirmed transactions
-@app.route('/mine', methods=['GET'])
-def mine_unconfirmed_transactions():
-    result = blockchain.mine()
-    if not result:
-        return "No transactions to mine"
-    return "Block #{} is mined.".format(result)
 
 
 # FOR PEERS [not yet implemented] #

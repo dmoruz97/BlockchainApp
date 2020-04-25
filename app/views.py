@@ -9,43 +9,33 @@ from app import app
 # Node in the blockchain network that our application will communicate with to fetch and add data.
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 
-posts = []
+transactions = []
+blocks = []
 
 
-# Fetch the chain from a blockchain node, parse the data, and store it locally.
-def fetch_posts():
-    get_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-    response = requests.get(get_chain_address)
-    if response.status_code == 200:
-        content = []
-        chain = json.loads(response.content)
-        for block in chain["chain"]:
-            for tx in block["transactions"]:
-                tx["index"] = block["index"]
-                tx["hash"] = block["previous_hash"]
-                content.append(tx)
-
-        global posts
-        posts = sorted(content, key=lambda k: k['timestamp'], reverse=True)
-
-
+# Fetch the blockchain and store all the transactions in a global variable.
 def fetch_blockchain():
     get_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
     response = requests.get(get_chain_address)
     if response.status_code == 200:
+
+        global transactions
+        global blocks
+
         chain = json.loads(response.content)
+        for block in chain["chain"]:
+            # "blocks" is a global variable
+            blocks.append({"index": block["index"], "nonce": block["nonce"], "previous_hash": block["previous_hash"],
+                           "hash": block["hash"], "timestamp": block["timestamp"], "#transactions": len(block["transactions"])})
+
+            for t in block["transactions"]:
+                t["index"] = block["index"]
+                t["hash"] = block["hash"]
+                transactions.append(t)
+
+        transactions = sorted(transactions, key=lambda k: k["timestamp"], reverse=True)
+
         return chain["chain"], chain["length"]
-
-
-# Recap of Blockchain endpoint
-@app.route('/about', methods=['GET'])
-def index_old():
-    fetch_posts()
-    """return render_template('about_blockchain.html',
-                           title='Blockchain',
-                           posts=posts,
-                           node_address=CONNECTED_NODE_ADDRESS,
-                           readable_time=timestamp_to_string)"""
 
 
 # Main endpoint
@@ -53,11 +43,15 @@ def index_old():
 @app.route('/', methods=['GET'])
 def index():
     chain, length = fetch_blockchain()
+    global blocks
+
     return render_template('index.html',
                            title='Blockchain',
-                           number_of_blocks=length,
+                           node_address=CONNECTED_NODE_ADDRESS,
                            genesis_block=chain[0],
-                           node_address=CONNECTED_NODE_ADDRESS)
+                           number_of_blocks=length,
+                           blocks=blocks
+                           )
 
 
 # Add new record to the chain (point 4.1 of the assignment)
@@ -227,4 +221,4 @@ def count_flights():
 
 
 def timestamp_to_string(epoch_time):
-    return datetime.datetime.fromtimestamp(epoch_time).strftime('%H:%M')
+    return datetime.datetime.fromtimestamp(epoch_time).strftime('%d/%m/%Y %H:%M:%S')
