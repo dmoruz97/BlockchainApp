@@ -172,6 +172,7 @@ def query_delay():
                         count = count + 1
                         total_delay = total_delay + transaction["ARR_DELAY"]  # Considered only the arrival delay
         """
+
         global transactions
         for transaction in transactions:
             if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
@@ -211,15 +212,19 @@ def count_flights():
         count = 0
 
         # search status
-        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
+        """copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
         response = requests.get(copy_chain_address)
         blockchain = response.json()
 
         for block in blockchain['chain']:
             for transaction in block['transactions']:
-                if first_date <= transaction['FL_DATE'] <= second_date and transaction['DEST_CITY_NAME'] == second_city and transaction['ORIGIN_CITY_NAME'] == first_city:
-                    count += 1
-                    status = "Number of flights: {}".format(count)
+        """
+        
+        global transactions
+        for transaction in transactions:
+            if first_date <= transaction['FL_DATE'] <= second_date and transaction['DEST_CITY_NAME'] == second_city and transaction['ORIGIN_CITY_NAME'] == first_city:
+                count += 1
+                status = "Number of flights: {}".format(count)
 
         return render_template('count_fights.html', title='Flights connecting city A to city B', result=status)
 
