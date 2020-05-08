@@ -1,5 +1,6 @@
 import datetime
 import json
+import const
 
 import requests
 from flask import render_template, redirect, request
@@ -12,6 +13,32 @@ CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 transactions = []
 blocks = []
 
+def get_k_blocks_from_blockchain(start,k):
+    get_blocks_address = "{}/get_k_blocks".format(CONNECTED_NODE_ADDRESS)
+    foo = {'start': start, 'k': k}
+    data = json.dumps(foo)
+    headers = {'Content-type': 'application/json'}
+    response = requests.post(get_blocks_address, headers=headers, data=data)
+
+    if response.status_code == 200:
+        return response.content
+
+
+def aux():
+    get_len_address = "{}/get_chain_length".format(CONNECTED_NODE_ADDRESS)
+    response = requests.get(get_len_address)
+    data = json.loads(response.content)
+    return data
+
+
+def get_chain_lengh():
+    data = aux()
+    return data['chain_length']
+
+
+def get_max_k():
+    data = aux()
+    return data['k']
 
 # Fetch the blockchain and store all the transactions in a global variable.
 def fetch_blockchain():
@@ -107,6 +134,18 @@ def add_record():
 
         return response.text
 
+def query_status_aux(blocks_list, date, op_carrier_fl_num):
+    for transaction in blocks_list:
+        if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
+            return str(transaction)
+    return const.no_matches
+
+def dictToList(dict):
+    lst = []
+    dict = json.loads(dict)
+    for k,v in dict.items():
+        lst += [json.loads(v)]
+    return lst
 
 # Endpoint to get the status
 # @params:
@@ -116,7 +155,6 @@ def add_record():
 def query_status():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
-        status = "No matches!"
         date = request.form["date"]
         op_carrier_fl_num = request.form["op_carrier_fl_num"]
 
@@ -133,9 +171,25 @@ def query_status():
         """
 
         global transactions
-        for transaction in transactions:
-            if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
-                status = transaction.status
+        status = query_status_aux(transactions, date, op_carrier_fl_num)
+
+        if status == const.no_matches:
+            len_chain = get_chain_lengh()
+            k = get_max_k()
+
+            i = 1
+            seen = k
+            while len_chain - seen > 0 and status == const.no_matches:
+                blocks_temp = get_k_blocks_from_blockchain(len_chain - seen, k * i)
+                blocks_temp = dictToList(blocks_temp)
+                seen += k*i
+                i += 1
+
+                j = 0
+                while status == const.no_matches and j < len(blocks_temp):
+                    block = blocks_temp[j]
+                    j += 1
+                    status = query_status_aux(block['transactions'], date, op_carrier_fl_num)
 
         return render_template('query_status.html', title='Query status of a flight', result=status)
 

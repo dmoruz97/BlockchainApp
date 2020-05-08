@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 
 # BLOCK #
@@ -63,16 +63,16 @@ class Blockchain:
     def __init__(self):
         self.unconfirmed_transactions = []  # data yet to get into Blockchain
         self.chain = []
+        self.len = 0
         self.load_blockchain(self.MAX_K)
 
-    # K iniziale 100 leggi solo 100 e quando mini togli la prima, metodo per leggere k blocchi da disco
+    # K iniziale 100, leggi solo 100 e quando mini togli la prima, metodo per leggere k blocchi da disco
     def load_blockchain(self, k):
         i = 0
-        nblocks = 0
         found = True
         while found:
             if os.path.isfile("blocks/block{}.json".format(i)):
-                nblocks += 1
+                self.len += 1
             else:
                 if i == 0:
                     self.create_genesis_block()
@@ -80,7 +80,7 @@ class Blockchain:
             i = i+1
 
         print("Found {} blocks".format(i))
-        for i in range(nblocks-k, nblocks):
+        for i in range(self.len-k, self.len):
             print(i)
             block = Block(i)
             block.load_from_file()
@@ -164,7 +164,10 @@ class Blockchain:
         proof = self.proof_of_work(new_block)
         new_block.save_to_file()
         self.add_block(new_block, proof)
-        if len(self.chain)>blockchain.MAX_K:
+
+        self.len += 1
+
+        if len(self.chain) > blockchain.MAX_K:
             self.chain.pop(0)
 
         if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:
@@ -174,20 +177,6 @@ class Blockchain:
 
         return new_block.index
 
-
-def load_blocks(start, k):
-    blocks=[]
-    end = start-k if start-k >= 0 else 0
-    for i in range(end, start):
-        if os.path.isfile("blocks/block{}.json".format(i)):
-            block = Block(i)
-            block.load_from_file()
-            blocks.append(block)
-    return blocks
-
-
-def get_blockchain():
-    return blockchain
 
 
 blockchain = Blockchain()
@@ -205,6 +194,36 @@ def get_chain():
         chain_data.append(block.__dict__)
     return json.dumps({"length": len(chain_data), "chain": chain_data})
 
+@app.route('/get_chain_length', methods=['GET'])
+def get_chain_length():
+    return json.dumps({"chain_length": blockchain.len, "k": blockchain.MAX_K})
+
+def listToDict(lst):
+    j = 0
+    op = {}
+    for i in lst:
+        op[j] = json.dumps(i.__dict__)
+        j += 1
+
+    return op
+
+@app.route('/get_k_blocks', methods=['POST'])
+def load_blocks():
+    param = request.get_json()
+    start = int(param['start'])
+    k = int(param['k'])
+    blocks = []
+    end = 0
+    if start-k >= 0:
+        end = start - k
+
+    print(start, end)
+    for i in range(end, start):
+        if os.path.isfile("blocks/block{}.json".format(i)):
+            block = Block(i)
+            block.load_from_file()
+            blocks.append(block)
+    return listToDict(blocks)
 
 # Mine unconfirmed transactions
 @app.route('/mine', methods=['GET'])
@@ -262,6 +281,8 @@ def new_transaction():
 
     tx_data["timestamp"] = time.time()
     blockchain.add_new_transaction(tx_data)
+
+    #TODO: rimuovere primo elemento e aggiungere questo elemento in ram
 
     return "Success", 201
 
