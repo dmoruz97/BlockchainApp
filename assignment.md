@@ -40,7 +40,7 @@ The mining operation must be invoked automatically every minute. In realty the m
 The web application must allow the following operations:
 
  - Adding a new record to the chain
- - Query the status of a flight given OP_CARRIER_AIRLINE_ID and the DATE
+ - Query the status of a flight given OP_CARRIER_FL_NUM and the DATE
  - Query the average delay of a flight carrier in a certain interval of time
  - Given a pair of cities A and B, and a time interval, count the number of flights connecting city A to city B
 
