@@ -55,7 +55,7 @@ def mine():
 
 
 # *** START OF MAIN *** #
-app.run(debug=True)
+app.run(debug=False)
 
 # Start thread to mine
 t = threading.Thread(target=mine)
