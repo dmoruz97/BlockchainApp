@@ -3,8 +3,8 @@ import requests
 import time
 import threading
 import csv
+import os
 from app import app
-
 
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
@@ -54,9 +54,8 @@ def mine():
         print(r.text)
         time.sleep(60)  # mining invoked every minute (60 seconds)
 
-
 # *** START OF MAIN *** #
-app.run(debug=False, port=5000)
+app.run(debug=True, port=5000)
 
 # Start thread to mine
 t = threading.Thread(target=mine)
