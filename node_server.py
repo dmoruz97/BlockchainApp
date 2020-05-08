@@ -58,11 +58,12 @@ class Blockchain:
 
     difficulty = 2  # difficulty of our PoW algorithm
     MAX_TRANSACTIONS_PER_BLOCK = 1000
+    MAX_K = 100
 
     def __init__(self):
         self.unconfirmed_transactions = []  # data yet to get into Blockchain
         self.chain = []
-        self.load_blockchain(100)
+        self.load_blockchain(self.MAX_K)
 
     # K iniziale 100 leggi solo 100 e quando mini togli la prima, metodo per leggere k blocchi da disco
     def load_blockchain(self, k):
@@ -163,6 +164,8 @@ class Blockchain:
         proof = self.proof_of_work(new_block)
         new_block.save_to_file()
         self.add_block(new_block, proof)
+        if len(self.chain)>blockchain.MAX_K:
+            self.chain.pop(0)
 
         if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:
             self.unconfirmed_transactions = self.unconfirmed_transactions[self.MAX_TRANSACTIONS_PER_BLOCK+1:]
