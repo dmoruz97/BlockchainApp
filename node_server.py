@@ -189,11 +189,8 @@ def load_blocks(start, k):
 def get_blockchain():
     return blockchain
 
-if __name__ == '__main__':
 
-    global blockchain
-    # Initialize the Blockchain object
-    blockchain = Blockchain()
+blockchain = Blockchain()
 
 # Initialize flask application
 app = Flask(__name__)
