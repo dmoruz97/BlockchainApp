@@ -5,6 +5,7 @@ import threading
 import csv
 from app import app
 
+
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
     csv_file = "656211699_T_ONTIME_REPORTING.csv"
@@ -55,7 +56,7 @@ def mine():
 
 
 # *** START OF MAIN *** #
-app.run(debug=False)
+app.run(debug=False, port=5000)
 
 # Start thread to mine
 t = threading.Thread(target=mine)
