@@ -166,123 +166,123 @@ class Blockchain:
         return new_block.index
 
 
-# Initialize flask application
-app = Flask(__name__)
-
 # Initialize the Blockchain object
 blockchain = Blockchain()
 
+if __name__ == '__main__':
+    # Initialize flask application
+    app = Flask(__name__)
 
-### ENDPOINTS ###
+    ### ENDPOINTS ###
 
-# Get a copy of the blockchain
-@app.route('/chain', methods=['GET'])
-def get_chain():
-    chain_data = []
-    for block in blockchain.chain:
-        chain_data.append(block.__dict__)
-    return json.dumps({"length": len(chain_data), "chain": chain_data})
-
-
-# Mine unconfirmed transactions
-@app.route('/mine', methods=['GET'])
-def mine_unconfirmed_transactions():
-    result = blockchain.mine()
-    if not result:
-        return "No transactions to mine"
-    return "Block #{} is mined.".format(result)
+    # Get a copy of the blockchain
+    @app.route('/chain', methods=['GET'])
+    def get_chain():
+        chain_data = []
+        for block in blockchain.chain:
+            chain_data.append(block.__dict__)
+        return json.dumps({"length": len(chain_data), "chain": chain_data})
 
 
-# Retrieve a transaction with id_transaction
-@app.route('/get_transaction', methods=['GET'])
-def get_transaction_by_id():
-    t = {}
-    t_id = request.args.get('id_transaction')
-
-    for block in blockchain.chain:
-        for transaction in block.transactions:
-            if transaction["TRANSACTION_ID"] == int(t_id):
-                t = transaction
-    if t == {}:
-        return "Transaction absent"
-    else:
-        return t
+    # Mine unconfirmed transactions
+    @app.route('/mine', methods=['GET'])
+    def mine_unconfirmed_transactions():
+        result = blockchain.mine()
+        if not result:
+            return "No transactions to mine"
+        return "Block #{} is mined.".format(result)
 
 
-# Retrieve all the transactions of a block with id_block
-@app.route('/get_all_transaction_in_block', methods=['GET'])
-def get_all_transaction():
-    transactions = []
+    # Retrieve a transaction with id_transaction
+    @app.route('/get_transaction', methods=['GET'])
+    def get_transaction_by_id():
+        t = {}
+        t_id = request.args.get('id_transaction')
 
-    for block in blockchain.chain:
-        if int(block.index) == int(request.args.get('id_block')):
-            transactions = block.transactions
-            break
-
-    if transactions == []:
-        return "No transactions in this block"
-    else:
-        return {"res" : transactions}
-
-
-# Add a new transaction
-@app.route('/new_transaction', methods=['POST'])
-def new_transaction():
-    tx_data = request.get_json()
-    required_fields = ["TRANSACTION_ID", "YEAR", "DAY_OF_WEEK", "FL_DATE", "OP_CARRIER_AIRLINE_ID", "OP_CARRIER_FL_NUM",
-                       "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST",
-                       "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED",
-                       "AIR_TIME"]
-
-    for field in required_fields:
-        if not tx_data.get(field):
-            return "Invalid transaction data", 404
-
-    tx_data["timestamp"] = time.time()
-    blockchain.add_new_transaction(tx_data)
-
-    return "Success", 201
+        for block in blockchain.chain:
+            for transaction in block.transactions:
+                if transaction["TRANSACTION_ID"] == int(t_id):
+                    t = transaction
+        if t == {}:
+            return "Transaction absent"
+        else:
+            return t
 
 
-# FOR PEERS [not yet implemented] #
+    # Retrieve all the transactions of a block with id_block
+    @app.route('/get_all_transaction_in_block', methods=['GET'])
+    def get_all_transaction():
+        transactions = []
 
-# the address to other participating members of the network
-peers = set()
+        for block in blockchain.chain:
+            if int(block.index) == int(request.args.get('id_block')):
+                transactions = block.transactions
+                break
 
-
-# endpoint to add new peers to the network.
-@app.route('/add_nodes', methods=['POST'])
-def register_new_peers():
-    nodes = request.get_json()
-    if not nodes:
-        return "Invalid data", 400
-    for node in nodes:
-        peers.add(node)
-
-    return "Success", 201
+        if transactions == []:
+            return "No transactions in this block"
+        else:
+            return {"res" : transactions}
 
 
-# endpoint to add a block mined by someone else to
-# the node's chain. The block is first verified by the node
-# and then added to the chain.
-@app.route('/add_block', methods=['POST'])
-def validate_and_add_block():
-    block_data = request.get_json()
-    block = Block(block_data["index"],block_data["transactions"],block_data["timestamp"],block_data["previous_hash"])
+    # Add a new transaction
+    @app.route('/new_transaction', methods=['POST'])
+    def new_transaction():
+        tx_data = request.get_json()
+        required_fields = ["TRANSACTION_ID", "YEAR", "DAY_OF_WEEK", "FL_DATE", "OP_CARRIER_AIRLINE_ID", "OP_CARRIER_FL_NUM",
+                           "ORIGIN_AIRPORT_ID", "ORIGIN", "ORIGIN_CITY_NAME", "ORIGIN_STATE_NM", "DEST_AIRPORT_ID", "DEST",
+                           "DEST_CITY_NAME", "DEST_STATE_NM", "DEP_TIME", "DEP_DELAY", "ARR_TIME", "ARR_DELAY", "CANCELLED",
+                           "AIR_TIME"]
 
-    proof = block_data['hash']
-    added = blockchain.add_block(block, proof)
+        for field in required_fields:
+            if not tx_data.get(field):
+                return "Invalid transaction data", 404
 
-    if not added:
-        return "The block was discarded by the node", 400
+        tx_data["timestamp"] = time.time()
+        blockchain.add_new_transaction(tx_data)
 
-    return "Block added to the chain", 201
-
-
-# endpoint to query unconfirmed transactions
-@app.route('/pending_tx')
-def get_pending_tx():
-    return json.dumps(blockchain.unconfirmed_transactions)
+        return "Success", 201
 
 
-app.run(debug=False, port=8000)
+    # FOR PEERS [not yet implemented] #
+
+    # the address to other participating members of the network
+    peers = set()
+
+
+    # endpoint to add new peers to the network.
+    @app.route('/add_nodes', methods=['POST'])
+    def register_new_peers():
+        nodes = request.get_json()
+        if not nodes:
+            return "Invalid data", 400
+        for node in nodes:
+            peers.add(node)
+
+        return "Success", 201
+
+
+    # endpoint to add a block mined by someone else to
+    # the node's chain. The block is first verified by the node
+    # and then added to the chain.
+    @app.route('/add_block', methods=['POST'])
+    def validate_and_add_block():
+        block_data = request.get_json()
+        block = Block(block_data["index"],block_data["transactions"],block_data["timestamp"],block_data["previous_hash"])
+
+        proof = block_data['hash']
+        added = blockchain.add_block(block, proof)
+
+        if not added:
+            return "The block was discarded by the node", 400
+
+        return "Block added to the chain", 201
+
+
+    # endpoint to query unconfirmed transactions
+    @app.route('/pending_tx')
+    def get_pending_tx():
+        return json.dumps(blockchain.unconfirmed_transactions)
+
+
+    app.run(debug=False, port=8000)
