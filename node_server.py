@@ -62,31 +62,37 @@ class Blockchain:
     def __init__(self):
         self.unconfirmed_transactions = []  # data yet to get into Blockchain
         self.chain = []
-        self.load_blockchain()
+        self.load_blockchain(100)
 
     # K iniziale 100 leggi solo 100 e quando mini togli la prima, metodo per leggere k blocchi da disco
-    def load_blockchain(self):
+    def load_blockchain(self, k):
         i = 0
+        nblocks = 0
         found = True
         while found:
             if os.path.isfile("blocks/block{}.json".format(i)):
-                block = Block(i)
-                block.load_from_file()
-                if i == 0:
-                    if block.check_genesis():
-                        print("Found genesis")
-                        block.hash = block.compute_hash()
-                        self.chain.append(block)
-                    else:
-                        found = False
-                else:
-                    found = self.add_block(block, block.compute_hash())
+                nblocks += 1
             else:
                 if i == 0:
                     self.create_genesis_block()
                 found = False
-
             i = i+1
+
+        print("Found {} blocks".format(i))
+        for i in range(nblocks-k, nblocks):
+            print(i)
+            block = Block(i)
+            block.load_from_file()
+            if i == 0:
+                if block.check_genesis():
+                    print("Found genesis")
+                    block.hash = block.compute_hash()
+                    self.chain.append(block)
+                else:
+                    break;
+            else:
+                res = self.add_block(block, block.compute_hash())
+                if not res : break
         print("Loaded {} blocks".format(len(self.chain)))
 
     # Generates the Genesis Block (with index: 0, previous_hash: 0 and a valid hash)
@@ -104,10 +110,10 @@ class Blockchain:
     # Adds a block to the chain after some verifications:
     # check PoW and if the previuos_hash matches with the hash of the last block in the chain
     def add_block(self, block, proof):
-        last_hash = self.last_block.hash
-
-        if last_hash != block.previous_hash:
-            return False
+        if len(self.chain) > 0:
+            last_hash = self.last_block.hash
+            if last_hash != block.previous_hash:
+                return False
 
         if not self.is_valid_proof(block, proof):
             return False
@@ -164,6 +170,17 @@ class Blockchain:
             self.unconfirmed_transactions = []
 
         return new_block.index
+
+
+def load_blocks(start, k):
+    blocks=[]
+    end = start-k if start-k >= 0 else 0
+    for i in range(end, start):
+        if os.path.isfile("blocks/block{}.json".format(i)):
+            block = Block(i)
+            block.load_from_file()
+            blocks.append(block)
+    return blocks
 
 
 def get_blockchain():
