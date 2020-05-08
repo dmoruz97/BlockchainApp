@@ -64,7 +64,7 @@ class Blockchain:
         self.chain = []
         self.load_blockchain()
 
-    #K iniziale 100 leggi solo 100 e quando mini togli la prima
+    # K iniziale 100 leggi solo 100 e quando mini togli la prima, metodo per leggere k blocchi da disco
     def load_blockchain(self):
         i = 0
         found = True
