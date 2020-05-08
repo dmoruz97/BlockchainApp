@@ -6,6 +6,7 @@ import csv
 import os
 from app import app
 
+
 # Function that reads the CSV file and return a list of the rows inside it
 def read_csv():
     csv_file = "656211699_T_ONTIME_REPORTING.csv"
@@ -37,11 +38,11 @@ def add_transaction_to_blockchain():
     transactions = read_csv()
 
     count = 0
-    for t in transactions:
-        data = json.dumps(t)
-        response = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
+    for tr in transactions:
+        data = json.dumps(tr)
+        resp = requests.post('http://127.0.0.1:8000/new_transaction', headers=headers, data=data)
 
-        print(response)
+        print(resp)
 
         count = count+1
 
@@ -54,6 +55,7 @@ def mine():
         print(r.text)
         time.sleep(60)  # mining invoked every minute (60 seconds)
 
+
 # *** START OF MAIN *** #
 app.run(debug=True, port=5000)
 
@@ -63,6 +65,14 @@ t.start()
 
 # add_transaction_to_blockchain()
 
+# RUN BLOCKCHAIN ON PORT 8000
+# python node_server.py
+
+# RUN APP ON PORT 5000 (from another terminal):
+# python main.py
+
+# CTRL+C to suspend view of Flask and to see messages from our main
+
 
 # Get transaction by id
 params = {'id_transaction': '1'}
@@ -71,16 +81,7 @@ print(response.url)
 print(response.text)
 print(response.status_code)
 
-# Get all transaction of a block (given id)
+# Get all transaction of a block (given block id)
 params = {'id_block': '1'}
 response = requests.get('http://127.0.0.1:8000/get_all_transaction_in_block', params=params)
 print(response.text)
-
-
-# RUN BLOCKCHAIN ON PORT 8000
-# python node_server.py
-
-# RUN APP ON PORT 5000 (from another terminal):
-# python main.py
-
-# CTRL+C to suspend view of Flask and to see messages from our main

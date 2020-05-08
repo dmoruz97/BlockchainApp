@@ -13,10 +13,11 @@ CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 transactions = []
 blocks = []
 
+
 def get_k_blocks_from_blockchain(start,k):
     get_blocks_address = "{}/get_k_blocks".format(CONNECTED_NODE_ADDRESS)
-    foo = {'start': start, 'k': k}
-    data = json.dumps(foo)
+    values = {'start': start, 'k': k}
+    data = json.dumps(values)
     headers = {'Content-type': 'application/json'}
     response = requests.post(get_blocks_address, headers=headers, data=data)
 
@@ -24,31 +25,26 @@ def get_k_blocks_from_blockchain(start,k):
         return response.content
 
 
-def aux():
+def get_chain_and_k_length():
     get_len_address = "{}/get_chain_length".format(CONNECTED_NODE_ADDRESS)
     response = requests.get(get_len_address)
     data = json.loads(response.content)
-    return data
+    return data['chain_length'], data['k']
 
 
-def get_chain_lengh():
-    data = aux()
-    return data['chain_length']
+def dict_to_list(d):
+    lst = []
+    d = json.loads(d)
+    for k, v in d.items():
+        lst += [json.loads(v)]
+    return lst
 
-
-def get_max_k():
-    data = aux()
-    return data['k']
 
 # Fetch the blockchain and store all the transactions in a global variable.
 def fetch_blockchain():
     get_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
     response = requests.get(get_chain_address)
     if response.status_code == 200:
-
-        global transactions
-        global blocks
-
         chain = json.loads(response.content)
 
     global transactions
@@ -134,23 +130,19 @@ def add_record():
 
         return response.text
 
+
+# Endpoint to get the status
+# @params:
+# - date
+# - OP_CARRIER_FL_NUM
+
 def query_status_aux(blocks_list, date, op_carrier_fl_num):
     for transaction in blocks_list:
         if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
             return str(transaction)
     return const.no_matches
 
-def dictToList(dict):
-    lst = []
-    dict = json.loads(dict)
-    for k,v in dict.items():
-        lst += [json.loads(v)]
-    return lst
 
-# Endpoint to get the status
-# @params:
-# - date
-# - OP_CARRIER_FL_NUM
 @app.route('/query_status', methods=['GET', 'POST'])
 def query_status():
     if request.method == "POST":
@@ -173,15 +165,16 @@ def query_status():
         global transactions
         status = query_status_aux(transactions, date, op_carrier_fl_num)
 
+        # if flight not found in the first k blocks...
         if status == const.no_matches:
-            len_chain = get_chain_lengh()
-            k = get_max_k()
+            len_chain, k = get_chain_and_k_length();
 
             i = 1
             seen = k
+            # ... search in the previous i*k blocks, with i which increments (1, 2, 3, ...)
             while len_chain - seen > 0 and status == const.no_matches:
                 blocks_temp = get_k_blocks_from_blockchain(len_chain - seen, k * i)
-                blocks_temp = dictToList(blocks_temp)
+                blocks_temp = dict_to_list(blocks_temp)
                 seen += k*i
                 i += 1
 
@@ -198,6 +191,20 @@ def query_status():
 
 
 # Query the average delay of a flight carrier in a certain interval of time (point 4.3 of the assignment)
+def query_delay_aux(blocks_list, carrier, start_time, end_time):
+    count = 0
+    total_delay = 0
+
+    for transaction in blocks_list:
+        if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
+            arr_delay = int(float(transaction["ARR_DELAY"]))
+            if arr_delay > 0:  # There are also ARR_DELAY negative (flights arrived in advance)
+                count = count + 1
+                total_delay = total_delay + arr_delay  # Considered only the arrival delay
+
+    return count, total_delay
+
+
 @app.route('/query_delay', methods=['GET', 'POST'])
 def query_delay():
     if request.method == 'GET':
@@ -215,9 +222,6 @@ def query_delay():
         start_time = request.form.get("start_time")
         end_time = request.form.get("end_time")
 
-        count = 0
-        total_delay = 0
-
         """copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
         response = requests.get(copy_chain_address)
         blockchain = response.json()
@@ -231,12 +235,29 @@ def query_delay():
         """
 
         global transactions
-        for transaction in transactions:
-            if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
-                arr_delay = int(float(transaction["ARR_DELAY"]))
-                if arr_delay > 0:  # There are also ARR_DELAY negative (flights arrived in advance)
-                    count = count + 1
-                    total_delay = total_delay + arr_delay  # Considered only the arrival delay
+        count, total_delay = query_delay_aux(transactions, carrier, start_time, end_time)
+
+        # Then search in the rest of the blockchain...
+        # (possible heuristic: we could stop when "start_time" is greater than a start_time in blockchain)
+        len_chain, k = get_chain_and_k_length();
+
+        i = 1
+        seen = k
+        # ... search in the previous i*k blocks, with i which increments (1, 2, 3, ...)
+        while len_chain - seen > 0:
+            blocks_temp = get_k_blocks_from_blockchain(len_chain - seen, k * i)
+            blocks_temp = dict_to_list(blocks_temp)
+            seen += k * i
+            i += 1
+
+            j = 0
+            while j < len(blocks_temp):
+                block = blocks_temp[j]
+                j += 1
+                count_2, total_delay_2 = query_delay_aux(block['transactions'], carrier, start_time, end_time)
+
+            count = count + count_2
+            total_delay = total_delay + total_delay_2
 
         if count != 0:
             average_delay = total_delay / count
@@ -256,17 +277,27 @@ def query_delay():
 # - second date
 # - first city
 # - second city
+
+def count_flights_aux(blocks_list, first_date, second_date, first_city, second_city):
+    count = 0
+
+    for transaction in blocks_list:
+        if first_date <= transaction['FL_DATE'] <= second_date and transaction['DEST_CITY_NAME'] == second_city and \
+                transaction['ORIGIN_CITY_NAME'] == first_city:
+            count += 1
+
+    return count
+
+
 @app.route('/count_flight', methods=['GET', 'POST'])
 def count_flights():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
-        status = "No matches!"
+        status = const.no_matches
         first_date = request.form["first_date"]
         second_date = request.form["second_date"]
         first_city = request.form["first_city"]
         second_city = request.form["second_city"]
-
-        count = 0
 
         # search status
         """copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
@@ -276,12 +307,32 @@ def count_flights():
         for block in blockchain['chain']:
             for transaction in block['transactions']:
         """
-        
+
         global transactions
-        for transaction in transactions:
-            if first_date <= transaction['FL_DATE'] <= second_date and transaction['DEST_CITY_NAME'] == second_city and transaction['ORIGIN_CITY_NAME'] == first_city:
-                count += 1
-                status = "Number of flights: {}".format(count)
+        count = count_flights_aux(transactions, first_date, second_date, first_city, second_city)
+
+        # Then search in the rest of the blockchain...
+        # (possible heuristic: we could stop when "start_time" is greater than a start_time in blockchain)
+        len_chain, k = get_chain_and_k_length();
+
+        i = 1
+        seen = k
+        # ... search in the previous i*k blocks, with i which increments (1, 2, 3, ...)
+        while len_chain - seen > 0:
+            blocks_temp = get_k_blocks_from_blockchain(len_chain - seen, k * i)
+            blocks_temp = dict_to_list(blocks_temp)
+            seen += k * i
+            i += 1
+
+            j = 0
+            while j < len(blocks_temp):
+                block = blocks_temp[j]
+                j += 1
+                count_2 = count_flights_aux(block['transactions'], first_date, second_date, first_city, second_city)
+
+            count = count + count_2
+
+        status = "Number of flights: {}".format(count)
 
         return render_template('count_fights.html', title='Flights connecting city A to city B', result=status)
 
