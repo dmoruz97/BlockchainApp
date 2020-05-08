@@ -5,7 +5,7 @@ import requests
 from flask import render_template, redirect, request
 
 from app import app
-from node_server import blockchain
+from node_server import get_blockchain
 
 # Node in the blockchain network that our application will communicate with to fetch and add data.
 CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
@@ -29,7 +29,7 @@ def fetch_blockchain():
     global blocks
 
     print("Partito")
-
+    blockchain = get_blockchain()
     for block in blockchain.chain:
         # "blocks" is a global variable
         blocks.append({"index": block["index"], "nonce": block["nonce"], "previous_hash": block["previous_hash"],

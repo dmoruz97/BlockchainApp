@@ -166,10 +166,15 @@ class Blockchain:
         return new_block.index
 
 
-# Initialize the Blockchain object
-blockchain = Blockchain()
+def get_blockchain():
+    return blockchain
 
 if __name__ == '__main__':
+
+    global blockchain
+    # Initialize the Blockchain object
+    blockchain = Blockchain()
+
     # Initialize flask application
     app = Flask(__name__)
 
