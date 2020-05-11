@@ -31,6 +31,7 @@
     <!-- LOADS -->
     <load duration="30" unit="minute">   <!-- whole experiment is 30 minutes -->
         <!-- 35' to be sure not to relax the server after the 30' choosen before for the experiment-->
+
         
         <arrivalphase phase="1" duration="30" unit="minute">
             <!-- Limited to 1 user -->
@@ -45,6 +46,7 @@
     <!-- OPTIONS -->
     <options>
         <option name="file_server" id="flight_status" value="flight_status.csv"></option>
+
         <option type="ts_http" name="user_agent">
             <user_agent probability="30">
                 Mozilla/5.0 (X11; Ubuntu; Linux i686; rv:24.0) Gecko/20100101 Firefox/24.0
@@ -125,10 +127,10 @@
 		</for>
 
 
-                
+
             </session>
-            
-        
+
+
     </sessions>
 </tsung>
 
