@@ -17,4 +17,4 @@ dep_delay=5.00&amp;\
 arr_time=1630&amp;\
 arr_delay=5.00&amp;1
 cancelled=0.00&amp;\
-arr_time=65.00
+air_time=65.00
