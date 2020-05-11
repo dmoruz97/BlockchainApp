@@ -120,14 +120,12 @@ def add_record():
         headers = {'Content-type': 'application/json'}
         address = "{}/new_transaction".format(CONNECTED_NODE_ADDRESS)
         response = requests.post(address, headers=headers, data=data)
-
         if response.status_code == 201:
             params = {'success': 'Record successfuly added!'}
             response = requests.get('http://127.0.0.1:5000/add_record', params=params)
         else:
             params = {'success': 'Record NOT added!'}
             response = requests.get('http://127.0.0.1:5000/add_record', params=params)
-
         return response.text
 
 
@@ -147,22 +145,13 @@ def query_status_aux(blocks_list, date, op_carrier_fl_num):
 def query_status():
     if request.method == "POST":
         # date with the schema: yyyy-mm-dd
+        print(request.form)
         date = request.form["date"]
         op_carrier_fl_num = request.form["op_carrier_fl_num"]
-
+        op_carrier_fl_num=op_carrier_fl_num[0:len(op_carrier_fl_num)-1]
         # search status
-        """
-        copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-        #response = requests.get(copy_chain_address)
-        #blockchain = response.json()
-
-        for block in blockchain['chain']:
-            for transaction in block['transactions']:
-                if transaction['FL_DATE'] == date and transaction['OP_CARRIER_FL_NUM'] == op_carrier_fl_num:
-                    status = transaction.status
-        """
-
         global transactions
+
         status = query_status_aux(transactions, date, op_carrier_fl_num)
 
         # if flight not found in the first k blocks...
@@ -183,6 +172,8 @@ def query_status():
                     block = blocks_temp[j]
                     j += 1
                     status = query_status_aux(block['transactions'], date, op_carrier_fl_num)
+        else:
+            print("Status found in cache")
 
         return render_template('query_status.html', title='Query status of a flight', result=status)
 
@@ -222,18 +213,6 @@ def query_delay():
         start_time = request.form.get("start_time")
         end_time = request.form.get("end_time")
 
-        """copy_chain_address = "{}/chain".format(CONNECTED_NODE_ADDRESS)
-        response = requests.get(copy_chain_address)
-        blockchain = response.json()
-
-        for block in blockchain['chain']:
-            for transaction in block['transactions']:
-                if (transaction['OP_CARRIER_FL_NUM'] == carrier) and (start_time <= transaction['FL_DATE'] <= end_time):
-                    if transaction["ARR_DELAY"] > 0:  # There are also ARR_DELAY negative (flight arrived in advance)
-                        count = count + 1
-                        total_delay = total_delay + transaction["ARR_DELAY"]  # Considered only the arrival delay
-        """
-
         global transactions
         count, total_delay = query_delay_aux(transactions, carrier, start_time, end_time)
 
@@ -264,7 +243,6 @@ def query_delay():
             info = 'Average delay: {0:.2f} seconds'.format(average_delay)
         else:
             info = 'No matches!'
-
         params = {'delay': info}
         response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
 
@@ -342,3 +320,6 @@ def count_flights():
 
 def timestamp_to_string(epoch_time):
     return datetime.datetime.fromtimestamp(epoch_time).strftime('%d/%m/%Y %H:%M:%S')
+
+
+chain, length = fetch_blockchain()
