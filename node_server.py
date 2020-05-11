@@ -3,7 +3,7 @@ import json
 import time
 import os
 
-from flask import Flask, request
+from flask import Flask, request, jsonify
 
 
 # BLOCK #
@@ -63,15 +63,17 @@ class Blockchain:
     def __init__(self):
         self.unconfirmed_transactions = []  # data yet to get into Blockchain
         self.chain = []
+        self.len = 0
         self.load_blockchain(self.MAX_K)
 
+    # Initial k = 100.
+    # Load k blocks from the disk
     def load_blockchain(self, k):
         i = 0
-        nblocks = 0
         found = True
         while found:
             if os.path.isfile("blocks/block{}.json".format(i)):
-                nblocks += 1
+                self.len += 1
             else:
                 if i == 0:
                     self.create_genesis_block()
@@ -79,7 +81,7 @@ class Blockchain:
             i = i+1
 
         print("Found {} blocks".format(i))
-        for i in range(nblocks-k, nblocks):
+        for i in range(self.len-k, self.len):
             print(i)
             block = Block(i)
             block.load_from_file()
@@ -126,7 +128,7 @@ class Blockchain:
 
     # Checks if block_hash is a valid hash of the block and satisfies the difficult criteria
     def is_valid_proof(self, block, block_hash):
-        return (block_hash.startswith('0' * Blockchain.difficulty) and block_hash == block.compute_hash())
+        return block_hash.startswith('0' * Blockchain.difficulty) and block_hash == block.compute_hash()
 
     # Functions that tries different values of nonce to get a hash which satisfies the difficulty criteria
     def proof_of_work(self, block):
@@ -147,7 +149,8 @@ class Blockchain:
         if not self.unconfirmed_transactions:   # There are no transactions to be mined
             return False
 
-        if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:   # There too much transactions to be mined for a block
+        # If there are too much transactions to be mined for a block...
+        if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:
             transactions_temp = self.unconfirmed_transactions[:self.MAX_TRANSACTIONS_PER_BLOCK]
         else:
             transactions_temp = self.unconfirmed_transactions
@@ -163,7 +166,11 @@ class Blockchain:
         proof = self.proof_of_work(new_block)
         new_block.save_to_file()
         self.add_block(new_block, proof)
-        if len(self.chain)>blockchain.MAX_K:
+
+        self.len += 1
+
+        # After a mine, delete the first block read (to maintain the cache of k blocks)
+        if len(self.chain) > blockchain.MAX_K:
             self.chain.pop(0)
 
         if len(self.unconfirmed_transactions) > self.MAX_TRANSACTIONS_PER_BLOCK:
@@ -174,27 +181,13 @@ class Blockchain:
         return new_block.index
 
 
-def load_blocks(start, k):
-    blocks=[]
-    end = start-k if start-k >= 0 else 0
-    for i in range(end, start):
-        if os.path.isfile("blocks/block{}.json".format(i)):
-            block = Block(i)
-            block.load_from_file()
-            blocks.append(block)
-    return blocks
-
-
-def get_blockchain():
-    return blockchain
-
-
 blockchain = Blockchain()
 
 # Initialize flask application
 app = Flask(__name__)
 
-### ENDPOINTS ###
+# ENDPOINTS #
+
 
 # Get a copy of the blockchain
 @app.route('/chain', methods=['GET'])
@@ -203,6 +196,42 @@ def get_chain():
     for block in blockchain.chain:
         chain_data.append(block.__dict__)
     return json.dumps({"length": len(chain_data), "chain": chain_data})
+
+
+# Get chain and k length
+@app.route('/get_chain_length', methods=['GET'])
+def get_chain_length():
+    return json.dumps({"chain_length": blockchain.len, "k": blockchain.MAX_K})
+
+
+def list_to_dict(lst):
+    j = 0
+    op = {}
+    for i in lst:
+        op[j] = json.dumps(i.__dict__)
+        j += 1
+
+    return op
+
+
+# Get k blocks
+@app.route('/get_k_blocks', methods=['POST'])
+def load_blocks():
+    param = request.get_json()
+    start = int(param['start'])
+    k = int(param['k'])
+    blocks = []
+    end = 0
+    if start-k >= 0:
+        end = start - k
+
+    print(start, end)
+    for i in range(end, start):
+        if os.path.isfile("blocks/block{}.json".format(i)):
+            block = Block(i)
+            block.load_from_file()
+            blocks.append(block)
+    return list_to_dict(blocks)
 
 
 # Mine unconfirmed transactions
@@ -243,7 +272,7 @@ def get_all_transaction():
     if transactions == []:
         return "No transactions in this block"
     else:
-        return {"res" : transactions}
+        return {"res": transactions}
 
 
 # Add a new transaction
@@ -263,47 +292,6 @@ def new_transaction():
     blockchain.add_new_transaction(tx_data)
 
     return "Success", 201
-
-
-# FOR PEERS [not yet implemented] #
-
-# the address to other participating members of the network
-peers = set()
-
-
-# endpoint to add new peers to the network.
-@app.route('/add_nodes', methods=['POST'])
-def register_new_peers():
-    nodes = request.get_json()
-    if not nodes:
-        return "Invalid data", 400
-    for node in nodes:
-        peers.add(node)
-
-    return "Success", 201
-
-
-# endpoint to add a block mined by someone else to
-# the node's chain. The block is first verified by the node
-# and then added to the chain.
-@app.route('/add_block', methods=['POST'])
-def validate_and_add_block():
-    block_data = request.get_json()
-    block = Block(block_data["index"],block_data["transactions"],block_data["timestamp"],block_data["previous_hash"])
-
-    proof = block_data['hash']
-    added = blockchain.add_block(block, proof)
-
-    if not added:
-        return "The block was discarded by the node", 400
-
-    return "Block added to the chain", 201
-
-
-# endpoint to query unconfirmed transactions
-@app.route('/pending_tx')
-def get_pending_tx():
-    return json.dumps(blockchain.unconfirmed_transactions)
 
 
 app.run(debug=False, port=8000)
