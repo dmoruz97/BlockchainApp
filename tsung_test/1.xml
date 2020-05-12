@@ -12,18 +12,18 @@
     
     <!-- CLIENTS -->
     <clients>
-        <client host="localhost" use_controller_vm="true"/>
+        <client host="localhost"/>
     </clients>
 
     <!-- SERVERS -->
     <servers>
         <!-- Application server -->
-        <server host="localhost" port="5000" type="tcp"></server>
+        <server host="192.168.0.100" port="5000" type="tcp"></server>
     </servers>
-    
+
     <!-- MONITORS -->
     <monitoring>
-        <monitor host="localhost" type="snmp"></monitor>
+        <monitor host="192.168.0.100" type="snmp"></monitor>
     </monitoring>
     
     
@@ -37,9 +37,9 @@
             <users maxnumber="1" interarrival="0.01" unit="second"></users>
         </arrivalphase>
     </load>
-    
-    
-    
+
+
+
     <!-- OPTIONS -->
     <options>
         <option name="file_server" id="flight_status" value="flight_status.csv"></option>
@@ -60,18 +60,18 @@
             </user_agent>
             <user_agent probability="5">
                 Mozilla/5.0 (Linux; U; Android 2.2) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
-            </user_agent>  
+            </user_agent>
         </option>
     </options>
-    
-    
-    
+
+
+
     <!-- SESSIONS -->
     <sessions>
             <!-- Add record -->
             <session name="session_name" probability="100" type="ts_http">
 
-		<for from="1" to="10" incr="1" var="count">
+		<for from="1" to="10000" incr="1" var="count">
             <transaction name="general">
 
             <setdynvars sourcetype="file" fileid="choice" order="random">
