@@ -225,7 +225,7 @@ def load_blocks():
     if start-k >= 0:
         end = start - k
 
-    print(start, end)
+    print("Loading blocks {},{}:".format(start, end))
     for i in range(end, start):
         if os.path.isfile("blocks/block{}.json".format(i)):
             block = Block(i)
