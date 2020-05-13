@@ -1,0 +1,2715 @@
+# stats: dump at 1589364457
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 2.5328773463416145 0 2.5328773463416145 2.5328773463416145 0 0
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05078125 0 0.05078125 0.05078125 0 0
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6744.26171875 0 6744.26171875 6744.26171875 0 0
+stats: users_count 1 1
+stats: finish_users_count 0 0
+stats: request 1 12.238 0.0 12.238 12.238 0 0
+stats: connect 2 1.5785 0.031500000000000083 1.61 1.547 0 0
+stats: 200 1 1
+stats: size_rcv 2523 2523
+stats: size_sent 533 533
+stats: connected 1 1
+# stats: dump at 1589364467
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 1.0494752623688157 0.0 2.5328773463416145 1.0494752623688157 2.5328773463416145 1
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0390625 0.0 0.05078125 0.0390625 0.05078125 1
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6751.12109375 0.0 6751.12109375 6744.26171875 6744.26171875 1
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 7921.2555 7916.1305 15837.386 5.125 12.238 1
+stats: connect 2 1.2485 0.019499999999999906 1.61 1.229 1.5785 2
+stats: page 1 15852.29 0.0 15852.29 15852.29 0 0
+stats: tr_general 1 15858.093 0 15858.093 15858.093 0 0
+stats: 200 2 3
+stats: size_rcv 4858 7381
+stats: size_sent 502 1035
+stats: connected 0 1
+# stats: dump at 1589364477
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 2.5328773463416145 0.2997002997002997 1.7911763043552151 2
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.03125 0.0 0.05078125 0.03125 0.044921875 2
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.39453125 0.0 6752.39453125 6744.26171875 6747.69140625 2
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 15837.386 5.125 5284.916333333334 3
+stats: connect 0 0 0 1.61 1.229 1.4135 4
+stats: page 0 0 0 15852.29 15852.29 15852.29 1
+stats: tr_general 0 0 0 15858.093 15858.093 15858.093 1
+stats: 200 0 3
+stats: size_rcv 0 7381
+stats: size_sent 0 1035
+stats: connected 0 1
+# stats: dump at 1589364487
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29925187032418954 0.0 2.5328773463416145 0.29925187032418954 1.29401763613691 3
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.03125 0.0 0.05078125 0.03125 0.040364583333333336 3
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.41796875 0.0 6752.41796875 6744.26171875 6749.259114583333 3
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4024.70575 6961.824414902655 16082.939 2.763 5284.916333333334 3
+stats: connect 4 1.156 0.23043762713584776 1.61 0.94 1.4135 4
+stats: page 2 8051.121 8037.467 16088.588 13.654 15852.29 1
+stats: tr_general 2 8052.0425000000005 8037.4415 16089.484 14.601 15858.093 1
+stats: 200 4 7
+stats: size_rcv 14669 22050
+stats: size_sent 1326 2361
+stats: connected 0 1
+# stats: dump at 1589364497
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.4495504495504496 0.0 2.5328773463416145 0.29925187032418954 1.0453261946837298 4
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.05078125 0.01953125 0.0380859375 4
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.4609375 0.0 6752.4609375 6744.26171875 6750.048828125 4
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16082.939 2.763 4564.796 7
+stats: connect 0 0 0 1.61 0.94 1.2847499999999998 8
+stats: page 0 0 0 16088.588 13.654 10651.510666666667 3
+stats: tr_general 0 0 0 16089.484 14.601 10654.059333333333 3
+stats: 200 0 7
+stats: size_rcv 0 22050
+stats: size_sent 0 2361
+stats: connected 0 1
+# stats: dump at 1589364507
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3489531405782652 0.0 2.5328773463416145 0.29925187032418954 0.9261710456570738 5
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.05078125 0.01953125 0.034375 5
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.4921875 0.0 6752.4921875 6744.26171875 6750.53125 5
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8183.5935 8179.2295 16362.823 2.763 4564.796 7
+stats: connect 2 1.528 0.05600000000000005 1.61 0.94 1.2847499999999998 8
+stats: page 1 16365.804 0.0 16365.804 13.654 10651.510666666667 3
+stats: tr_general 1 16366.443 0.0 16366.443 14.601 10654.059333333333 3
+stats: 200 2 9
+stats: size_rcv 4866 26916
+stats: size_sent 533 2894
+stats: connected 0 1
+# stats: dump at 1589364517
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 2.5328773463416145 0.29925187032418954 0.8299680614772723 6
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.05078125 0.01953125 0.031901041666666664 6
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.50390625 0.0 6752.50390625 6744.26171875 6750.858072916667 6
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8137.813999999999 8133.818 16362.823 2.763 5368.973222222222 9
+stats: connect 2 1.2959999999999998 0.24900000000000005 1.61 0.94 1.3334 10
+stats: page 1 16276.242 0.0 16365.804 13.654 12080.083999999999 4
+stats: tr_general 1 16276.804 0.0 16366.443 14.601 12082.15525 4
+stats: 200 2 11
+stats: size_rcv 4858 31774
+stats: size_sent 502 3396
+stats: connected 0 1
+# stats: dump at 1589364527
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24937655860349126 0.0 2.5328773463416145 0.24937655860349126 0.754215524080562 7
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.05078125 0.01171875 0.030133928571428572 7
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.4921875 0.0 6752.50390625 6744.26171875 6751.093191964285 7
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16362.823 2.763 5872.398818181818 11
+stats: connect 0 0 0 1.61 0.94 1.3271666666666666 12
+stats: page 0 0 0 16365.804 13.654 12919.315599999998 5
+stats: tr_general 0 0 0 16366.443 14.601 12921.085000000001 5
+stats: 200 0 11
+stats: size_rcv 0 31774
+stats: size_sent 0 3396
+stats: connected 0 1
+# stats: dump at 1589364537
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 2.5328773463416145 0.24937655860349126 0.6911106533959281 8
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.05078125 0.01171875 0.02783203125 8
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.5 0.0 6752.50390625 6744.26171875 6751.26806640625 8
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4189.08425 7247.104884635945 16741.438 2.763 5872.398818181818 11
+stats: connect 4 1.2095 0.09289375651786295 1.61 0.94 1.3271666666666666 12
+stats: page 2 8378.3685 8367.2935 16745.662 11.075 12919.315599999998 5
+stats: tr_general 2 8379.036 8367.3 16746.336 11.736 12921.085000000001 5
+stats: 200 4 15
+stats: size_rcv 14669 46443
+stats: size_sent 1326 4722
+stats: connected 0 1
+# stats: dump at 1589364547
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 2.5328773463416145 0.24937655860349126 0.6420567543138821 9
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.05078125 0.01171875 0.026041666666666668 9
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.5390625 0.0 6752.5390625 6744.26171875 6751.404947916667 9
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8228.104500000001 8224.4915 16741.438 2.763 5423.514933333333 15
+stats: connect 2 1.278 0.05899999999999994 1.61 0.94 1.29775 16
+stats: page 1 16456.824 0.0 16745.662 11.075 11621.902142857143 7
+stats: tr_general 1 16457.514 0.0 16746.336 11.736 11623.356714285715 7
+stats: 200 2 17
+stats: size_rcv 4866 51309
+stats: size_sent 533 5255
+stats: connected 0 1
+# stats: dump at 1589364557
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 2.5328773463416145 0.24937655860349126 0.6078211088525238 10
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.05078125 0.01171875 0.024609375 10
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.51953125 0.0 6752.5390625 6744.26171875 6751.518359375 10
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16741.438 2.763 5753.466647058823 17
+stats: connect 0 0 0 1.61 0.94 1.2955555555555556 18
+stats: page 0 0 0 16745.662 11.075 12226.267375 8
+stats: tr_general 0 0 0 16746.336 11.736 12227.626375 8
+stats: 200 0 17
+stats: size_rcv 0 51309
+stats: size_sent 0 5255
+stats: connected 0 1
+# stats: dump at 1589364567
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 2.5328773463416145 0.1998001998001998 0.5843351704405234 11
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0234375 11
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.26953125 0.0 6752.5390625 6744.26171875 6751.609375 11
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8406.516 8401.469000000001 16807.985 2.763 5753.466647058823 17
+stats: connect 2 1.67 0.14500000000000002 1.815 0.94 1.2955555555555556 18
+stats: page 1 16811.839 0.0 16811.839 11.075 12226.267375 8
+stats: tr_general 1 16812.557 0.0 16812.557 11.736 12227.626375 8
+stats: 200 2 19
+stats: size_rcv 4858 56167
+stats: size_sent 502 5757
+stats: connected 0 1
+# stats: dump at 1589364577
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 2.5328773463416145 0.1998001998001998 0.5522905895538298 12
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.021484375 12
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.28125 0.0 6752.5390625 6744.26171875 6751.664388020833 12
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16807.985 2.763 6032.735 19
+stats: connect 0 0 0 1.815 0.94 1.333 20
+stats: page 0 0 0 16811.839 11.075 12735.775333333333 9
+stats: tr_general 0 0 0 16812.557 11.736 12737.06311111111 9
+stats: 200 0 19
+stats: size_rcv 0 56167
+stats: size_sent 0 5757
+stats: connected 0 1
+# stats: dump at 1589364587
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14977533699450823 0.0 2.5328773463416145 0.14977533699450823 0.5328490575873057 13
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.019831730769230768 13
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.30078125 0.0 6752.5390625 6744.26171875 6751.711838942308 13
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 5021.758 6819.372935798936 16807.985 2.763 6032.735 19
+stats: connect 4 1.315 0.09617951964945552 1.815 0.94 1.333 20
+stats: page 2 10044.314999999999 6531.590999999999 16811.839 11.075 12735.775333333333 9
+stats: tr_general 2 10045.3865 6531.166500000001 16812.557 11.736 12737.06311111111 9
+stats: 200 4 23
+stats: size_rcv 9922 66089
+stats: size_sent 981 6738
+stats: connected 0 1
+# stats: dump at 1589364597
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 2.5328773463416145 0.14977533699450823 0.5054866489735345 14
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.018415178571428572 14
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.33984375 0.0 6752.5390625 6744.26171875 6751.75390625 14
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16807.985 2.763 5856.9129130434785 23
+stats: connect 0 0 0 1.815 0.94 1.33 24
+stats: page 0 0 0 16811.839 11.075 12246.41890909091 11
+stats: tr_general 0 0 0 16812.557 11.736 12247.667363636365 11
+stats: 200 0 23
+stats: size_rcv 0 66089
+stats: size_sent 0 6738
+stats: connected 0 1
+# stats: dump at 1589364607
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3491271820448878 0.0 2.5328773463416145 0.14977533699450823 0.49508592479666674 15
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0171875 15
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.35546875 0.0 6752.5390625 6744.26171875 6751.79296875 15
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8194.5145 8189.8575 16807.985 2.763 5856.9129130434785 23
+stats: connect 2 1.421 0.123 1.815 0.94 1.33 24
+stats: page 1 16388.773 0.0 16811.839 11.075 12246.41890909091 11
+stats: tr_general 1 16389.376 0.0 16812.557 11.736 12247.667363636365 11
+stats: 200 2 25
+stats: size_rcv 4531 70620
+stats: size_sent 478 7216
+stats: connected 0 1
+# stats: dump at 1589364617
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3988035892323031 0.0 2.5328773463416145 0.14977533699450823 0.4859635033746806 16
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.01611328125 16
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.3203125 0.0 6752.5390625 6744.26171875 6751.828125 16
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5241.6635 5238.3414999999995 16807.985 2.763 6043.92104 25
+stats: connect 2 1.131 0.10499999999999998 1.815 0.94 1.337 26
+stats: page 1 10484.931 0.0 16811.839 11.075 12591.615083333332 12
+stats: tr_general 1 10485.887 0.0 16812.557 11.736 12592.80975 12
+stats: 200 2 27
+stats: size_rcv 5262 75882
+stats: size_sent 479 7695
+stats: connected 0 1
+# stats: dump at 1589364627
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 2.5328773463416145 0.14977533699450823 0.4808364496015996 17
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.015165441176470588 17
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.08984375 0.0 6752.5390625 6744.26171875 6751.857077205882 17
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5259.753 5255.9039999999995 16807.985 2.763 5984.494555555556 27
+stats: connect 2 1.1885 0.2325000000000001 1.815 0.94 1.3222857142857143 28
+stats: page 1 10519.257 0.0 16811.839 11.075 12429.562461538462 13
+stats: tr_general 1 10520.098 0.0 16812.557 11.736 12430.73876923077 13
+stats: 200 2 29
+stats: size_rcv 5596 81478
+stats: size_sent 533 8228
+stats: connected 0 1
+# stats: dump at 1589364637
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 2.5328773463416145 0.14977533699450823 0.47076501762312273 18
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.014322916666666666 18
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.10546875 0.0 6752.5390625 6744.26171875 6751.870008680556 18
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16807.985 2.763 5934.512379310345 29
+stats: connect 0 0 0 1.815 0.94 1.3133666666666668 30
+stats: page 0 0 0 16811.839 11.075 12293.112071428573 14
+stats: tr_general 0 0 0 16812.557 11.736 12294.264428571429 14
+stats: 200 0 29
+stats: size_rcv 0 81478
+stats: size_sent 0 8228
+stats: connected 0 1
+# stats: dump at 1589364647
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14985014985014986 0.0 2.5328773463416145 0.14977533699450823 0.46175373637922235 19
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.013569078947368422 19
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.14453125 0.0 6752.5390625 6744.26171875 6751.882401315789 19
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8287.0125 8283.3825 16807.985 2.763 5934.512379310345 29
+stats: connect 2 1.29 0.030000000000000027 1.815 0.94 1.3133666666666668 30
+stats: page 1 16574.484 0.0 16811.839 11.075 12293.112071428573 14
+stats: tr_general 1 16575.074 0.0 16812.557 11.736 12294.264428571429 14
+stats: 200 2 31
+stats: size_rcv 4731 86209
+stats: size_sent 478 8706
+stats: connected 0 1
+# stats: dump at 1589364657
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 2.5328773463416145 0.14977533699450823 0.4461585570527687 20
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.012890625 20
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.15234375 0.0 6752.5390625 6744.26171875 6751.8955078125 20
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5144.760499999999 5140.3265 16807.985 2.763 6086.286580645161 31
+stats: connect 2 1.293 0.139 1.815 0.94 1.31190625 32
+stats: page 1 10288.983 0.0 16811.839 11.075 12578.536866666667 15
+stats: tr_general 1 10289.925 0.0 16812.557 11.736 12579.651733333332 15
+stats: 200 2 33
+stats: size_rcv 5597 91806
+stats: size_sent 533 9239
+stats: connected 0 1
+# stats: dump at 1589364667
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24937655860349126 0.0 2.5328773463416145 0.14977533699450823 0.43917722928782804 21
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.012276785714285714 21
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.15625 0.0 6752.5390625 6744.26171875 6751.9077380952385 21
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8141.1425 8136.744500000001 16807.985 2.763 6029.224393939394 33
+stats: connect 2 1.2995 0.058499999999999996 1.815 0.94 1.3107941176470588 34
+stats: page 1 16282.537 0.0 16811.839 11.075 12435.439750000001 16
+stats: tr_general 1 16283.297 0.0 16812.557 11.736 12436.543812499998 16
+stats: 200 2 35
+stats: size_rcv 5066 96872
+stats: size_sent 533 9772
+stats: connected 0 1
+# stats: dump at 1589364677
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3 0.0 2.5328773463416145 0.14977533699450823 0.4305499260749036 22
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.01171875 22
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.14453125 0.0 6752.5390625 6744.26171875 6751.919034090909 22
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16807.985 2.763 6149.905428571428 35
+stats: connect 0 0 0 1.815 0.94 1.3101666666666665 36
+stats: page 0 0 0 16811.839 11.075 12661.739588235296 17
+stats: tr_general 0 0 0 16812.557 11.736 12662.823411764704 17
+stats: 200 0 35
+stats: size_rcv 0 96872
+stats: size_sent 0 9772
+stats: connected 0 1
+# stats: dump at 1589364687
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29925187032418954 0.0 2.5328773463416145 0.14977533699450823 0.4248738423325165 23
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.011209239130434782 23
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.15625 0.0 6752.5390625 6744.26171875 6751.928838315217 23
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8265.118499999999 8261.4445 16807.985 2.763 6149.905428571428 35
+stats: connect 2 1.227 0.139 1.815 0.94 1.3101666666666665 36
+stats: page 1 16531.191 0.0 16811.839 11.075 12661.739588235296 17
+stats: tr_general 1 16531.878 0.0 16812.557 11.736 12662.823411764704 17
+stats: 200 2 37
+stats: size_rcv 5066 101938
+stats: size_sent 533 10305
+stats: connected 0 1
+# stats: dump at 1589364697
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 2.5328773463416145 0.14977533699450823 0.4196395934988362 24
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0107421875 24
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.15625 0.0 6752.5390625 6744.26171875 6751.938313802083 24
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16807.985 2.763 6264.24127027027 37
+stats: connect 0 0 0 1.815 0.94 1.3057894736842104 38
+stats: page 0 0 0 16811.839 11.075 12876.709111111113 18
+stats: tr_general 0 0 0 16812.557 11.736 12877.770888888886 18
+stats: 200 0 37
+stats: size_rcv 0 101938
+stats: size_sent 0 10305
+stats: connected 0 1
+# stats: dump at 1589364707
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 2.5328773463416145 0.14977533699450823 0.4148300576630744 25
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0103125 25
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.15625 0.0 6752.5390625 6744.26171875 6751.94703125 25
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8264.4075 8259.6405 16807.985 2.763 6264.24127027027 37
+stats: connect 2 1.4064999999999999 0.13150000000000012 1.815 0.94 1.3057894736842104 38
+stats: page 1 16527.913 0.0 16811.839 11.075 12876.709111111113 18
+stats: tr_general 1 16528.519 0.0 16812.557 11.736 12877.770888888886 18
+stats: 200 2 39
+stats: size_rcv 4731 106669
+stats: size_sent 478 10783
+stats: connected 0 1
+# stats: dump at 1589364717
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.5994005994005994 0.0 2.5328773463416145 0.14977533699450823 0.4065596785145023 26
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.009915865384615384 26
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.1796875 0.0 6752.5390625 6744.26171875 6751.955078125 26
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2603.24575 4500.784591108498 16807.985 2.763 6366.813897435897 39
+stats: connect 4 1.1822499999999998 0.2115542188187228 1.815 0.94 1.310825 40
+stats: page 2 5207.6845 5196.1714999999995 16811.839 11.075 13068.877736842107 19
+stats: tr_general 2 5208.4775 5196.3365 16812.557 11.736 13069.915526315788 19
+stats: 200 4 43
+stats: size_rcv 15608 122277
+stats: size_sent 1357 12140
+stats: connected 0 1
+# stats: dump at 1589364727
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34930139720558884 0.0 2.5328773463416145 0.14977533699450823 0.413701934843617 27
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.009548611111111112 27
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.1953125 0.0 6752.5390625 6744.26171875 6751.963396990741 27
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8475.1715 8470.300500000001 16945.472 2.763 6016.714534883721 43
+stats: connect 2 1.52 0.15599999999999992 1.815 0.94 1.2991363636363635 44
+stats: page 1 16948.541 0.0 16948.541 11.075 12320.192666666668 21
+stats: tr_general 1 16949.25 0.0 16949.25 11.736 12321.20714285714 21
+stats: 200 2 45
+stats: size_rcv 4731 127008
+stats: size_sent 479 12619
+stats: connected 0 1
+# stats: dump at 1589364737
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 2.5328773463416145 0.14977533699450823 0.41140191564225886 28
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.009207589285714286 28
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.21484375 0.0 6752.5390625 6744.26171875 6751.9716796875 28
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 1768.02 1763.8339999999998 16945.472 2.763 6125.97928888889 45
+stats: connect 2 1.2645 0.10050000000000003 1.815 0.94 1.3087391304347824 46
+stats: page 1 3536.996 0.0 16948.541 11.075 12530.572136363638 22
+stats: tr_general 1 3537.977 0.0 16949.25 11.736 12531.572727272725 22
+stats: 200 2 47
+stats: size_rcv 5264 132272
+stats: size_sent 479 13098
+stats: connected 0 1
+# stats: dump at 1589364747
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 2.5328773463416145 0.14977533699450823 0.4092665318725437 29
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.008890086206896552 29
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.21875 0.0 6752.5390625 6744.26171875 6751.980064655172 29
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 1735.6311666666668 3870.227723049529 16945.472 2.763 5940.534212765958 47
+stats: connect 6 1.1685 0.11025840859846771 1.815 0.94 1.3068958333333331 48
+stats: page 3 3471.772333333333 4894.859499816266 16948.541 10.086 12139.547086956523 23
+stats: tr_general 3 3472.4636666666665 4895.040988582719 16949.25 10.679 12140.546826086957 23
+stats: 200 6 53
+stats: size_rcv 25631 157903
+stats: size_sent 2181 15279
+stats: connected 0 1
+# stats: dump at 1589364757
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 2.5328773463416145 0.14977533699450823 0.40228432080346554 30
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.00859375 30
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.3515625 0.0 6752.5390625 6744.26171875 6751.988020833333 30
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8298.201500000001 8293.6465 16945.472 2.763 5464.507452830189 53
+stats: connect 2 1.359 0.16199999999999992 1.815 0.94 1.2915185185185183 54
+stats: page 1 16595.383 0.0 16948.541 10.086 11139.419230769232 26
+stats: tr_general 1 16595.968 0.0 16949.25 10.679 11140.383384615385 26
+stats: 200 2 55
+stats: size_rcv 5066 162969
+stats: size_sent 533 15812
+stats: connected 0 1
+# stats: dump at 1589364767
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 2.5328773463416145 0.14977533699450823 0.3989751588323957 31
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.008316532258064516 31
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.109375 0.0 6752.5390625 6744.26171875 6751.999747983871 31
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5567.550872727273 55
+stats: connect 0 0 0 1.815 0.94 1.2939285714285713 56
+stats: page 0 0 0 16948.541 10.086 11341.491962962966 27
+stats: tr_general 0 0 0 16949.25 10.679 11342.442074074073 27
+stats: 200 0 55
+stats: size_rcv 0 162969
+stats: size_sent 0 15812
+stats: connected 0 1
+# stats: dump at 1589364777
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 2.5328773463416145 0.14977533699450823 0.39430409130650806 32
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.008056640625 32
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.1171875 0.0 6752.5390625 6744.26171875 6752.003173828125 32
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 10 1676.6021999999998 5014.154682116534 16945.472 2.763 5567.550872727273 55
+stats: connect 10 1.1709 0.12478257089834302 1.815 0.923 1.2939285714285713 56
+stats: page 5 3353.487 6685.197356984609 16948.541 9.157 11341.491962962966 27
+stats: tr_general 5 3354.1808000000005 6685.1984636658735 16949.25 9.932 11342.442074074073 27
+stats: 200 10 65
+stats: size_rcv 35652 198621
+stats: size_sent 3108 18920
+stats: connected 0 1
+# stats: dump at 1589364787
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 2.5328773463416145 0.14977533699450823 0.38841003398813506 33
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0078125 33
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.140625 0.0 6752.5390625 6744.26171875 6752.006628787879 33
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 4968.943384615384 65
+stats: connect 0 0 0 1.815 0.923 1.2752878787878787 66
+stats: page 0 0 0 16948.541 9.157 10093.366187500002 32
+stats: tr_general 0 0 0 16949.25 9.932 10094.276249999999 32
+stats: 200 0 65
+stats: size_rcv 0 198621
+stats: size_sent 0 18920
+stats: connected 0 1
+# stats: dump at 1589364797
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.39920159680638717 0.0 2.5328773463416145 0.14977533699450823 0.3872649090567346 34
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.007582720588235294 34
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.15234375 0.0 6752.5390625 6744.26171875 6752.010569852941 34
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8338.034500000002 8333.7935 16945.472 2.763 4968.943384615384 65
+stats: connect 2 1.2040000000000002 0.12999999999999995 1.815 0.923 1.2752878787878787 66
+stats: page 1 16676.394 0.0 16948.541 9.157 10093.366187500002 32
+stats: tr_general 1 16677.057 0.0 16949.25 9.932 10094.276249999999 32
+stats: 200 2 67
+stats: size_rcv 4658 203279
+stats: size_sent 502 19422
+stats: connected 0 1
+# stats: dump at 1589364807
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 2.5328773463416145 0.14977533699450823 0.3876059572781533 35
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.007366071428571428 35
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.16015625 0.0 6752.5390625 6744.26171875 6752.014620535714 35
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8335.771 8331.523000000001 16945.472 2.763 5069.513268656716 67
+stats: connect 2 1.287 0.312 1.815 0.923 1.273191176470588 68
+stats: page 1 16671.787 0.0 16948.541 9.157 10292.851878787882 33
+stats: tr_general 1 16672.438 0.0 16949.25 9.932 10293.754454545455 33
+stats: 200 2 69
+stats: size_rcv 4866 208145
+stats: size_sent 533 19955
+stats: connected 0 1
+# stats: dump at 1589364817
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 2.5328773463416145 0.14977533699450823 0.38377663206904483 36
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.007161458333333333 36
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.171875 0.0 6752.5390625 6744.26171875 6752.018663194444 36
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5164.187405797101 69
+stats: connect 0 0 0 1.815 0.923 1.2735857142857143 70
+stats: page 0 0 0 16948.541 9.157 10480.467617647062 34
+stats: tr_general 0 0 0 16949.25 9.932 10481.362794117647 34
+stats: 200 0 69
+stats: size_rcv 0 208145
+stats: size_sent 0 19955
+stats: connected 0 1
+# stats: dump at 1589364827
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29910269192422734 0.0 2.5328773463416145 0.14977533699450823 0.3801542974117801 37
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.006967905405405405 37
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.19140625 0.0 6752.5390625 6744.26171875 6752.022804054054 37
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8462.2845 8457.3775 16945.472 2.763 5164.187405797101 69
+stats: connect 2 1.388 0.3110000000000001 1.815 0.923 1.2735857142857143 70
+stats: page 1 16924.118 0.0 16948.541 9.157 10480.467617647062 34
+stats: tr_general 1 16924.737 0.0 16949.25 9.932 10481.362794117647 34
+stats: 200 2 71
+stats: size_rcv 4858 213003
+stats: size_sent 502 20457
+stats: connected 0 1
+# stats: dump at 1589364837
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 2.5328773463416145 0.14977533699450823 0.3780213604252656 38
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.006784539473684211 38
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.2265625 0.0 6752.5390625 6744.26171875 6752.0272409539475 38
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5257.091549295775 71
+stats: connect 0 0 0 1.815 0.923 1.2767638888888888 72
+stats: page 0 0 0 16948.541 9.157 10664.571914285718 35
+stats: tr_general 0 0 0 16949.25 9.932 10665.459200000001 35
+stats: 200 0 71
+stats: size_rcv 0 213003
+stats: size_sent 0 20457
+stats: connected 0 1
+# stats: dump at 1589364847
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3491271820448878 0.0 2.5328773463416145 0.14977533699450823 0.3747291604568617 39
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.006610576923076923 39
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.2421875 0.0 6752.5390625 6744.26171875 6752.03235176282 39
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 8 2058.945875 5434.8590489940825 16945.472 2.763 5257.091549295775 71
+stats: connect 8 1.15725 0.14159603631458056 1.815 0.923 1.2767638888888888 72
+stats: page 4 4118.30275 7115.853802627496 16948.541 8.943 10664.571914285718 35
+stats: tr_general 4 4118.84175 7115.839367147926 16949.25 9.496 10665.459200000001 35
+stats: 200 8 79
+stats: size_rcv 34691 247694
+stats: size_sent 2974 23431
+stats: connected 0 1
+# stats: dump at 1589364857
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 2.5328773463416145 0.14977533699450823 0.3740891109965624 40
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0064453125 40
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.2265625 0.0 6752.5390625 6744.26171875 6752.03759765625 40
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8323.267 8318.803 16945.472 2.763 4933.228696202531 79
+stats: connect 2 1.366 0.3079999999999999 1.815 0.923 1.2648125 80
+stats: page 1 16646.331 0.0 16948.541 8.943 9993.159692307696 39
+stats: tr_general 1 16646.923 0.0 16949.25 9.496 9994.011256410256 39
+stats: 200 2 81
+stats: size_rcv 4866 252560
+stats: size_sent 533 23964
+stats: connected 0 1
+# stats: dump at 1589364867
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34965034965034963 0.0 2.5328773463416145 0.14977533699450823 0.3698405973131099 41
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.006288109756097561 41
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.94921875 0.0 6752.94921875 6744.26171875 6752.042206554878 41
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5016.933345679011 81
+stats: connect 0 0 0 1.815 0.923 1.2672804878048778 82
+stats: page 0 0 0 16948.541 8.943 10159.488975000004 40
+stats: tr_general 0 0 0 16949.25 9.496 10160.334050000001 40
+stats: 200 0 81
+stats: size_rcv 0 252560
+stats: size_sent 0 23964
+stats: connected 0 1
+# stats: dump at 1589364877
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1 0.0 2.5328773463416145 0.1 0.36935987713066326 42
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.006138392857142857 42
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.9921875 0.0 6752.9921875 6744.26171875 6752.063802083333 42
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8395.249 8390.989000000001 16945.472 2.763 5016.933345679011 81
+stats: connect 2 1.562 0.11099999999999999 1.815 0.923 1.2672804878048778 82
+stats: page 1 16790.906 0.0 16948.541 8.943 10159.488975000004 40
+stats: tr_general 1 16791.541 0.0 16949.25 9.496 10160.334050000001 40
+stats: 200 2 83
+stats: size_rcv 4858 257418
+stats: size_sent 502 24466
+stats: connected 0 1
+# stats: dump at 1589364887
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 2.5328773463416145 0.1 0.36309569394157803 43
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.005995639534883721 43
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.9921875 0.0 6752.9921875 6744.26171875 6752.085392441861 43
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5098.3385421686735 83
+stats: connect 0 0 0 1.815 0.923 1.2742976190476187 84
+stats: page 0 0 0 16948.541 8.943 10321.23085365854 41
+stats: tr_general 0 0 0 16949.25 9.496 10322.07080487805 41
+stats: 200 0 83
+stats: size_rcv 0 257418
+stats: size_sent 0 24466
+stats: connected 0 1
+# stats: dump at 1589364897
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24937655860349126 0.0 2.5328773463416145 0.1 0.35938443271109216 44
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.005859375 44
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.99609375 0.0 6752.99609375 6744.26171875 6752.106001420455 44
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8293.495 8289.831 16945.472 2.763 5098.3385421686735 83
+stats: connect 2 1.262 0.10000000000000009 1.815 0.923 1.2742976190476187 84
+stats: page 1 16587.795 0.0 16948.541 8.943 10321.23085365854 41
+stats: tr_general 1 16588.443 0.0 16949.25 9.496 10322.07080487805 41
+stats: 200 2 85
+stats: size_rcv 4866 262284
+stats: size_sent 533 24999
+stats: connected 0 1
+# stats: dump at 1589364907
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34930139720558884 0.0 2.5328773463416145 0.1 0.35693981328647884 45
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.005729166666666666 45
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6753.04296875 0.0 6753.04296875 6744.26171875 6752.12578125 45
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4087.549 7071.2557560843825 16945.472 2.763 5173.518694117645 85
+stats: connect 4 1.227 0.2153241742118149 1.815 0.923 1.2740116279069764 86
+stats: page 2 8175.6255 8163.559499999999 16948.541 8.943 10470.434761904766 42
+stats: tr_general 2 8176.267 8163.5779999999995 16949.25 9.496 10471.270142857144 42
+stats: 200 4 89
+stats: size_rcv 14742 277026
+stats: size_sent 1303 26302
+stats: connected 0 1
+# stats: dump at 1589364917
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29985007496251875 0.0 2.5328773463416145 0.1 0.35677376076298123 46
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.005604619565217391 46
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.87109375 0.0 6753.04296875 6744.26171875 6752.145720108696 46
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 1710.171 1706.843 16945.472 2.763 5124.711067415728 89
+stats: connect 2 1.222 0.02200000000000002 1.815 0.923 1.271922222222222 90
+stats: page 1 3420.286 0.0 16948.541 8.943 10366.125250000005 44
+stats: tr_general 1 3421.206 0.0 16949.25 9.496 10366.951818181818 44
+stats: 200 2 91
+stats: size_rcv 5396 282422
+stats: size_sent 502 26804
+stats: connected 0 1
+# stats: dump at 1589364927
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 2.5328773463416145 0.1 0.35556261851190757 47
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.005485372340425532 47
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.80859375 0.0 6753.04296875 6744.26171875 6752.161153590426 47
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8199.441499999999 8194.8355 16945.472 2.763 5049.666230769229 91
+stats: connect 2 1.5575 0.04250000000000004 1.815 0.923 1.2708369565217388 92
+stats: page 1 16397.832 0.0 16948.541 8.943 10211.77326666667 45
+stats: tr_general 1 16398.524 0.0 16949.25 9.496 10212.60191111111 45
+stats: 200 2 93
+stats: size_rcv 4658 287080
+stats: size_sent 502 27306
+stats: connected 0 1
+# stats: dump at 1589364937
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34930139720558884 0.0 2.5328773463416145 0.1 0.35439570300101403 48
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.00537109375 48
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.8515625 0.0 6753.04296875 6744.26171875 6752.174641927083 48
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5117.403333333331 93
+stats: connect 0 0 0 1.815 0.923 1.2769361702127655 94
+stats: page 0 0 0 16948.541 8.943 10346.25280434783 46
+stats: tr_general 0 0 0 16949.25 9.496 10347.07847826087 46
+stats: 200 0 93
+stats: size_rcv 0 287080
+stats: size_sent 0 27306
+stats: connected 0 1
+# stats: dump at 1589364947
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14985014985014986 0.0 2.5328773463416145 0.1 0.3542917375766176 49
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0052614795918367345 49
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.859375 0.0 6753.04296875 6744.26171875 6752.1884566326535 49
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8254.408500000001 8251.2075 16945.472 2.763 5117.403333333331 93
+stats: connect 2 1.047 0.08299999999999996 1.815 0.923 1.2769361702127655 94
+stats: page 1 16510.448 0.0 16948.541 8.943 10346.25280434783 46
+stats: tr_general 1 16511.111 0.0 16949.25 9.496 10347.07847826087 46
+stats: 200 2 95
+stats: size_rcv 4658 291738
+stats: size_sent 502 27808
+stats: connected 0 1
+# stats: dump at 1589364957
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 2.5328773463416145 0.1 0.35020290582208824 50
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.00515625 50
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.90625 0.0 6753.04296875 6744.26171875 6752.201875 50
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5183.445547368418 95
+stats: connect 0 0 0 1.815 0.923 1.2721458333333329 96
+stats: page 0 0 0 16948.541 8.943 10477.405893617024 47
+stats: tr_general 0 0 0 16949.25 9.496 10478.228106382978 47
+stats: 200 0 95
+stats: size_rcv 0 291738
+stats: size_sent 0 27808
+stats: connected 0 1
+# stats: dump at 1589364967
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.39920159680638717 0.0 2.5328773463416145 0.1 0.34823080103454757 51
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.00505514705882353 51
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.9140625 0.0 6753.04296875 6744.26171875 6752.21568627451 51
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 5086.31175 6881.373798876768 16945.472 2.763 5183.445547368418 95
+stats: connect 4 1.27975 0.031163881337214726 1.815 0.923 1.2721458333333329 96
+stats: page 2 10172.849999999999 6559.767999999998 16948.541 8.943 10477.405893617024 47
+stats: tr_general 2 10173.619999999999 6559.710999999999 16949.25 9.496 10478.228106382978 47
+stats: 200 4 99
+stats: size_rcv 9927 301665
+stats: size_sent 981 28789
+stats: connected 0 1
+# stats: dump at 1589364977
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.399400898652022 0.0 2.5328773463416145 0.1 0.3492110086455445 52
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.004957932692307692 52
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.88671875 0.0 6753.04296875 6744.26171875 6752.229116586538 52
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5179.520949494947 99
+stats: connect 0 0 0 1.815 0.923 1.2724499999999994 100
+stats: page 0 0 0 16948.541 8.943 10464.975040816329 49
+stats: tr_general 0 0 0 16949.25 9.496 10465.795122448979 49
+stats: 200 0 99
+stats: size_rcv 0 301665
+stats: size_sent 0 28789
+stats: connected 0 1
+# stats: dump at 1589364987
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 2.5328773463416145 0.1 0.35015798770227047 53
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.00486438679245283 53
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.90625 0.0 6753.04296875 6744.26171875 6752.241524174528 53
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8407.362500000001 8402.9455 16945.472 2.763 5179.520949494947 99
+stats: connect 2 1.355 0.04200000000000004 1.815 0.923 1.2724499999999994 100
+stats: page 1 16813.752 0.0 16948.541 8.943 10464.975040816329 49
+stats: tr_general 1 16814.452 0.0 16949.25 9.496 10465.795122448979 49
+stats: 200 2 101
+stats: size_rcv 4531 306196
+stats: size_sent 479 29268
+stats: connected 0 1
+# stats: dump at 1589364997
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.199700449326011 0.0 2.5328773463416145 0.1 0.3473754332999139 54
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.004774305555555556 54
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.9140625 0.0 6753.04296875 6744.26171875 6752.253833912037 54
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2607.55025 4507.339540547471 16945.472 2.763 5243.438603960394 101
+stats: connect 4 1.199 0.06637017402418048 1.815 0.923 1.27406862745098 102
+stats: page 2 5215.5064999999995 5203.6515 16948.541 8.943 10591.950580000002 50
+stats: tr_general 2 5216.306 5203.878 16949.25 9.496 10592.768259999999 50
+stats: 200 4 105
+stats: size_rcv 15399 321595
+stats: size_sent 1326 30594
+stats: connected 0 1
+# stats: dump at 1589365007
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 2.5328773463416145 0.1 0.3446904335912974 55
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.0046875 55
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.6796875 0.0 6753.04296875 6744.26171875 6752.265838068181 55
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8367.7075 8362.9395 16945.472 2.763 5143.023809523807 105
+stats: connect 2 1.361 0.32499999999999996 1.815 0.923 1.2712358490566034 106
+stats: page 1 16734.913 0.0 16948.541 8.943 10385.164269230772 52
+stats: tr_general 1 16735.573 0.0 16949.25 9.496 10385.981249999999 52
+stats: 200 2 107
+stats: size_rcv 4866 326461
+stats: size_sent 533 31127
+stats: connected 0 1
+# stats: dump at 1589365017
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2 0.0 2.5328773463416145 0.1 0.34388436645554243 56
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.05078125 0.0 0.004603794642857143 56
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.63671875 0.0 6753.04296875 6744.26171875 6752.273228236607 56
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 16945.472 2.763 5203.298271028036 107
+stats: connect 0 0 0 1.815 0.923 1.2728981481481478 108
+stats: page 0 0 0 16948.541 8.943 10504.970849056604 53
+stats: tr_general 0 0 0 16949.25 9.496 10505.784867924525 53
+stats: 200 0 107
+stats: size_rcv 0 326461
+stats: size_sent 0 31127
+stats: connected 0 1
+# stats: dump at 1589365027
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29925187032418954 0.0 2.5328773463416145 0.1 0.34136007932474344 57
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0703125 0.0 0.0703125 0.0 0.004523026315789474 57
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.66796875 0.0 6753.04296875 6744.26171875 6752.2796052631575 57
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8503.224 8499.804999999998 17003.029 2.763 5203.298271028036 107
+stats: connect 2 1.246 0.07899999999999996 1.815 0.923 1.2728981481481478 108
+stats: page 1 17008.004 0.0 17008.004 8.943 10504.970849056604 53
+stats: tr_general 1 17008.703 0.0 17008.703 9.496 10505.784867924525 53
+stats: 200 2 109
+stats: size_rcv 5066 331527
+stats: size_sent 533 31660
+stats: connected 0 1
+# stats: dump at 1589365037
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.4987531172069825 0.0 2.5328773463416145 0.1 0.34063407572128557 58
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05859375 0.0 0.0703125 0.0 0.005657327586206897 58
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.68359375 0.0 6753.04296875 6744.26171875 6752.286301185345 58
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17003.029 2.763 5263.847366972475 109
+stats: connect 0 0 0 1.815 0.923 1.2724090909090904 110
+stats: page 0 0 0 17008.004 8.943 10625.397388888889 54
+stats: tr_general 0 0 0 17008.703 9.496 10626.209277777774 54
+stats: 200 0 109
+stats: size_rcv 0 331527
+stats: size_sent 0 31660
+stats: connected 0 1
+# stats: dump at 1589365047
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.199700449326011 0.0 2.5328773463416145 0.1 0.34331405947528043 59
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05078125 0.0 0.0703125 0.0 0.006554555084745763 59
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.6953125 0.0 6753.04296875 6744.26171875 6752.293034957627 59
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8507.0165 8502.9065 17009.923 2.763 5263.847366972475 109
+stats: connect 2 1.4895 0.019499999999999906 1.815 0.923 1.2724090909090904 110
+stats: page 1 17013.542 0.0 17013.542 8.943 10625.397388888889 54
+stats: tr_general 1 17014.208 0.0 17014.208 9.496 10626.209277777774 54
+stats: 200 2 111
+stats: size_rcv 4731 336258
+stats: size_sent 479 32139
+stats: connected 0 1
+# stats: dump at 1589365057
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 1.3958125623130608 0.0 2.5328773463416145 0.1 0.3409204993061259 60
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0390625 0.0 0.0703125 0.0 0.007291666666666667 60
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6752.4609375 0.0 6753.04296875 6744.26171875 6752.299739583334 60
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2571.84325 4446.149580034807 17009.923 2.763 5322.282846846845 111
+stats: connect 4 1.259 0.05636931789546511 1.815 0.923 1.276285714285714 112
+stats: page 2 5143.826 5133.357000000001 17013.542 8.943 10741.545472727274 55
+stats: tr_general 2 5144.6015 5133.5055 17014.208 9.496 10742.354709090907 55
+stats: 200 4 115
+stats: size_rcv 15294 351552
+stats: size_sent 1303 33442
+stats: connected 0 1
+# stats: dump at 1589365067
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 3.8114343029087263 0.0 3.8114343029087263 0.1 0.3582138118144363 61
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.12109375 0.0 0.12109375 0.0 0.0078125 61
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6750.515625 0.0 6753.04296875 6744.26171875 6752.302382172131 61
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 1 16558.841 0.0 17009.923 2.763 5226.615382608695 115
+stats: connect 0 0 0 1.815 0.923 1.2756896551724135 116
+stats: page 1 16563.494 0.0 17013.542 8.943 10545.134263157895 57
+stats: tr_general 1 16564.498 0.0 17014.208 9.496 10545.94231578947 57
+stats: 200 1 116
+stats: size_rcv 3072 354624
+stats: size_sent 0 33442
+stats: connected -1 0
+# stats: dump at 1589365077
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.35000000000000003 0.0 3.8114343029087263 0.1 0.4139109165095055 62
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1015625 0.0 0.12109375 0.0 0.009639616935483871 62
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6750.48828125 0.0 6753.04296875 6744.26171875 6752.273563508064 62
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 5 4.97 1.6115042662059569 17009.923 2.669 5324.30698275862 116
+stats: connect 6 1.219833333333333 0.2449717103848706 1.815 0.923 1.2756896551724135 116
+stats: page 2 11.310500000000001 0.10349999999999904 17013.542 8.943 10648.899086206897 58
+stats: tr_general 2 11.889 0.13100000000000023 17014.208 9.496 10649.710517241376 58
+stats: 200 5 121
+stats: size_rcv 22545 377169
+stats: size_sent 2181 35623
+stats: connected 1 1
+# stats: dump at 1589365087
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.39920159680638717 0.0 3.8114343029087263 0.1 0.41289645751729115 63
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.078125 0.0 0.12109375 0.0 0.011098710317460318 63
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6750.53125 0.0 6753.04296875 6744.26171875 6752.245225694444 63
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8247.8665 8243.3665 17009.923 2.669 5104.499669421486 121
+stats: connect 2 1.4245 0.07749999999999996 1.815 0.923 1.2729426229508192 122
+stats: page 1 16494.14 0.0 17013.542 8.943 10294.312800000002 60
+stats: tr_general 1 16494.746 0.0 17014.208 9.496 10295.116466666665 60
+stats: 200 2 123
+stats: size_rcv 5066 382235
+stats: size_sent 533 36156
+stats: connected 0 1
+# stats: dump at 1589365097
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.4126824753186833 64
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0703125 0.0 0.12109375 0.0 0.01214599609375 64
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.4609375 0.0 6754.4609375 6744.26171875 6752.218444824219 64
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17009.923 2.669 5155.611325203251 123
+stats: connect 0 0 0 1.815 0.923 1.2753870967741932 124
+stats: page 0 0 0 17013.542 8.943 10395.949311475411 61
+stats: tr_general 0 0 0 17014.208 9.496 10396.749737704917 61
+stats: 200 0 123
+stats: size_rcv 0 382235
+stats: size_sent 0 36156
+stats: connected 0 1
+# stats: dump at 1589365107
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.4101758256945535 65
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05859375 0.0 0.12109375 0.0 0.013040865384615385 65
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.4921875 0.0 6754.4921875 6744.26171875 6752.2529447115385 65
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4130.76375 7144.835728949385 17009.923 2.669 5155.611325203251 123
+stats: connect 4 1.4059999999999997 0.14279180648762735 1.815 0.923 1.2753870967741932 124
+stats: page 2 8261.775 8248.913999999999 17013.542 8.943 10395.949311475411 61
+stats: tr_general 2 8262.368 8248.989 17014.208 9.496 10396.749737704917 61
+stats: 200 4 127
+stats: size_rcv 14869 397104
+stats: size_sent 1326 37482
+stats: connected 0 1
+# stats: dump at 1589365117
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 3.8114343029087263 0.1 0.40850195408858 66
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05078125 0.0 0.12109375 0.0 0.013731060606060606 66
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.46484375 0.0 6754.4921875 6744.26171875 6752.286872632576 66
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 2753.6535 6143.543653610505 17009.923 2.669 5123.332661417322 127
+stats: connect 6 1.2556666666666665 0.19766020225517225 1.815 0.923 1.2794687499999995 128
+stats: page 3 5507.9310000000005 7769.50006753605 17013.542 8.943 10328.197746031748 63
+stats: tr_general 3 5508.721999999999 7769.4152155715465 17014.208 9.496 10328.991587301587 63
+stats: 200 6 133
+stats: size_rcv 15304 412408
+stats: size_sent 1436 38918
+stats: connected 0 1
+# stats: dump at 1589365127
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.4053884928331536 67
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0390625 0.0 0.12109375 0.0 0.014284048507462687 67
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.48046875 0.0 6754.4921875 6744.26171875 6752.319379664179 67
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2590.62725 4479.1330323645425 17009.923 2.669 5016.429842105263 133
+stats: connect 4 1.1992500000000001 0.15965176948596582 1.815 0.923 1.2784029850746264 134
+stats: page 2 5181.584000000001 5170.607 17013.542 8.943 10109.094712121212 66
+stats: tr_general 2 5182.33 5170.731 17014.208 9.496 10109.888424242423 66
+stats: 200 4 137
+stats: size_rcv 15607 428015
+stats: size_sent 1357 40275
+stats: connected 0 1
+# stats: dump at 1589365137
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.4038298561386189 68
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.03125 0.0 0.12109375 0.0 0.0146484375 68
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.48046875 0.0 6754.4921875 6744.26171875 6752.35116038603 68
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17009.923 2.669 4945.603489051094 137
+stats: connect 0 0 0 1.815 0.923 1.2761086956521734 138
+stats: page 0 0 0 17013.542 8.943 9964.167926470589 68
+stats: tr_general 0 0 0 17014.208 9.496 9964.960235294117 68
+stats: 200 0 137
+stats: size_rcv 0 428015
+stats: size_sent 0 40275
+stats: connected 0 1
+# stats: dump at 1589365147
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.40231639731928803 69
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.03125 0.0 0.12109375 0.0 0.014889039855072464 69
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.484375 0.0 6754.4921875 6744.26171875 6752.382019927536 69
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8271.695 8268.271 17009.923 2.669 4945.603489051094 137
+stats: connect 2 1.1275 0.13450000000000004 1.815 0.923 1.2761086956521734 138
+stats: page 1 16543.242 0.0 17013.542 8.943 9964.167926470589 68
+stats: tr_general 1 16543.842 0.0 17014.208 9.496 9964.960235294117 68
+stats: 200 2 139
+stats: size_rcv 5066 433081
+stats: size_sent 533 40808
+stats: connected 0 1
+# stats: dump at 1589365157
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.4008461801805095 70
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.12109375 0.0 0.015122767857142857 70
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1875 0.0 6757.1875 6744.26171875 6752.412053571428 70
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17009.923 2.669 4993.460920863308 139
+stats: connect 0 0 0 1.815 0.923 1.2739857142857136 140
+stats: page 0 0 0 17013.542 8.943 10059.516826086956 69
+stats: tr_general 0 0 0 17014.208 9.496 10060.306347826086 69
+stats: 200 0 139
+stats: size_rcv 0 433081
+stats: size_sent 0 40808
+stats: connected 0 1
+# stats: dump at 1589365167
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 3.8114343029087263 0.1 0.39871806848430863 71
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.12109375 0.0 0.015184859154929578 71
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.47265625 0.0 6757.47265625 6744.26171875 6752.479313380281 71
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8511.654 8507.336000000001 17018.99 2.669 4993.460920863308 139
+stats: connect 2 1.312 0.23399999999999999 1.815 0.923 1.2739857142857136 140
+stats: page 1 17022.624 0.0 17022.624 8.943 10059.516826086956 69
+stats: tr_general 1 17023.24 0.0 17023.24 9.496 10060.306347826086 69
+stats: 200 2 141
+stats: size_rcv 5066 438147
+stats: size_sent 533 41341
+stats: connected 0 1
+# stats: dump at 1589365177
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.39803414789870045 72
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.12109375 0.0 0.015245225694444444 72
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.48046875 0.0 6757.48046875 6744.26171875 6752.548665364583 72
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8340.742499999998 8336.3395 17018.99 2.669 5043.364368794325 141
+stats: connect 2 1.377 0.04899999999999993 1.815 0.923 1.2745211267605627 142
+stats: page 1 16681.606 0.0 17022.624 8.943 10158.989785714284 70
+stats: tr_general 1 16682.251 0.0 17023.24 9.496 10159.776828571426 70
+stats: 200 2 143
+stats: size_rcv 4731 442878
+stats: size_sent 478 41819
+stats: connected 0 1
+# stats: dump at 1589365187
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.39531861436310456 73
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.015303938356164384 73
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.48828125 0.0 6757.48828125 6744.26171875 6752.616224315068 73
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17018.99 2.669 5089.481545454544 143
+stats: connect 0 0 0 1.815 0.923 1.2759444444444439 144
+stats: page 0 0 0 17022.624 8.943 10250.857619718308 71
+stats: tr_general 0 0 0 17023.24 9.496 10251.64266197183 71
+stats: 200 0 143
+stats: size_rcv 0 442878
+stats: size_sent 0 41819
+stats: connected 0 1
+# stats: dump at 1589365197
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.3933497893265425 74
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.015255489864864864 74
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.5078125 0.0 6757.5078125 6744.26171875 6752.6820629222975 74
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 1709.5561666666665 3808.556604611184 17018.99 2.669 5089.481545454544 143
+stats: connect 6 1.2408333333333335 0.15597159641706845 1.815 0.923 1.2759444444444439 144
+stats: page 3 3419.6530000000002 4815.936241705033 17022.624 8.943 10250.857619718308 71
+stats: tr_general 3 3420.3590000000004 4816.104536517731 17023.24 9.496 10251.64266197183 71
+stats: 200 6 149
+stats: size_rcv 25619 468497
+stats: size_sent 2181 44000
+stats: connected 0 1
+# stats: dump at 1589365207
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.39076912813285797 75
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.015208333333333334 75
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.2734375 0.0 6757.5078125 6744.26171875 6752.74640625 75
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4249.1115 7352.087196745476 17018.99 2.669 4953.377167785234 149
+stats: connect 4 1.2625 0.14150176677342224 1.815 0.923 1.2745399999999996 150
+stats: page 2 8498.207999999999 8488.839 17022.624 8.943 9973.916891891891 74
+stats: tr_general 2 8498.8355 8488.8615 17023.24 9.496 9974.698729729727 74
+stats: 200 4 153
+stats: size_rcv 15077 483574
+stats: size_sent 1357 45357
+stats: connected 0 1
+# stats: dump at 1589365217
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 3.8114343029087263 0.1 0.38956691852064657 76
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.015162417763157895 76
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.71875 0.0 6757.71875 6744.26171875 6752.8059724506575 76
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17018.99 2.669 4934.964993464051 153
+stats: connect 0 0 0 1.815 0.923 1.2742272727272723 154
+stats: page 0 0 0 17022.624 8.943 9935.08244736842 76
+stats: tr_general 0 0 0 17023.24 9.496 9935.860223684207 76
+stats: 200 0 153
+stats: size_rcv 0 483574
+stats: size_sent 0 45357
+stats: connected 0 1
+# stats: dump at 1589365227
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 3.8114343029087263 0.1 0.38710371243563835 77
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.015117694805194806 77
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.74609375 0.0 6757.74609375 6744.26171875 6752.869774756493 77
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8377.7095 8373.6655 17018.99 2.669 4934.964993464051 153
+stats: connect 2 1.3615 0.05350000000000005 1.815 0.923 1.2742272727272723 154
+stats: page 1 16755.545 0.0 17022.624 8.943 9935.08244736842 76
+stats: tr_general 1 16756.207 0.0 17023.24 9.496 9935.860223684207 76
+stats: 200 2 155
+stats: size_rcv 4858 488432
+stats: size_sent 502 45859
+stats: connected 0 1
+# stats: dump at 1589365237
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.38662130312647014 78
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.014923878205128206 78
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.7578125 0.0 6757.7578125 6744.26171875 6752.932291666667 78
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17018.99 2.669 4979.387503225806 155
+stats: connect 0 0 0 1.815 0.923 1.2753461538461535 156
+stats: page 0 0 0 17022.624 8.943 10023.659883116883 77
+stats: tr_general 0 0 0 17023.24 9.496 10024.436155844152 77
+stats: 200 0 155
+stats: size_rcv 0 488432
+stats: size_sent 0 45859
+stats: connected 0 1
+# stats: dump at 1589365247
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3848871798167365 79
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01473496835443038 79
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.75 0.0 6757.7578125 6744.26171875 6752.993374208861 79
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8237.8395 8234.7515 17018.99 2.669 4979.387503225806 155
+stats: connect 2 1.126 0.057000000000000106 1.815 0.923 1.2753461538461535 156
+stats: page 1 16476.85 0.0 17022.624 8.943 10023.659883116883 77
+stats: tr_general 1 16477.484 0.0 17023.24 9.496 10024.436155844152 77
+stats: 200 2 157
+stats: size_rcv 4866 493298
+stats: size_sent 533 46392
+stats: connected 0 1
+# stats: dump at 1589365257
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3831964095897462 80
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01455078125 80
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.7890625 0.0 6757.7890625 6744.26171875 6753.05283203125 80
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4213.74625 7287.751801848235 17018.99 2.669 5020.896445859872 157
+stats: connect 4 1.29775 0.17394018368393205 1.815 0.923 1.2734556962025314 158
+stats: page 2 8426.600499999999 8413.1965 17022.624 8.943 10106.39308974359 78
+stats: tr_general 2 8427.3545 8413.095500000001 17023.24 9.496 10107.167538461536 78
+stats: 200 4 161
+stats: size_rcv 10239 503537
+stats: size_sent 980 47372
+stats: connected 0 1
+# stats: dump at 1589365267
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.38154738677576805 81
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.014371141975308642 81
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.8203125 0.0 6757.8203125 6744.26171875 6753.1113040123455 81
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17018.99 2.669 5000.84302484472 161
+stats: connect 0 0 0 1.815 0.923 1.2740555555555553 162
+stats: page 0 0 0 17022.624 8.943 10064.398275 80
+stats: tr_general 0 0 0 17023.24 9.496 10065.172212499998 80
+stats: 200 0 161
+stats: size_rcv 0 503537
+stats: size_sent 0 47372
+stats: connected 0 1
+# stats: dump at 1589365277
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 3.8114343029087263 0.1 0.380545603981 82
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.014195884146341464 82
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.578125 0.0 6757.8203125 6744.26171875 6753.168730945122 82
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8480.467999999999 8475.792 17018.99 2.669 5000.84302484472 161
+stats: connect 2 1.3495 0.16349999999999998 1.815 0.923 1.2740555555555553 162
+stats: page 1 16961.794 0.0 17022.624 8.943 10064.398275 80
+stats: tr_general 1 16962.462 0.0 17023.24 9.496 10065.172212499998 80
+stats: 200 2 163
+stats: size_rcv 4866 508403
+stats: size_sent 533 47905
+stats: connected 0 1
+# stats: dump at 1589365287
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.399002493765586 0.0 3.8114343029087263 0.1 0.3783691515230966 83
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01402484939759036 83
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.5859375 0.0 6757.8203125 6744.26171875 6753.221856174699 83
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17018.99 2.669 5043.537809815951 163
+stats: connect 0 0 0 1.815 0.923 1.2749756097560974 164
+stats: page 0 0 0 17022.624 8.943 10149.551308641974 81
+stats: tr_general 0 0 0 17023.24 9.496 10150.323938271602 81
+stats: 200 0 163
+stats: size_rcv 0 508403
+stats: size_sent 0 47905
+stats: connected 0 1
+# stats: dump at 1589365297
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14992503748125938 0.0 3.8114343029087263 0.1 0.37861478654979286 84
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.013857886904761904 84
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.56640625 0.0 6757.8203125 6744.26171875 6753.273809523809 84
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8498.6975 8495.119499999999 17018.99 2.669 5043.537809815951 163
+stats: connect 2 1.2665000000000002 0.039499999999999924 1.815 0.923 1.2749756097560974 164
+stats: page 1 16998.69 0.0 17022.624 8.943 10149.551308641974 81
+stats: tr_general 1 16999.347 0.0 17023.24 9.496 10150.323938271602 81
+stats: 200 2 165
+stats: size_rcv 4731 513134
+stats: size_sent 479 48384
+stats: connected 0 1
+# stats: dump at 1589365307
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.3759243189136925 85
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01369485294117647 85
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.84375 0.0 6757.84375 6744.26171875 6753.324310661765 85
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5323.9105 5319.6235 17018.99 2.669 5085.4185333333335 165
+stats: connect 2 1.222 0.08299999999999996 1.815 0.923 1.2748734939759034 166
+stats: page 1 10647.352 0.0 17022.624 8.943 10233.077390243901 82
+stats: tr_general 1 10648.282 0.0 17023.24 9.496 10233.848609756093 82
+stats: 200 2 167
+stats: size_rcv 5401 518535
+stats: size_sent 502 48886
+stats: connected 0 1
+# stats: dump at 1589365317
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.6490264603095357 0.0 3.8114343029087263 0.1 0.37387636404027974 86
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.013535610465116279 86
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.609375 0.0 6757.84375 6744.26171875 6753.376862281977 86
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8537.540500000001 8533.2855 17070.826 2.669 5088.274724550899 167
+stats: connect 2 1.2835 0.09050000000000002 1.815 0.923 1.2742440476190473 168
+stats: page 1 17075.326 0.0 17075.326 8.943 10238.068650602409 83
+stats: tr_general 1 17076.03 0.0 17076.03 9.496 10238.841783132524 83
+stats: 200 2 169
+stats: size_rcv 4658 523193
+stats: size_sent 502 49388
+stats: connected 0 1
+# stats: dump at 1589365327
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.37703900882498387 87
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.013380028735632184 87
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.625 0.0 6757.84375 6744.26171875 6753.425511853448 87
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17070.826 2.669 5129.094437869823 169
+stats: connect 0 0 0 1.815 0.923 1.2743529411764702 170
+stats: page 0 0 0 17075.326 8.943 10319.464571428569 84
+stats: tr_general 0 0 0 17076.03 9.496 10320.236880952376 84
+stats: 200 0 169
+stats: size_rcv 0 523193
+stats: size_sent 0 49388
+stats: connected 0 1
+# stats: dump at 1589365337
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.15 0.0 3.8114343029087263 0.1 0.3761584595654842 88
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.013227982954545454 88
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.140625 0.0 6757.84375 6744.26171875 6753.473233309659 88
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8365.063 8361.485999999999 17070.826 2.669 5129.094437869823 169
+stats: connect 2 1.495 0.05199999999999999 1.815 0.923 1.2743529411764702 170
+stats: page 1 16731.041 0.0 17075.326 8.943 10319.464571428569 84
+stats: tr_general 1 16731.709 0.0 17076.03 9.496 10320.236880952376 84
+stats: 200 2 171
+stats: size_rcv 4658 527851
+stats: size_sent 502 49890
+stats: connected 0 1
+# stats: dump at 1589365347
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.3736173532782316 89
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01307935393258427 89
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.15234375 0.0 6757.84375 6744.26171875 6753.514439957865 89
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17070.826 2.669 5166.942023391814 171
+stats: connect 0 0 0 1.815 0.923 1.2769186046511625 172
+stats: page 0 0 0 17075.326 8.943 10394.894882352937 85
+stats: tr_general 0 0 0 17076.03 9.496 10395.665964705879 85
+stats: 200 0 171
+stats: size_rcv 0 527851
+stats: size_sent 0 49890
+stats: connected 0 1
+# stats: dump at 1589365357
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3727943901750181 90
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012934027777777777 90
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.16796875 0.0 6757.84375 6744.26171875 6753.554861111111 90
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8235.4625 8232.130500000001 17070.826 2.669 5166.942023391814 171
+stats: connect 2 1.083 0.07000000000000006 1.815 0.923 1.2769186046511625 172
+stats: page 1 16471.412 0.0 17075.326 8.943 10394.894882352937 85
+stats: tr_general 1 16472.082 0.0 17076.03 9.496 10395.665964705879 85
+stats: 200 2 173
+stats: size_rcv 4658 532509
+stats: size_sent 502 50392
+stats: connected 0 1
+# stats: dump at 1589365367
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3714408865649357 91
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012791895604395604 91
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.13671875 0.0 6757.84375 6744.26171875 6753.594565590659 91
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 14 1206.1390714285715 4330.308241634462 17070.826 2.536 5202.416248554914 173
+stats: connect 14 1.1462857142857141 0.152355518710786 1.815 0.906 1.2746896551724134 174
+stats: page 7 2412.528428571429 5882.993756963489 17075.326 8.9 10465.552058139532 86
+stats: tr_general 7 2413.1474285714285 5883.0317371799 17076.03 9.478 10466.321965116276 86
+stats: 200 14 187
+stats: size_rcv 60107 592616
+stats: size_sent 5101 55493
+stats: connected 0 1
+# stats: dump at 1589365377
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34965034965034963 0.0 3.8114343029087263 0.1 0.3701168069463768 92
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012652853260869566 92
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.06640625 0.0 6757.84375 6744.26171875 6753.633067255435 92
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17070.826 2.536 4903.229721925135 187
+stats: connect 0 0 0 1.815 0.906 1.2651276595744678 188
+stats: page 0 0 0 17075.326 8.9 9859.410494623653 93
+stats: tr_general 0 0 0 17076.03 9.478 9860.16904301075 93
+stats: 200 0 187
+stats: size_rcv 0 592616
+stats: size_sent 0 55493
+stats: connected 0 1
+# stats: dump at 1589365387
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24937655860349126 0.0 3.8114343029087263 0.1 0.3698967375130861 93
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012516801075268816 93
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0625 0.0 6757.84375 6744.26171875 6753.669984879032 93
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8555.6615 8551.416500000001 17107.078 2.536 4903.229721925135 187
+stats: connect 2 1.4585 0.10149999999999998 1.815 0.906 1.2651276595744678 188
+stats: page 1 17110.323 0.0 17110.323 8.9 9859.410494623653 93
+stats: tr_general 1 17110.963 0.0 17110.963 9.478 9860.16904301075 93
+stats: 200 2 189
+stats: size_rcv 4866 597482
+stats: size_sent 533 56026
+stats: connected 0 1
+# stats: dump at 1589365397
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 3.8114343029087263 0.1 0.3686146079502181 94
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012383643617021276 94
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.08203125 0.0 6757.84375 6744.26171875 6753.706075465426 94
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17107.078 2.536 4941.879793650794 189
+stats: connect 0 0 0 1.815 0.906 1.2671631578947364 190
+stats: page 0 0 0 17110.323 8.9 9936.547861702125 94
+stats: tr_general 0 0 0 17110.963 9.478 9937.305148936168 94
+stats: 200 0 189
+stats: size_rcv 0 597482
+stats: size_sent 0 56026
+stats: connected 0 1
+# stats: dump at 1589365407
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.36683866523468966 95
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01225328947368421 95
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0625 0.0 6757.84375 6744.26171875 6753.741611842105 95
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8549.440999999999 8546.106 17107.078 2.536 4941.879793650794 189
+stats: connect 2 1.246 0.026999999999999913 1.815 0.906 1.2671631578947364 190
+stats: page 1 17100.003 0.0 17110.323 8.9 9936.547861702125 94
+stats: tr_general 1 17100.678 0.0 17110.963 9.478 9937.305148936168 94
+stats: 200 2 191
+stats: size_rcv 4858 602340
+stats: size_sent 502 56528
+stats: connected 0 1
+# stats: dump at 1589365417
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.3661393072603731 96
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012125651041666666 96
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1015625 0.0 6757.84375 6744.26171875 6753.776204427083 96
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17107.078 2.536 4979.655303664922 191
+stats: connect 0 0 0 1.815 0.906 1.266942708333333 192
+stats: page 0 0 0 17110.323 8.9 10011.952652631577 95
+stats: tr_general 0 0 0 17110.963 9.478 10012.709073684207 95
+stats: 200 0 191
+stats: size_rcv 0 602340
+stats: size_sent 0 56528
+stats: connected 0 1
+# stats: dump at 1589365427
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.36442447110098986 97
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.012000644329896908 97
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.10546875 0.0 6757.84375 6744.26171875 6753.810486469072 97
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8429.2485 8425.1945 17107.078 2.536 4979.655303664922 191
+stats: connect 2 1.3679999999999999 0.08000000000000002 1.815 0.906 1.266942708333333 192
+stats: page 1 16857.974 0.0 17110.323 8.9 10011.952652631577 95
+stats: tr_general 1 16858.623 0.0 17110.963 9.478 10012.709073684207 95
+stats: 200 2 193
+stats: size_rcv 4866 607206
+stats: size_sent 533 57061
+stats: connected 0 1
+# stats: dump at 1589365437
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.3632530536576891 98
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011878188775510204 98
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.125 0.0 6757.84375 6744.26171875 6753.844108737245 98
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8639.4415 8636.2795 17275.721 2.536 5015.40238341969 193
+stats: connect 2 1.145 0.10000000000000009 1.815 0.906 1.2679845360824737 194
+stats: page 1 17279.992 0.0 17279.992 8.9 10083.265374999997 96
+stats: tr_general 1 17280.642 0.0 17280.642 9.478 10084.02067708333 96
+stats: 200 2 195
+stats: size_rcv 4858 612064
+stats: size_sent 502 57563
+stats: connected 0 1
+# stats: dump at 1589365447
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.3621040429945205 99
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01175820707070707 99
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.140625 0.0 6757.84375 6744.26171875 6753.87724905303 99
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17275.721 2.536 5052.572015384616 195
+stats: connect 0 0 0 1.815 0.906 1.2667295918367343 196
+stats: page 0 0 0 17279.992 8.9 10157.458432989688 97
+stats: tr_general 0 0 0 17280.642 9.478 10158.212649484532 97
+stats: 200 0 195
+stats: size_rcv 0 612064
+stats: size_sent 0 57563
+stats: connected 0 1
+# stats: dump at 1589365457
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.36147701454062314 100
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011640625 100
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.14453125 0.0 6757.84375 6744.26171875 6753.9098828125 100
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8387.17 8383.333 17275.721 2.536 5052.572015384616 195
+stats: connect 2 1.276 0.052000000000000046 1.815 0.906 1.2667295918367343 196
+stats: page 1 16773.902 0.0 17279.992 8.9 10157.458432989688 97
+stats: tr_general 1 16774.548 0.0 17280.642 9.478 10158.212649484532 97
+stats: 200 2 197
+stats: size_rcv 4658 616722
+stats: size_sent 502 58065
+stats: connected 0 1
+# stats: dump at 1589365467
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34965034965034963 0.0 3.8114343029087263 0.1 0.35987625399863876 101
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011525371287128713 101
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1796875 0.0 6757.84375 6744.26171875 6753.941909034654 101
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17275.721 2.536 5086.425802030457 197
+stats: connect 0 0 0 1.815 0.906 1.2668232323232318 198
+stats: page 0 0 0 17279.992 8.9 10224.973163265304 98
+stats: tr_general 0 0 0 17280.642 9.478 10225.7262755102 98
+stats: 200 0 197
+stats: size_rcv 0 616722
+stats: size_sent 0 58065
+stats: connected 0 1
+# stats: dump at 1589365477
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3597760000344398 102
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011412377450980392 102
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0 0.0 6757.84375 6744.26171875 6753.973651960784 102
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4239.5025 7334.930180483264 17275.721 2.536 5086.425802030457 197
+stats: connect 4 1.1995 0.1181704277727724 1.815 0.906 1.2668232323232318 198
+stats: page 2 8479.7265 8468.289499999999 17279.992 8.9 10224.973163265304 98
+stats: tr_general 2 8480.3865 8468.2955 17280.642 9.478 10225.7262755102 98
+stats: 200 4 201
+stats: size_rcv 14669 631391
+stats: size_sent 1326 59391
+stats: connected 0 1
+# stats: dump at 1589365487
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.35870657830262503 103
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011301577669902913 103
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.015625 0.0 6757.84375 6744.26171875 6754.003033980583 103
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8559.5675 8556.0865 17275.721 2.536 5069.571606965174 201
+stats: connect 2 1.201 0.0779999999999999 1.815 0.906 1.2654900990099005 202
+stats: page 1 17118.667 0.0 17279.992 8.9 10190.068229999997 100
+stats: tr_general 1 17119.352 0.0 17280.642 9.478 10190.819479999996 100
+stats: 200 2 203
+stats: size_rcv 4531 635922
+stats: size_sent 479 59870
+stats: connected 0 1
+# stats: dump at 1589365497
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.35765652464590747 104
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011192908653846154 104
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0546875 0.0 6757.84375 6744.26171875 6754.032001201923 104
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 1738.8045 1735.3684999999998 17275.721 2.536 5103.955802955666 203
+stats: connect 2 1.2525 0.02150000000000002 1.815 0.906 1.2648578431372544 204
+stats: page 1 3477.928 0.0 17279.992 8.9 10258.66821782178 101
+stats: tr_general 1 3478.946 0.0 17280.642 9.478 10259.418811881184 101
+stats: 200 2 205
+stats: size_rcv 5604 641526
+stats: size_sent 533 60403
+stats: connected 0 1
+# stats: dump at 1589365507
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.3566276583317323 105
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.011086309523809524 105
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0703125 0.0 6757.84375 6744.26171875 6754.060788690476 105
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4252.982 7357.64691853411 17275.721 2.536 5071.125058536586 205
+stats: connect 4 1.3050000000000002 0.09943088051505938 1.815 0.906 1.2647378640776694 206
+stats: page 2 8505.726 8494.727 17279.992 8.9 10192.190372549017 102
+stats: tr_general 2 8506.3685 8494.7455 17280.642 9.478 10192.94358823529 102
+stats: 200 4 209
+stats: size_rcv 15077 656603
+stats: size_sent 1357 61760
+stats: connected 0 1
+# stats: dump at 1589365517
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3551481540059631 106
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010981721698113208 106
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.30078125 0.0 6757.84375 6744.26171875 6754.089180424528 106
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17275.721 2.536 5055.466818181819 209
+stats: connect 0 0 0 1.815 0.906 1.2655047619047615 210
+stats: page 0 0 0 17279.992 8.9 10159.758365384614 104
+stats: tr_general 0 0 0 17280.642 9.478 10160.509451923073 104
+stats: 200 0 209
+stats: size_rcv 0 656603
+stats: size_sent 0 61760
+stats: connected 0 1
+# stats: dump at 1589365527
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3498250874562719 0.0 3.8114343029087263 0.1 0.3541619615541085 107
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01087908878504673 107
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.3203125 0.0 6757.84375 6744.26171875 6754.119195385514 107
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4324.39575 7481.229446005562 17282.265 2.536 5055.466818181819 209
+stats: connect 4 1.27225 0.16018329344847418 1.815 0.906 1.2655047619047615 210
+stats: page 2 8649.5915 8637.2485 17286.84 8.9 10159.758365384614 104
+stats: tr_general 2 8650.241 8637.301000000001 17287.542 9.478 10160.509451923073 104
+stats: 200 4 213
+stats: size_rcv 15077 671680
+stats: size_sent 1357 63117
+stats: connected 0 1
+# stats: dump at 1589365537
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.3541218053124619 108
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01077835648148148 108
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.40234375 0.0 6757.84375 6744.26171875 6754.1488353587965 108
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17282.265 2.536 5041.73778403756 213
+stats: connect 0 0 0 1.815 0.906 1.265630841121495 214
+stats: page 0 0 0 17286.84 8.9 10131.264650943394 106
+stats: tr_general 0 0 0 17287.542 9.478 10132.013820754713 106
+stats: 200 0 213
+stats: size_rcv 0 671680
+stats: size_sent 0 63117
+stats: connected 0 1
+# stats: dump at 1589365547
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14992503748125938 0.0 3.8114343029087263 0.1 0.35362115273151284 109
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01067947247706422 109
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.40625 0.0 6757.84375 6744.26171875 6754.178684059633 109
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8591.6145 8588.354500000001 17282.265 2.536 5041.73778403756 213
+stats: connect 2 1.192 0.129 1.815 0.906 1.265630841121495 214
+stats: page 1 17183.385 0.0 17286.84 8.9 10131.264650943394 106
+stats: tr_general 1 17184.063 0.0 17287.542 9.478 10132.013820754713 106
+stats: 200 2 215
+stats: size_rcv 4858 676538
+stats: size_sent 502 63619
+stats: connected 0 1
+# stats: dump at 1589365557
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29910269192422734 0.0 3.8114343029087263 0.1 0.3517693698656015 110
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010582386363636363 110
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.3984375 0.0 6757.84375 6744.26171875 6754.208025568182 110
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8464.331 8460.969 17282.265 2.536 5074.759893023257 215
+stats: connect 2 1.1480000000000001 0.02999999999999986 1.815 0.906 1.2649490740740736 216
+stats: page 1 16928.757 0.0 17286.84 8.9 10197.172317757007 107
+stats: tr_general 1 16929.419 0.0 17287.542 9.478 10197.920822429904 107
+stats: 200 2 217
+stats: size_rcv 4531 681069
+stats: size_sent 479 64098
+stats: connected 0 1
+# stats: dump at 1589365567
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.35129489528955304 111
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01048704954954955 111
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.390625 0.0 6757.84375 6744.26171875 6754.236768018018 111
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 8 906.40825 1562.1959374036398 17282.265 2.536 5106.000179723504 217
+stats: connect 8 1.2163750000000002 0.17125999058449107 1.815 0.883 1.2638761467889905 218
+stats: page 4 1813.0925 1802.941189380078 17286.84 8.9 10259.501805555554 108
+stats: tr_general 4 1813.80275 1803.059832856965 17287.542 9.478 10260.249509259256 108
+stats: 200 8 225
+stats: size_rcv 30682 711751
+stats: size_sent 2629 66727
+stats: connected 0 1
+# stats: dump at 1589365577
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3 0.0 3.8114343029087263 0.1 0.3508315587030819 112
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010393415178571428 112
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6756.8671875 0.0 6757.84375 6744.26171875 6754.264927455357 112
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17282.265 2.536 4956.681355555557 225
+stats: connect 0 0 0 1.815 0.883 1.2621946902654864 226
+stats: page 0 0 0 17286.84 8.9 9957.844330357142 112
+stats: tr_general 0 0 0 17287.542 9.478 9958.590696428568 112
+stats: 200 0 225
+stats: size_rcv 0 711751
+stats: size_sent 0 66727
+stats: connected 0 1
+# stats: dump at 1589365587
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24987506246876562 0.0 3.8114343029087263 0.1 0.35038172190039973 113
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010301438053097346 113
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6756.87890625 0.0 6757.84375 6744.26171875 6754.287956305309 113
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8431.786999999998 8428.42 17282.265 2.536 4956.681355555557 225
+stats: connect 2 1.1935 0.007500000000000062 1.815 0.883 1.2621946902654864 226
+stats: page 1 16863.692 0.0 17286.84 8.9 9957.844330357142 112
+stats: tr_general 1 16864.374 0.0 17287.542 9.478 9958.590696428568 112
+stats: 200 2 227
+stats: size_rcv 4866 716617
+stats: size_sent 533 67260
+stats: connected 0 1
+# stats: dump at 1589365597
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.34950008453696435 114
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01021107456140351 114
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.16015625 0.0 6757.84375 6744.26171875 6754.310683936404 114
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17282.265 2.536 4987.2990264317195 227
+stats: connect 0 0 0 1.815 0.883 1.2615921052631576 228
+stats: page 0 0 0 17286.84 8.9 10018.958026548673 113
+stats: tr_general 0 0 0 17287.542 9.478 10019.703823008847 113
+stats: 200 0 227
+stats: size_rcv 0 716617
+stats: size_sent 0 67260
+stats: connected 0 1
+# stats: dump at 1589365607
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.34906444204190196 115
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010122282608695653 115
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.20703125 0.0 6757.84375 6744.26171875 6754.335461956522 115
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4319.2744999999995 7472.503496280764 17282.265 2.536 4987.2990264317195 227
+stats: connect 4 1.2392500000000002 0.1652216314530272 1.815 0.883 1.2615921052631576 228
+stats: page 2 8638.8365 8626.7685 17286.84 8.9 10018.958026548673 113
+stats: tr_general 2 8639.4385 8626.766500000002 17287.542 9.478 10019.703823008847 113
+stats: 200 4 231
+stats: size_rcv 14742 731359
+stats: size_sent 1303 68563
+stats: connected 0 1
+# stats: dump at 1589365617
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.34820721031445034 116
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010035021551724138 116
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1953125 0.0 6757.84375 6744.26171875 6754.360216864224 116
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 1829.612 4077.7772216640283 17282.265 2.536 4975.731502164504 231
+stats: connect 6 1.1218333333333335 0.12589336316458025 1.815 0.883 1.2612068965517238 232
+stats: page 3 3659.5959999999995 5155.995894061204 17286.84 8.9 9994.955913043477 115
+stats: tr_general 3 3660.3873333333336 5156.067847457681 17287.542 9.478 9995.69920869565 115
+stats: 200 6 237
+stats: size_rcv 20787 752146
+stats: size_sent 1805 70368
+stats: connected 0 1
+# stats: dump at 1589365627
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3469387743271491 117
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009949252136752136 117
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.17578125 0.0 6757.84375 6744.26171875 6754.3844484508545 117
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17282.265 2.536 4896.082907172998 237
+stats: connect 0 0 0 1.815 0.883 1.257693277310924 238
+stats: page 0 0 0 17286.84 8.9 9833.887440677965 118
+stats: tr_general 0 0 0 17287.542 9.478 9834.631957627116 118
+stats: 200 0 237
+stats: size_rcv 0 752146
+stats: size_sent 0 70368
+stats: connected 0 1
+# stats: dump at 1589365637
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34965034965034963 0.0 3.8114343029087263 0.1 0.3461140860841861 118
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009864936440677966 118
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.38671875 0.0 6757.84375 6744.26171875 6754.408103813559 118
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4404.61075 7620.059129618593 17602.94 2.536 4896.082907172998 237
+stats: connect 4 1.26525 0.15307085777508408 1.815 0.883 1.257693277310924 238
+stats: page 2 8809.3195 8796.7005 17606.02 8.9 9833.887440677965 118
+stats: tr_general 2 8809.931 8796.693 17606.624 9.478 9834.631957627116 118
+stats: 200 4 241
+stats: size_rcv 14542 766688
+stats: size_sent 1303 71671
+stats: connected 0 1
+# stats: dump at 1589365647
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.3461438025847421 119
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00978203781512605 119
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.4140625 0.0 6757.84375 6744.26171875 6754.433134191177 119
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5429.4655 5426.1075 17602.94 2.536 4887.92569294606 241
+stats: connect 2 1.1975 0.03049999999999997 1.815 0.883 1.2578181818181813 242
+stats: page 1 10858.93 0.0 17606.02 8.9 9816.811308333332 120
+stats: tr_general 1 10859.743 0.0 17606.624 9.478 9817.553608333332 120
+stats: 200 2 243
+stats: size_rcv 5394 772082
+stats: size_sent 502 72173
+stats: connected 0 1
+# stats: dump at 1589365657
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.34575552651311103 120
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009700520833333334 120
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.39453125 0.0 6757.84375 6744.26171875 6754.457975260417 120
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4342.56675 7510.38605817209 17602.94 2.536 4892.382810699591 243
+stats: connect 4 1.38 0.2740228092695935 1.815 0.883 1.2573237704918028 244
+stats: page 2 8685.3975 8669.0985 17606.02 8.9 9825.42385950413 121
+stats: tr_general 2 8686.171 8669.005 17606.624 9.478 9826.16674380165 121
+stats: 200 4 247
+stats: size_rcv 10052 782134
+stats: size_sent 981 73154
+stats: connected 0 1
+# stats: dump at 1589365667
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.3453724328857695 121
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00962035123966942 121
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.40625 0.0 6757.84375 6744.26171875 6754.482244318182 121
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17602.94 2.536 4883.478906882593 247
+stats: connect 0 0 0 1.815 0.883 1.259302419354838 248
+stats: page 0 0 0 17606.02 8.9 9806.886845528454 123
+stats: tr_general 0 0 0 17606.624 9.478 9807.630227642274 123
+stats: 200 0 247
+stats: size_rcv 0 782134
+stats: size_sent 0 73154
+stats: connected 0 1
+# stats: dump at 1589365677
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29925187032418954 0.0 3.8114343029087263 0.1 0.3445886444994128 122
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009541495901639344 122
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.4296875 0.0 6757.84375 6744.26171875 6754.506211577869 122
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 2959.1151666666665 6605.476532961378 17729.409 2.536 4883.478906882593 247
+stats: connect 6 1.2200000000000002 0.12041871393876721 1.815 0.883 1.259302419354838 248
+stats: page 3 5918.642666666667 8353.97476036752 17732.947 8.9 9806.886845528454 123
+stats: tr_general 3 5919.324 8353.891806415299 17733.511 9.478 9807.630227642274 123
+stats: 200 6 253
+stats: size_rcv 20258 802392
+stats: size_sent 1835 74989
+stats: connected 0 1
+# stats: dump at 1589365687
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.3442200528394517 123
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009463922764227643 123
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.49609375 0.0 6757.84375 6744.26171875 6754.529979674797 123
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17729.409 2.536 4837.84182213439 253
+stats: connect 0 0 0 1.815 0.883 1.2583740157480308 254
+stats: page 0 0 0 17732.947 8.9 9714.3096031746 126
+stats: tr_general 0 0 0 17733.511 9.478 9715.051507936507 126
+stats: 200 0 253
+stats: size_rcv 0 802392
+stats: size_sent 0 74989
+stats: connected 0 1
+# stats: dump at 1589365697
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34930139720558884 0.0 3.8114343029087263 0.1 0.3434581995887323 124
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009387600806451613 124
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.265625 0.0 6757.84375 6744.26171875 6754.553899949597 124
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8873.940499999999 8869.5165 17743.457 2.536 4837.84182213439 253
+stats: connect 2 1.4425 0.016500000000000015 1.815 0.883 1.2583740157480308 254
+stats: page 1 17746.418 0.0 17746.418 8.9 9714.3096031746 126
+stats: tr_general 1 17747.104 0.0 17747.104 9.478 9715.051507936507 126
+stats: 200 2 255
+stats: size_rcv 4858 807250
+stats: size_sent 502 75491
+stats: connected 0 1
+# stats: dump at 1589365707
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.3435049451696671 125
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.0093125 125
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.38671875 0.0 6757.84375 6744.26171875 6754.57559375 125
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4869.497498039218 255
+stats: connect 0 0 0 1.815 0.883 1.2598124999999993 256
+stats: page 0 0 0 17746.418 8.9 9777.554551181101 127
+stats: tr_general 0 0 0 17747.104 9.478 9778.29601574803 127
+stats: 200 0 255
+stats: size_rcv 0 807250
+stats: size_sent 0 75491
+stats: connected 0 1
+# stats: dump at 1589365717
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.199700449326011 0.0 3.8114343029087263 0.1 0.3431561017475985 126
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00923859126984127 126
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.14453125 0.0 6757.84375 6744.26171875 6754.597904265873 126
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8529.413 8524.819 17743.457 2.536 4869.497498039218 255
+stats: connect 2 1.376 0.13499999999999995 1.815 0.883 1.2598124999999993 256
+stats: page 1 17058.862 0.0 17746.418 8.9 9777.554551181101 127
+stats: tr_general 1 17059.506 0.0 17747.104 9.478 9778.29601574803 127
+stats: 200 2 257
+stats: size_rcv 4658 811908
+stats: size_sent 502 75993
+stats: connected 0 1
+# stats: dump at 1589365727
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.3420265296812867 127
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009165846456692913 127
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.18359375 0.0 6757.84375 6744.26171875 6754.61795644685 127
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8689.3915 8685.737500000001 17743.457 2.536 4897.979330739302 257
+stats: connect 2 1.425 0.10499999999999998 1.815 0.883 1.260713178294573 258
+stats: page 1 17379.928 0.0 17746.418 8.9 9834.439765624998 128
+stats: tr_general 1 17380.58 0.0 17747.104 9.478 9835.180468749999 128
+stats: 200 2 259
+stats: size_rcv 4658 816566
+stats: size_sent 502 76495
+stats: connected 0 1
+# stats: dump at 1589365737
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.34091538647909075 128
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00909423828125 128
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.19921875 0.0 6757.84375 6744.26171875 6754.638000488281 128
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4927.256644787647 259
+stats: connect 0 0 0 1.815 0.883 1.2619769230769224 260
+stats: page 0 0 0 17746.418 8.9 9892.931922480619 129
+stats: tr_general 0 0 0 17747.104 9.478 9893.671937984496 129
+stats: 200 0 259
+stats: size_rcv 0 816566
+stats: size_sent 0 76495
+stats: connected 0 1
+# stats: dump at 1589365747
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.3398214703032854 129
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00902374031007752 129
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.20703125 0.0 6757.84375 6744.26171875 6754.657854893411 129
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8768.813 8765.417 17743.457 2.536 4927.256644787647 259
+stats: connect 2 1.2839999999999998 0.12800000000000006 1.815 0.883 1.2619769230769224 260
+stats: page 1 17538.099 0.0 17746.418 8.9 9892.931922480619 129
+stats: tr_general 1 17538.758 0.0 17747.104 9.478 9893.671937984496 129
+stats: 200 2 261
+stats: size_rcv 4658 821224
+stats: size_sent 502 76997
+stats: connected 0 1
+# stats: dump at 1589365757
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34930139720558884 0.0 3.8114343029087263 0.1 0.33951054512868156 130
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008954326923076922 130
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.19140625 0.0 6757.84375 6744.26171875 6754.677463942307 130
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4956.69385823755 261
+stats: connect 0 0 0 1.815 0.883 1.2621450381679384 262
+stats: page 0 0 0 17746.418 8.9 9951.740899999999 130
+stats: tr_general 0 0 0 17747.104 9.478 9952.480292307691 130
+stats: 200 0 261
+stats: size_rcv 0 821224
+stats: size_sent 0 76997
+stats: connected 0 1
+# stats: dump at 1589365767
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.3395852844575129 131
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008885973282442748 131
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.19140625 0.0 6757.84375 6744.26171875 6754.696654341603 131
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4250.66125 7352.31515093968 17743.457 2.536 4956.69385823755 261
+stats: connect 4 1.36125 0.12815493552727497 1.815 0.883 1.2621450381679384 262
+stats: page 2 8501.032500000001 8487.7975 17746.418 8.9 9951.740899999999 130
+stats: tr_general 2 8501.826500000001 8487.6945 17747.104 9.478 9952.480292307691 130
+stats: 200 4 265
+stats: size_rcv 10037 831261
+stats: size_sent 980 77977
+stats: connected 0 1
+# stats: dump at 1589365777
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.33928085955711346 132
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008818655303030304 132
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.2109375 0.0 6757.84375 6744.26171875 6754.715553977273 132
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4243.6140000000005 7338.2254198891305 17743.457 2.536 4946.036762264153 265
+stats: connect 4 1.2965 0.2167377447515776 1.815 0.883 1.263635338345864 266
+stats: page 2 8488.323 8470.077000000001 17746.418 8.9 9929.760469696968 132
+stats: tr_general 2 8489.027 8469.898 17747.104 9.478 9930.500689393937 132
+stats: 200 4 269
+stats: size_rcv 9919 841180
+stats: size_sent 957 78934
+stats: connected 0 1
+# stats: dump at 1589365787
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.33898213635735336 133
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00875234962406015 133
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.2109375 0.0 6757.84375 6744.26171875 6754.734316259399 133
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4935.5918141263965 269
+stats: connect 0 0 0 1.815 0.883 1.2641222222222215 270
+stats: page 0 0 0 17746.418 8.9 9908.246477611938 134
+stats: tr_general 0 0 0 17747.104 9.478 9908.986156716417 134
+stats: 200 0 269
+stats: size_rcv 0 841180
+stats: size_sent 0 78934
+stats: connected 0 1
+# stats: dump at 1589365797
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3379434651890164 134
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008687033582089552 134
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.234375 0.0 6757.84375 6744.26171875 6754.752798507463 134
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5355.7185 5351.6555 17743.457 2.536 4935.5918141263965 269
+stats: connect 2 1.4514999999999998 0.05550000000000005 1.815 0.883 1.2641222222222215 270
+stats: page 1 10710.361 0.0 17746.418 8.9 9908.246477611938 134
+stats: tr_general 1 10711.301 0.0 17747.104 9.478 9908.986156716417 134
+stats: 200 2 271
+stats: size_rcv 5597 846777
+stats: size_sent 533 79467
+stats: connected 0 1
+# stats: dump at 1589365807
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.33728925849619046 135
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008622685185185185 135
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.2421875 0.0 6757.84375 6744.26171875 6754.7711805555555 135
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8583.747 8580.673999999999 17743.457 2.536 4938.692380073802 271
+stats: connect 2 1.084 0.020000000000000018 1.815 0.883 1.2654999999999994 272
+stats: page 1 17168.691 0.0 17746.418 8.9 9914.188066666664 135
+stats: tr_general 1 17169.37 0.0 17747.104 9.478 9914.929229629628 135
+stats: 200 2 273
+stats: size_rcv 5067 851844
+stats: size_sent 533 80000
+stats: connected 0 1
+# stats: dump at 1589365817
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1500750375187594 0.0 3.8114343029087263 0.1 0.3366437565808067 136
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008559283088235295 136
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.29296875 0.0 6757.84375 6744.26171875 6754.789349724265 136
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4965.396076923079 273
+stats: connect 0 0 0 1.815 0.883 1.2641751824817513 274
+stats: page 0 0 0 17746.418 8.9 9967.529999999999 136
+stats: tr_general 0 0 0 17747.104 9.478 9968.270705882353 136
+stats: 200 0 273
+stats: size_rcv 0 851844
+stats: size_sent 0 80000
+stats: connected 0 1
+# stats: dump at 1589365827
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 3.8114343029087263 0.1 0.33528194111320053 137
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008496806569343065 137
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.296875 0.0 6757.84375 6744.26171875 6754.807624315694 137
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8589.4865 8585.3765 17743.457 2.536 4965.396076923079 273
+stats: connect 2 1.517 0.01699999999999996 1.815 0.883 1.2641751824817513 274
+stats: page 1 17178.14 0.0 17746.418 8.9 9967.529999999999 136
+stats: tr_general 1 17178.851 0.0 17747.104 9.478 9968.270705882353 136
+stats: 200 2 275
+stats: size_rcv 4732 856576
+stats: size_sent 479 80479
+stats: connected 0 1
+# stats: dump at 1589365837
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.33538479506397817 138
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008435235507246374 138
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.296875 0.0 6757.84375 6744.26171875 6754.82566236413 138
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2618.90825 4527.457322825163 17743.457 2.536 4991.753098181821 275
+stats: connect 4 1.2145000000000001 0.06315259297922775 1.815 0.883 1.266007246376811 276
+stats: page 2 5238.135 5226.955 17746.418 8.9 10020.16218978102 137
+stats: tr_general 2 5238.846500000001 5227.1565 17747.104 9.478 10020.902678832115 137
+stats: 200 4 279
+stats: size_rcv 15271 871847
+stats: size_sent 1303 81782
+stats: connected 0 1
+# stats: dump at 1589365847
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3489531405782652 0.0 3.8114343029087263 0.1 0.3344093663210733 139
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.008374550359712227 139
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.28125 0.0 6757.84375 6744.26171875 6754.843440872302 139
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5243.5675 5239.623500000001 17743.457 2.536 4957.733817204303 279
+stats: connect 2 1.282 0.018000000000000016 1.815 0.883 1.265271428571428 280
+stats: page 1 10487.458 0.0 17746.418 8.9 9951.356043165466 139
+stats: tr_general 1 10488.288 0.0 17747.104 9.478 9952.096115107912 139
+stats: 200 2 281
+stats: size_rcv 5602 877449
+stats: size_sent 533 82315
+stats: connected 0 1
+# stats: dump at 1589365857
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.3345132504229104 140
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.078125 0.0 0.12109375 0.0 0.00831473214285714 140
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1015625 0.0 6757.84375 6744.26171875 6754.860853794643 140
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4959.768220640572 281
+stats: connect 0 0 0 1.815 0.883 1.2653900709219854 282
+stats: page 0 0 0 17746.418 8.9 9955.185342857141 140
+stats: tr_general 0 0 0 17747.104 9.478 9955.926057142855 140
+stats: 200 0 281
+stats: size_rcv 0 877449
+stats: size_sent 0 82315
+stats: connected 0 1
+# stats: dump at 1589365867
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29925187032418954 0.0 3.8114343029087263 0.1 0.33426528888791823 141
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0703125 0.0 0.12109375 0.0 0.008809840425531911 141
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1171875 0.0 6757.84375 6744.26171875 6754.876745345745 141
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 3494.4868333333325 6356.786015563038 17743.457 2.536 4959.768220640572 281
+stats: connect 6 1.3223333333333336 0.15569914008183283 1.815 0.883 1.2653900709219854 282
+stats: page 3 6989.017333333334 7513.3435786856935 17746.418 8.9 9955.185342857141 140
+stats: tr_general 3 6989.703333333334 7513.281481445343 17747.104 9.478 9955.926057142855 140
+stats: 200 6 287
+stats: size_rcv 20136 897585
+stats: size_sent 1805 84120
+stats: connected 0 1
+# stats: dump at 1589365877
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.25 0.0 3.8114343029087263 0.1 0.33401871551775114 142
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05859375 0.0 0.12109375 0.0 0.00924295774647887 142
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.55078125 0.0 6757.84375 6744.26171875 6754.8925231073945 142
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4929.135160278748 287
+stats: connect 0 0 0 1.815 0.883 1.2665763888888886 288
+stats: page 0 0 0 17746.418 8.9 9892.95804195804 143
+stats: tr_general 0 0 0 17747.104 9.478 9893.697608391607 143
+stats: 200 0 287
+stats: size_rcv 0 897585
+stats: size_sent 0 84120
+stats: connected 0 1
+# stats: dump at 1589365887
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.33343117205259204 143
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05078125 0.0 0.12109375 0.0 0.009588068181818179 143
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.8203125 0.0 6757.84375 6744.26171875 6754.911112325175 143
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8609.210000000001 8604.65 17743.457 2.536 4929.135160278748 287
+stats: connect 2 1.3290000000000002 0.13999999999999996 1.815 0.883 1.2665763888888886 288
+stats: page 1 17218.664 0.0 17746.418 8.9 9892.95804195804 143
+stats: tr_general 1 17219.331 0.0 17747.104 9.478 9893.697608391607 143
+stats: 200 2 289
+stats: size_rcv 4531 902116
+stats: size_sent 479 84599
+stats: connected 0 1
+# stats: dump at 1589365897
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.33319589081603945 144
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0390625 0.0 0.12109375 0.0 0.00987413194444444 144
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.828125 0.0 6757.84375 6744.26171875 6754.931315104167 144
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2608.6642500000003 4509.434894314164 17743.457 2.536 4954.602806228376 289
+stats: connect 4 1.26 0.16253461169855482 1.815 0.883 1.2670068965517238 290
+stats: page 2 5218.3885 5205.6945000000005 17746.418 8.9 9943.830999999998 144
+stats: tr_general 2 5219.160000000001 5205.88 17747.104 9.478 9944.570062499999 144
+stats: 200 4 293
+stats: size_rcv 15278 917394
+stats: size_sent 1303 85902
+stats: connected 0 1
+# stats: dump at 1589365907
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.33296282396630666 145
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.03125 0.0 0.12109375 0.0 0.010075431034482756 145
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.81640625 0.0 6757.84375 6744.26171875 6754.951293103448 145
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2630.2335 4546.038018157376 17743.457 2.536 4922.57634129693 293
+stats: connect 4 1.2055 0.16930667441066816 1.815 0.883 1.26691156462585 294
+stats: page 2 5259.906 5247.517000000001 17746.418 8.9 9879.098910958903 146
+stats: tr_general 2 5260.588000000001 5247.737 17747.104 9.478 9879.83841780822 146
+stats: 200 4 297
+stats: size_rcv 15614 933008
+stats: size_sent 1357 87259
+stats: connected 0 1
+# stats: dump at 1589365917
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.6986027944111777 0.0 3.8114343029087263 0.1 0.3323928748278405 146
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.03125 0.0 0.12109375 0.0 0.01022046232876712 146
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.5703125 0.0 6757.84375 6744.26171875 6754.970917166095 146
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4891.7030370370385 297
+stats: connect 0 0 0 1.815 0.883 1.2660872483221473 298
+stats: page 0 0 0 17746.418 8.9 9816.677385135134 148
+stats: tr_general 0 0 0 17747.104 9.478 9817.416114864865 148
+stats: 200 0 297
+stats: size_rcv 0 933008
+stats: size_sent 0 87259
+stats: connected 0 1
+# stats: dump at 1589365927
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.33488409877058434 147
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.12109375 0.0 0.010363520408163263 147
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.58984375 0.0 6757.84375 6744.26171875 6754.98860012755 147
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 3447.9534999999996 6255.331521223842 17743.457 2.536 4891.7030370370385 297
+stats: connect 6 1.3126666666666666 0.1383638520552082 1.815 0.883 1.2660872483221473 298
+stats: page 3 6896.1923333333325 7385.049130269495 17746.418 8.9 9816.677385135134 148
+stats: tr_general 3 6896.934333333334 7385.037393879705 17747.104 9.478 9817.416114864865 148
+stats: 200 6 303
+stats: size_rcv 20133 953141
+stats: size_sent 1805 89064
+stats: connected 0 1
+# stats: dump at 1589365937
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.19990004997501248 0.0 3.8114343029087263 0.1 0.334644349438383 148
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.12109375 0.0 0.010425464527027023 148
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.35546875 0.0 6757.84375 6744.26171875 6755.0061760979725 148
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4863.1139372937305 303
+stats: connect 0 0 0 1.815 0.883 1.267006578947368 304
+stats: page 0 0 0 17746.418 8.9 9758.654503311258 151
+stats: tr_general 0 0 0 17747.104 9.478 9759.393298013247 151
+stats: 200 0 303
+stats: size_rcv 0 953141
+stats: size_sent 0 89064
+stats: connected 0 1
+# stats: dump at 1589365947
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.33374002528091073 149
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01953125 0.0 0.12109375 0.0 0.01048657718120805 149
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.3984375 0.0 6757.84375 6744.26171875 6755.021943162751 149
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4316.02125 7467.4570372531225 17743.457 2.536 4863.1139372937305 303
+stats: connect 4 1.17275 0.21599233203982038 1.815 0.883 1.267006578947368 304
+stats: page 2 8633.07 8621.489000000001 17746.418 8.9 9758.654503311258 151
+stats: tr_general 2 8633.7465 8621.5395 17747.104 9.478 9759.393298013247 151
+stats: 200 4 307
+stats: size_rcv 14877 968018
+stats: size_sent 1357 90421
+stats: connected 0 1
+# stats: dump at 1589365957
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.33351309377703997 150
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.010546874999999997 150
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.41015625 0.0 6757.84375 6744.26171875 6755.037786458332 150
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4855.985693811076 307
+stats: connect 0 0 0 1.815 0.883 1.265782467532467 308
+stats: page 0 0 0 17746.418 8.9 9743.940980392155 153
+stats: tr_general 0 0 0 17747.104 9.478 9744.678960784315 153
+stats: 200 0 307
+stats: size_rcv 0 968018
+stats: size_sent 0 90421
+stats: connected 0 1
+# stats: dump at 1589365967
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.33328916798845226 151
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.0105546357615894 151
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.41796875 0.0 6757.84375 6744.26171875 6755.053497516556 151
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4340.021750000001 7506.143833803259 17743.457 2.536 4855.985693811076 307
+stats: connect 4 1.3672499999999999 0.11282370096748273 1.815 0.883 1.265782467532467 308
+stats: page 2 8679.4635 8664.436500000002 17746.418 8.9 9743.940980392155 153
+stats: tr_general 2 8680.1955 8664.3415 17747.104 9.478 9744.678960784315 153
+stats: 200 4 311
+stats: size_rcv 10460 978478
+stats: size_sent 1012 91433
+stats: connected 0 1
+# stats: dump at 1589365977
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3327379300280282 152
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.010562294407894733 152
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.3984375 0.0 6757.84375 6744.26171875 6755.069053248354 152
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 2913.1835000000005 6503.116592312714 17743.457 2.536 4849.349501607719 311
+stats: connect 6 1.2 0.19004034659338356 1.815 0.883 1.2670833333333327 312
+stats: page 3 5827.040666666667 8225.08258033293 17746.418 8.9 9730.205787096771 155
+stats: tr_general 3 5827.636666666666 8225.112985500053 17747.104 9.478 9730.943690322581 155
+stats: 200 6 317
+stats: size_rcv 24880 1003358
+stats: size_sent 2150 93583
+stats: connected 0 1
+# stats: dump at 1589365987
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3491271820448878 0.0 3.8114343029087263 0.1 0.3321947119341033 153
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.01171875 0.0 0.12109375 0.0 0.010569852941176468 153
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1328125 0.0 6757.84375 6744.26171875 6755.084277982025 153
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4812.702826498425 317
+stats: connect 0 0 0 1.815 0.883 1.2658176100628924 318
+stats: page 0 0 0 17746.418 8.9 9656.095056962022 158
+stats: tr_general 0 0 0 17747.104 9.478 9656.830265822786 158
+stats: 200 0 317
+stats: size_rcv 0 1003358
+stats: size_sent 0 93583
+stats: connected 0 1
+# stats: dump at 1589365997
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.3323046630387188 154
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010577313311688308 154
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.15625 0.0 6757.84375 6744.26171875 6755.09758015422 154
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8742.236499999999 8738.8865 17743.457 2.536 4812.702826498425 317
+stats: connect 2 1.242 0.040000000000000036 1.815 0.883 1.2658176100628924 318
+stats: page 1 17484.218 0.0 17746.418 8.9 9656.095056962022 158
+stats: tr_general 1 17484.894 0.0 17747.104 9.478 9656.830265822786 158
+stats: 200 2 319
+stats: size_rcv 4866 1008224
+stats: size_sent 533 94116
+stats: connected 0 1
+# stats: dump at 1589366007
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.3494757863205192 0.0 3.8114343029087263 0.1 0.3320943123075032 155
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010509072580645158 155
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.18359375 0.0 6757.84375 6744.26171875 6755.11086189516 155
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4837.33940125392 319
+stats: connect 0 0 0 1.815 0.883 1.2656687499999992 320
+stats: page 0 0 0 17746.418 8.9 9705.328534591192 159
+stats: tr_general 0 0 0 17747.104 9.478 9706.063371069185 159
+stats: 200 0 319
+stats: size_rcv 0 1008224
+stats: size_sent 0 94116
+stats: connected 0 1
+# stats: dump at 1589366017
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.1998001998001998 0.0 3.8114343029087263 0.1 0.3322057320127148 156
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010441706730769228 156
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1640625 0.0 6757.84375 6744.26171875 6755.12414863782 156
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4417.981 7643.5928673362105 17743.457 2.536 4837.33940125392 319
+stats: connect 4 1.30725 0.17957362696119933 1.815 0.883 1.2656687499999992 320
+stats: page 2 8835.788999999999 8824.829 17746.418 8.9 9705.328534591192 159
+stats: tr_general 2 8836.444 8824.869999999999 17747.104 9.478 9706.063371069185 159
+stats: 200 4 323
+stats: size_rcv 15077 1023301
+stats: size_sent 1357 95473
+stats: connected 0 1
+# stats: dump at 1589366027
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.3313623846737816 157
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010375199044585984 157
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.16015625 0.0 6757.84375 6744.26171875 6755.137141719745 157
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4832.146108359135 323
+stats: connect 0 0 0 1.815 0.883 1.2661820987654313 324
+stats: page 0 0 0 17746.418 8.9 9694.526801242233 161
+stats: tr_general 0 0 0 17747.104 9.478 9695.260645962737 161
+stats: 200 0 323
+stats: size_rcv 0 1023301
+stats: size_sent 0 95473
+stats: connected 0 1
+# stats: dump at 1589366037
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.3308442746315678 158
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010309533227848099 158
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.19140625 0.0 6757.84375 6744.26171875 6755.149945609177 158
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8737.582 8733.043 17743.457 2.536 4832.146108359135 323
+stats: connect 2 1.5430000000000001 0.12199999999999994 1.815 0.883 1.2661820987654313 324
+stats: page 1 17474.939 0.0 17746.418 8.9 9694.526801242233 161
+stats: tr_general 1 17475.651 0.0 17747.104 9.478 9695.260645962737 161
+stats: 200 2 325
+stats: size_rcv 4731 1028032
+stats: size_sent 478 95951
+stats: connected 0 1
+# stats: dump at 1589366047
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29940119760479045 0.0 3.8114343029087263 0.1 0.33064745953318697 159
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010244693396226412 159
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.1796875 0.0 6757.84375 6744.26171875 6755.162784984277 159
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5343.6315 5339.4135 17743.457 2.536 4856.179560000001 325
+stats: connect 2 1.2890000000000001 0.03999999999999987 1.815 0.883 1.2678803680981587 326
+stats: page 1 10687.837 0.0 17746.418 8.9 9742.554037037035 162
+stats: tr_general 1 10688.727 0.0 17747.104 9.478 9743.287746913584 162
+stats: 200 2 327
+stats: size_rcv 5597 1033629
+stats: size_sent 533 96484
+stats: connected 0 1
+# stats: dump at 1589366057
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14992503748125938 0.0 3.8114343029087263 0.1 0.33045217039613445 160
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.010180664062499997 160
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.17578125 0.0 6757.84375 6744.26171875 6755.175390625 160
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4402.90475 7617.846633504095 17743.457 2.536 4859.160917431194 327
+stats: connect 4 1.2085 0.1466722536814649 1.815 0.883 1.2680091463414624 328
+stats: page 2 8806.5545 8795.2715 17746.418 8.9 9748.353319018403 163
+stats: tr_general 2 8807.218 8795.288 17747.104 9.478 9749.087987730063 163
+stats: 200 4 331
+stats: size_rcv 14869 1048498
+stats: size_sent 1326 97810
+stats: connected 0 1
+# stats: dump at 1589366067
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.3293308838562905 161
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.0101174301242236 161
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6756.99609375 0.0 6757.84375 6744.26171875 6755.187815411491 161
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4853.64724773414 331
+stats: connect 0 0 0 1.815 0.883 1.2672921686746978 332
+stats: page 0 0 0 17746.418 8.9 9736.937575757573 165
+stats: tr_general 0 0 0 17747.104 9.478 9737.671381818183 165
+stats: 200 0 331
+stats: size_rcv 0 1048498
+stats: size_sent 0 97810
+stats: connected 0 1
+# stats: dump at 1589366077
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14985014985014986 0.0 3.8114343029087263 0.1 0.32914797901582143 162
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.01005497685185185 162
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.01953125 0.0 6757.84375 6744.26171875 6755.198977623457 162
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 2869.977666666666 6406.701743289669 17743.457 2.536 4853.64724773414 331
+stats: connect 6 1.1928333333333332 0.20176588468376472 1.815 0.883 1.2672921686746978 332
+stats: page 3 5739.893 8102.903622092186 17746.418 8.435 9736.937575757573 165
+stats: tr_general 3 5740.484666666666 8102.934272460453 17747.104 8.946 9737.671381818183 165
+stats: 200 6 337
+stats: size_rcv 24680 1073178
+stats: size_sent 2150 99960
+stats: connected 0 1
+# stats: dump at 1589366087
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24987506246876562 0.0 3.8114343029087263 0.1 0.3280479923338235 163
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009993289877300611 163
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.02734375 0.0 6757.84375 6744.26171875 6755.210146664111 163
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4818.329688427301 337
+stats: connect 0 0 0 1.815 0.883 1.2659704142011825 338
+stats: page 0 0 0 17746.418 8.435 9665.561779761902 168
+stats: tr_general 0 0 0 17747.104 8.946 9666.293047619049 168
+stats: 200 0 337
+stats: size_rcv 0 1073178
+stats: size_sent 0 99960
+stats: connected 0 1
+# stats: dump at 1589366097
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.3275713281273292 164
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009932355182926827 164
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.04296875 0.0 6757.84375 6744.26171875 6755.221227134146 164
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8571.7155 8566.870499999999 17743.457 2.536 4818.329688427301 337
+stats: connect 2 1.1085 0.007500000000000062 1.815 0.883 1.2659704142011825 338
+stats: page 1 17142.737 0.0 17746.418 8.435 9665.561779761902 168
+stats: tr_general 1 17143.474 0.0 17747.104 8.946 9666.293047619049 168
+stats: 200 2 339
+stats: size_rcv 4531 1077709
+stats: size_sent 479 100439
+stats: connected 0 1
+# stats: dump at 1589366107
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29925187032418954 0.0 3.8114343029087263 0.1 0.3270989295426637 165
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009872159090909088 165
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.01171875 0.0 6757.84375 6744.26171875 6755.232267992425 165
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2630.8335 4546.328977588979 17743.457 2.536 4840.473557522126 339
+stats: connect 4 1.3305 0.21714568842139154 1.815 0.883 1.265044117647058 340
+stats: page 2 5262.6925 5247.7005 17746.418 8.435 9709.80542011834 169
+stats: tr_general 2 5263.5869999999995 5247.768 17747.104 8.946 9710.536721893492 169
+stats: 200 4 343
+stats: size_rcv 10987 1088696
+stats: size_sent 1011 101450
+stats: connected 0 1
+# stats: dump at 1589366117
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24987506246876562 0.0 3.8114343029087263 0.1 0.32693117617387774 166
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009812688253012045 166
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0234375 0.0 6757.84375 6744.26171875 6755.242987575301 166
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17743.457 2.536 4814.705160349856 343
+stats: connect 0 0 0 1.815 0.883 1.2658052325581386 344
+stats: page 0 0 0 17746.418 8.435 9657.792403508769 171
+stats: tr_general 0 0 0 17747.104 8.946 9658.525614035087 171
+stats: 200 0 343
+stats: size_rcv 0 1088696
+stats: size_sent 0 101450
+stats: connected 0 1
+# stats: dump at 1589366127
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.32646976231935615 167
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.00975392964071856 167
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0625 0.0 6757.84375 6744.26171875 6755.253648952096 167
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 4474.2945 7741.712617426924 17883.334 2.536 4814.705160349856 343
+stats: connect 4 1.236 0.08793747778962047 1.815 0.883 1.2658052325581386 344
+stats: page 2 8948.2655 8938.5675 17886.833 8.435 9657.792403508769 171
+stats: tr_general 2 8948.85 8938.577 17887.427 8.946 9658.525614035087 171
+stats: 200 4 347
+stats: size_rcv 14742 1103438
+stats: size_sent 1303 102753
+stats: connected 0 1
+# stats: dump at 1589366137
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.29955067398901647 0.0 3.8114343029087263 0.1 0.32601309855406385 168
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009695870535714282 168
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.078125 0.0 6757.84375 6744.26171875 6755.264415922619 168
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 5253.896 5250.313999999999 17883.334 2.536 4810.781118155622 347
+stats: connect 2 1.282 0.07000000000000006 1.815 0.883 1.26546264367816 348
+stats: page 1 10508.795 0.0 17886.833 8.435 9649.589780346818 173
+stats: tr_general 1 10509.662 0.0 17887.427 8.946 9650.3212716763 173
+stats: 200 2 349
+stats: size_rcv 5395 1108833
+stats: size_sent 502 103255
+stats: connected 0 1
+# stats: dump at 1589366147
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.3258565161601878 169
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009638498520710057 169
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0859375 0.0 6757.84375 6744.26171875 6755.275147928994 169
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8580.98 8576.676 17883.334 2.536 4813.320458452724 349
+stats: connect 2 1.2875 0.1935 1.815 0.883 1.265557142857142 350
+stats: page 1 17161.514 0.0 17886.833 8.435 9654.527741379306 174
+stats: tr_general 1 17162.182 0.0 17887.427 8.946 9655.260011494252 174
+stats: 200 2 351
+stats: size_rcv 4531 1113364
+stats: size_sent 479 103734
+stats: connected 0 1
+# stats: dump at 1589366157
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24962556165751376 0.0 3.8114343029087263 0.1 0.32540736605338666 170
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009581801470588234 170
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.09765625 0.0 6757.84375 6744.26171875 6755.285799632353 170
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2631.0832499999997 4549.841697195594 17883.334 2.536 4834.788603988605 351
+stats: connect 4 1.166 0.15784644436920328 1.815 0.883 1.2656818181818172 352
+stats: page 2 5263.0470000000005 5253.15 17886.833 8.435 9697.424805714281 175
+stats: tr_general 2 5263.8045 5253.3045 17887.427 8.946 9698.156708571429 175
+stats: 200 4 355
+stats: size_rcv 15617 1128981
+stats: size_sent 1357 105091
+stats: connected 0 1
+# stats: dump at 1589366167
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.2997002997002997 0.0 3.8114343029087263 0.1 0.32496419760662715 171
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009525767543859648 171
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.08203125 0.0 6757.84375 6744.26171875 6755.296395285088 171
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17883.334 2.536 4809.958121126762 355
+stats: connect 0 0 0 1.815 0.883 1.2645617977528079 356
+stats: page 0 0 0 17886.833 8.435 9647.318841807906 177
+stats: tr_general 0 0 0 17887.427 8.946 9648.051033898306 177
+stats: 200 0 355
+stats: size_rcv 0 1128981
+stats: size_sent 0 105091
+stats: connected 0 1
+# stats: dump at 1589366177
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.14992503748125938 0.0 3.8114343029087263 0.1 0.32481731447926476 172
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009470385174418604 172
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.08984375 0.0 6757.84375 6744.26171875 6755.306776889535 172
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8603.521499999999 8600.6345 17883.334 2.536 4809.958121126762 355
+stats: connect 2 1.0985 0.00550000000000006 1.815 0.883 1.2645617977528079 356
+stats: page 1 17207.389 0.0 17886.833 8.435 9647.318841807906 177
+stats: tr_general 1 17208.018 0.0 17887.427 8.946 9648.051033898306 177
+stats: 200 2 357
+stats: size_rcv 4731 1133712
+stats: size_sent 479 105570
+stats: connected 0 1
+# stats: dump at 1589366187
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.399400898652022 0.0 3.8114343029087263 0.1 0.3238063764619353 173
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009415643063583815 173
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.0546875 0.0 6757.84375 6744.26171875 6755.317083634393 173
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 1742.105 1738.966 17883.334 2.536 4831.210577030814 357
+stats: connect 2 1.2645 0.12749999999999995 1.815 0.883 1.2636340782122892 358
+stats: page 1 3484.207 0.0 17886.833 8.435 9689.791146067411 178
+stats: tr_general 1 3485.037 0.0 17887.427 8.946 9690.522758426967 178
+stats: 200 2 359
+stats: size_rcv 5602 1139314
+stats: size_sent 533 106103
+stats: connected 0 1
+# stats: dump at 1589366197
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.24975024975024976 0.0 3.8114343029087263 0.1 0.3242408277388898 174
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009361530172413793 174
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.07421875 0.0 6757.84375 6744.26171875 6755.327069863506 174
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 2 8836.561 8832.524 17883.334 2.536 4814.001075208916 359
+stats: connect 2 1.2365 0.1205 1.815 0.883 1.2636388888888876 360
+stats: page 1 17672.419 0.0 17886.833 8.435 9655.123078212286 179
+stats: tr_general 1 17673.031 0.0 17887.427 8.946 9655.855240223465 179
+stats: 200 2 361
+stats: size_rcv 4731 1144045
+stats: size_sent 479 106582
+stats: connected 0 1
+# stats: dump at 1589366207
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.249500998003992 0.0 3.8114343029087263 0.1 0.3238151672932404 175
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009308035714285715 175
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.06640625 0.0 6757.84375 6744.26171875 6755.337053571428 175
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 2597.9184999999998 4491.93338880768 17883.334 2.536 4836.2867257617745 361
+stats: connect 4 1.05175 0.21579663458914275 1.815 0.88 1.2634889502762419 362
+stats: page 2 5196.825 5185.648 17886.833 8.435 9699.663611111106 180
+stats: tr_general 2 5197.5554999999995 5185.8275 17887.427 8.946 9700.395105555557 180
+stats: 200 4 365
+stats: size_rcv 15279 1159324
+stats: size_sent 1303 107885
+stats: connected 0 1
+# stats: dump at 1589366217
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34965034965034963 0.0 3.8114343029087263 0.1 0.32339292769500605 176
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009255149147727272 176
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6757.09765625 0.0 6757.84375 6744.26171875 6755.34687943892 176
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 4 875.8575 1509.0638176608868 17883.334 2.536 4811.7566630137 365
+stats: connect 4 1.1645 0.10890477491827431 1.815 0.88 1.261174863387977 366
+stats: page 2 1751.283 1741.143 17886.833 8.435 9650.181868131862 182
+stats: tr_general 2 1752.0040000000001 1741.311 17887.427 8.946 9650.913351648353 182
+stats: 200 4 369
+stats: size_rcv 15405 1174729
+stats: size_sent 1326 109211
+stats: connected 0 1
+# stats: dump at 1589366227
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 1.1557788944723617 0.0 3.8114343029087263 0.1 0.32354127471170285 177
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0 0.0 0.12109375 0.0 0.009202860169491525 177
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6754.63671875 0.0 6757.84375 6744.26171875 6755.356770833333 177
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 8 2180.590125 5756.819294451418 17883.334 2.536 4769.091089430895 369
+stats: connect 8 1.1552499999999999 0.2134453969988578 1.815 0.819 1.2601297297297285 370
+stats: page 4 4361.62525 7536.840008783932 17886.833 8.435 9564.324271739126 184
+stats: tr_general 4 4362.2225 7536.89355979035 17887.427 8.946 9565.055641304349 184
+stats: 200 8 377
+stats: size_rcv 34564 1209293
+stats: size_sent 2951 112162
+stats: connected 0 1
+# stats: dump at 1589366237
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 8.199195171026156 0.0 8.199195171026156 0.1 0.32821676695754926 178
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.0703125 0.0 0.12109375 0.0 0.009151158707865169 178
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6749.36328125 0.0 6757.84375 6744.26171875 6755.35272559691 178
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 6 1172.4973333333335 1651.6616837299205 17883.334 2.536 4714.162687002653 377
+stats: connect 6 1.3416666666666666 0.2049208519296062 1.815 0.819 1.2579100529100518 378
+stats: page 3 2344.703666666667 1649.8581687252863 17886.833 8.435 9453.628547872337 188
+stats: tr_general 3 2345.4339999999997 1649.957403109143 17887.427 8.946 9454.357063829788 188
+stats: 200 6 383
+stats: size_rcv 20674 1229967
+stats: size_sent 1805 113967
+stats: connected 0 1
+# stats: dump at 1589366247
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.34930139720558884 0.0 8.199195171026156 0.1 0.37218871334899406 179
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 0.05859375 0.0 0.12109375 0.0 0.009492842178770949 179
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 1 6749.42578125 0.0 6757.84375 6744.26171875 6755.319265013966 179
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17883.334 2.536 4658.679678851175 383
+stats: connect 0 0 0 1.815 0.819 1.259218749999999 384
+stats: page 0 0 0 17886.833 8.435 9341.970041884813 191
+stats: tr_general 0 0 0 17887.427 8.946 9342.698586387434 191
+stats: 200 0 383
+stats: size_rcv 0 1229967
+stats: size_sent 0 113967
+stats: connected 0 1
+# stats: dump at 1589366248
+stats: users 1 1
+stats: {cpu,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 0 0 0 8.199195171026156 0.1 0.3720615615926418 180
+stats: {load,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 0 0 0 0.12109375 0.0 0.009765624999999998 180
+stats: {freemem,"tsung_controller@utente-HP-Compaq-Pro-6300-SFF"} 0 0 0 6757.84375 6744.26171875 6755.2865234375 180
+stats: users_count 0 1
+stats: finish_users_count 0 0
+stats: request 0 0 0 17883.334 2.536 4658.679678851175 383
+stats: connect 0 0 0 1.815 0.819 1.259218749999999 384
+stats: page 0 0 0 17886.833 8.435 9341.970041884813 191
+stats: tr_general 0 0 0 17887.427 8.946 9342.698586387434 191
+stats: 200 0 383
+stats: size_rcv 0 1229967
+stats: size_sent 0 113967
+stats: connected 0 1
+stats: error_abort 1 1
+EndMonitor:{1589,366248,918871}
