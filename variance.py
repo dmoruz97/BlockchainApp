@@ -9,7 +9,9 @@ sample=[]
 if os.path.isfile(name):
     with open(name, 'r') as f:
         for cnt, line in enumerate(f):
-            sample.append(float(line.split(" ")[2])/1000)
+            val=float(line.split(" ")[2])/1000
+            if val!=0:
+                sample.append(val)
 
     print(sample)
     print((np.var(sample)))

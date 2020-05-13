@@ -1,0 +1,4 @@
+variance 29.615591231096523
+
+Name 	    highest 10sec mean 	lowest 10sec mean	Highest Rate	Mean Rate	Mean 	   Count
+tr_general 	17.75 sec 	        11.89 msec 	        0.7 / sec 	    0.11 / sec 	9.34 sec 	191

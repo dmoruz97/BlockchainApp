@@ -11,19 +11,19 @@
 <tsung loglevel="notice" dumptraffic="protocol" version="1.0">
     
     <!-- CLIENTS -->
-    <clients>
-        <client host="localhost"/>
+    <clients >
+        <client host="localhost" use_controller_vm="true"/>
     </clients>
 
     <!-- SERVERS -->
     <servers>
         <!-- Application server -->
-        <server host="192.168.0.100" port="5000" type="tcp"></server>
+        <server host="localhost" port="5000" type="tcp"></server>
     </servers>
 
     <!-- MONITORS -->
     <monitoring>
-        <monitor host="192.168.0.100" type="snmp"></monitor>
+        <monitor host="localhost" type="snmp"></monitor>
     </monitoring>
     
     
@@ -71,51 +71,12 @@
             <!-- Add record -->
             <session name="session_name" probability="100" type="ts_http">
 
-		<for from="1" to="10000" incr="1" var="count">
-            <transaction name="general">
+		<for from="1" to="1000" incr="1" var="count">
 
             <setdynvars sourcetype="file" fileid="choice" order="random">
                     <var name="type" />
             </setdynvars>
 
-            <if var="type" eq="1">
-                <setdynvars sourcetype="file" fileid="flight_status" delimiter=";" order="random">
-                    <var name="date" />
-                    <var name="opcarrierflnum" />
-                </setdynvars>
-
-                <request>
-                    <http url="/query_status" method="GET" version="1.1"></http>
-                </request>
-
-                <request subst="true">
-                    <http url="/query_status" method="POST" version="1.1"
-                          contents='date=%%_date%%&amp;op_carrier_fl_num=%%_opcarrierflnum%%'></http>
-                </request>
-            </if>
-
-            <if var="type" eq="2">
-                <request>
-                    <http url="/count_flight" method="GET" version="1.1"></http>
-                </request>
-                <request>
-                    <http url="/count_flight" method="POST" version="1.1"
-                          contents='first_date=2010-01-01&amp;second_date=2010-01-31&amp;first_city=Detroit,%20MI&amp;second_city=Miami,%20FL'></http>
-                </request>
-            </if>
-
-            <if var="type" eq="3">
-             <request>
-                    <http url="/query_delay" method="GET" version="1.1"></http>
-                </request>
-
-                <request>
-                    <http url="/query_delay" method="POST" version="1.1"
-                          contents='op_carrier_fl_num=1908&amp;start_time=2010-01-01&amp;end_time=2010-01-31'></http>
-                </request>
-            </if>
-
-            <if var="type" eq="4">
                 <request>
                     <http url="/add_record" method="GET" version="1.1"></http>
                 </request>
@@ -124,8 +85,6 @@
                     <http url="/add_record" method="POST" version="1.1"
                           contents_from_file='contents_add_record.txt'></http>
                 </request>
-
-            </if>
             </transaction>
 		</for>
             </session>
