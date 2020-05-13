@@ -57,15 +57,14 @@ def mine():
 
 
 # *** START OF MAIN *** #
-#app.run(debug=False, port=5000)
-app.run(host='192.168.0.100', port=5000, debug=True)
+#app.run(debug=True, port=5000)
+app.run(debug=True, port=5000, host='192.168.0.101')
 
 # Start thread to mine
 t = threading.Thread(target=mine)
 t.start()
 
-#add_transaction_to_blockchain()
-
+# add_transaction_to_blockchain()
 
 # RUN BLOCKCHAIN ON PORT 8000
 # python node_server.py
