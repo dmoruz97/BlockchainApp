@@ -57,7 +57,8 @@ def mine():
 
 
 # *** START OF MAIN *** #
-app.run(debug=True, port=5000)
+#app.run(debug=True, port=5000)
+app.run(debug=True, port=5000, host='192.168.0.101')
 
 # Start thread to mine
 t = threading.Thread(target=mine)

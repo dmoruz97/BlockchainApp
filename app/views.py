@@ -121,12 +121,15 @@ def add_record():
         address = "{}/new_transaction".format(CONNECTED_NODE_ADDRESS)
         response = requests.post(address, headers=headers, data=data)
         if response.status_code == 201:
-            params = {'success': 'Record successfuly added!'}
-            response = requests.get('http://127.0.0.1:5000/add_record', params=params)
+            success = 'Record successfuly added!'
+            #response = requests.get('http://127.0.0.1:5000/add_record', params=params)
         else:
-            params = {'success': 'Record NOT added!'}
-            response = requests.get('http://127.0.0.1:5000/add_record', params=params)
-        return response.text
+            success = 'Record NOT added!'
+            #response = requests.get('http://127.0.0.1:5000/add_record', params=params)
+        return render_template('add_record.html',
+                               title='Add new record',
+                               success=success)
+        #return response.text
 
 
 # Endpoint to get the status
@@ -243,10 +246,11 @@ def query_delay():
             info = 'Average delay: {0:.2f} seconds'.format(average_delay)
         else:
             info = 'No matches!'
-        params = {'delay': info}
-        response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
-
-        return response.text
+        #response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
+        return render_template('query_delay.html',
+                               title='Query delay',
+                               delay=info)
+        #return response.text
 
 
 # Endpoint to get the number of flight connecting A to B

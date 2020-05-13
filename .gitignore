@@ -2,3 +2,7 @@
 .vscode
 blocks/*
 venv/
+/tsung_test/manager.conf
+/tsung_test/snmpm_config_db
+/tsung_test/linux tsung_stats.xml
+/tsung_test/erl_crash.dump
