@@ -30,7 +30,7 @@
     <!-- LOADS -->
     <load duration="30" unit="minute">   <!-- whole experiment is 30 minutes -->
         <!-- 35' to be sure not to relax the server after the 30' choosen before for the experiment-->
-        <arrivalphase phase="1" duration="30" unit="minute">
+        <arrivalphase phase="1" duration="35" unit="minute">
             <!-- Limited to 1 user -->
             <!-- Rate = 1/interArrivalValue
             0.107 MAX
