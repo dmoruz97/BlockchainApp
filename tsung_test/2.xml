@@ -36,7 +36,7 @@
             0.107 MAX
             0.3 L = 0.0321
             0.5 L = 0.0535
-            0.8 L =0.856
+            0.8 L = 0.0856
             0.85 L =0.09095
             -->
             <users maxnumber="2000" arrivalrate="0.0321" unit="second"></users>
