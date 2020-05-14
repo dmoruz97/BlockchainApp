@@ -1,0 +1,12 @@
+
+=INFO REPORT==== 14-May-2020::09:49:03 ===
+  ts_launcher_static:(5:<0.93.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 14-May-2020::09:49:03 ===
+         ts_launcher:(5:<0.94.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 14-May-2020::09:49:03 ===
+         ts_launcher:(5:<0.94.0>) Expected duration of first phase: 2.1e3 sec (191 users) 
+
+=INFO REPORT==== 14-May-2020::09:49:03 ===
+         ts_launcher:(5:<0.94.0>) Activate launcher (191 users) in 2881 msec 
