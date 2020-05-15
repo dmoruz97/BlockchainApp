@@ -294,4 +294,5 @@ def new_transaction():
     return "Success", 201
 
 
+app.config["CACHE_TYPE"] = "null"
 app.run(debug=False, port=8000)
