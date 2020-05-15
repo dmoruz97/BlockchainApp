@@ -18,7 +18,8 @@ def get_k_blocks_from_blockchain(start,k):
     get_blocks_address = "{}/get_k_blocks".format(CONNECTED_NODE_ADDRESS)
     values = {'start': start, 'k': k}
     data = json.dumps(values)
-    headers = {'Content-type': 'application/json'}
+    headers = {'Content-type': 'application/json',
+               'Cache-Control': 'no-cache'}
     response = requests.post(get_blocks_address, headers=headers, data=data)
 
     if response.status_code == 200:
