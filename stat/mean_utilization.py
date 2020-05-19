@@ -8,4 +8,5 @@ for line in content:
     sum += float(list[-1])
 
 mean = sum/n
-print mean
+print(mean)
+
