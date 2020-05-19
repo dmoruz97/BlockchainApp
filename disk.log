@@ -1,0 +1,240 @@
+werkzeug - INFO -  * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:14:13] "[37mGET /chain HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:14:15] "[37mGET /chain HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:15:46] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893737.4581804
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:15:48] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893842.2448742
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:15:54] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894048.6349542
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:15:59] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:01] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893752.3748443
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:03] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893856.5876176
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:08] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894062.5122993
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:13] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:15] "[37mPOST /new_transaction HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:15] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893766.51757
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:17] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893870.4882355
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:22] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894076.7534168
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:27] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:29] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893780.556458
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:31] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893884.6431067
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:36] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894090.8508549
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:42] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:44] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893794.6548548
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:45] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893898.660729
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:50] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894104.9625244
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:56] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:58] "[37mPOST /new_transaction HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:58] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893808.8852477
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:16:59] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893913.1391232
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:05] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894120.103084
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:11] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:13] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 100 time 1589893824.2834358
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:15] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 200 time 1589893928.1926866
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:20] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:root:
+DEBUG:root:K 300 time 1589894134.2366045
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:25] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:42] "[37mGET /chain HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:44] "[37mGET /chain HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:56] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893867.4925983
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:17:58] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1589893971.38609
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:03] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 1589894177.4869747
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:08] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:10] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893881.0550406
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:12] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1589893984.6586165
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:16] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 1589894190.3803773
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:21] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:23] "[37mPOST /new_transaction HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:23] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893893.890427
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:24] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1589893997.8012757
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:30] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 1589894204.13941
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:35] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:37] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893907.9498692
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:39] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1589894012.0000405
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:44] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 1589894218.067652
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:49] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:51] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893921.9354215
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:53] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1589894025.9561365
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:18:58] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 1589894232.2896202
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:03] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:05] "[37mPOST /new_transaction HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:05] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893936.0893824
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:07] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1589894039.9542205
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:12] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 1589894246.7558317
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:18] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:20] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 1589893950.8456511
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:21] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:35] "[37mGET /chain HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:37] "[37mGET /chain HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:41] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.6371212005615234
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:43] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.170046091079712
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:49] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6431066989898682
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:54] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:56] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.6018526554107666
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:19:57] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.2627649307250977
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:03] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.606365442276001
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:07] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:09] "[37mPOST /new_transaction HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:09] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5414943695068359
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:11] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.113720178604126
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:15] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6057636737823486
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:20] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:22] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5730922222137451
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:24] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.1038658618927002
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:28] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.576756477355957
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:33] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:35] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5505106449127197
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:36] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.090947151184082
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:41] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.5888550281524658
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:46] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:48] "[37mPOST /new_transaction HTTP/1.1[0m" 201 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:48] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5408062934875488
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:49] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.0734026432037354
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:54] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6210646629333496
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:20:59] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:00] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.546288013458252
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:02] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.1148600578308105
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:07] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6081516742706299
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:12] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:14] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.551915168762207
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:15] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.2397689819335938
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:20] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6870229244232178
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:26] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:28] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.7287273406982422
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:29] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.2402679920196533
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:34] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6755683422088623
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:40] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:42] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.62074875831604
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:43] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.3305518627166748
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:49] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:52] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5989527702331543
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:54] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:56] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.6157453060150146
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:21:57] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.208441972732544
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:03] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6621570587158203
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:08] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:10] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.609760046005249
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:12] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.240494728088379
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:17] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:20] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5947573184967041
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:22] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.3143038749694824
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:27] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.62125563621521
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:32] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:34] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5570323467254639
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:36] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.167428731918335
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:41] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6269116401672363
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:46] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:48] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.5819482803344727
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:49] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.1120734214782715
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:22:54] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 300 time 0.6621816158294678
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:23:00] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:23:01] "[37mGET /get_chain_length HTTP/1.1[0m" 200 -
+DEBUG:root:K 100 time 0.6028711795806885
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:23:03] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -
+DEBUG:root:K 200 time 1.212209939956665
+INFO:werkzeug:127.0.0.1 - - [19/May/2020 15:23:08] "[37mPOST /get_k_blocks HTTP/1.1[0m" 200 -

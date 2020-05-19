@@ -4,19 +4,14 @@ Name 	    highest 10sec mean 	lowest 10sec mean	Highest Rate	Mean Rate	Mean 	   
 tr_general 	17.75 sec 	        11.89 msec 	        0.7 / sec 	    0.11 / sec 	9.34 sec 	191
 
 
-1 test VISIT RATIO
+1 test
 290 rich 468 disco
 559 rich 948 disco  1.7 visit ratio
 
 
-
-40 b/s
-100 b 2.5
-200 b 5
+40 blocchi/s
+100b 2.5 sec
+200b 5 sec
 
 0.33 mu disco  3.33 expected service time
-
-559/60*60
-
-0.72
 

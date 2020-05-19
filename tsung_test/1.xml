@@ -26,8 +26,6 @@
         <monitor host="127.0.0.1" type="snmp"></monitor>
     </monitoring>
 
-
-
     <!-- LOADS -->
     <load duration="30" unit="minute">   <!-- whole experiment is 30 minutes -->
         <!-- 35' to be sure not to relax the server after the 30' choosen before for the experiment-->

@@ -4,7 +4,10 @@ import time
 import os
 
 from flask import Flask, request, jsonify
+import logging
 
+
+logging.basicConfig(filename='disk.log', level=logging.DEBUG)
 
 # BLOCK #
 class Block:
@@ -217,6 +220,7 @@ def list_to_dict(lst):
 # Get k blocks
 @app.route('/get_k_blocks', methods=['POST'])
 def load_blocks():
+    start_time = time.time()
     param = request.get_json()
     start = int(param['start'])
     k = int(param['k'])
@@ -231,6 +235,10 @@ def load_blocks():
             block = Block(i)
             block.load_from_file()
             blocks.append(block)
+
+    print(time.time()-start_time)
+    logging.debug('K {} time {}'.format(k, time.time()-start_time))
+
     return list_to_dict(blocks)
 
 
