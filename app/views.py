@@ -1,6 +1,7 @@
 import datetime
 import json
 import const
+import os
 
 import requests
 from flask import render_template, redirect, request
@@ -13,12 +14,15 @@ CONNECTED_NODE_ADDRESS = "http://127.0.0.1:8000"
 transactions = []
 blocks = []
 
+def clear_cache():
+    print(os.system("vmtouch -e -b ~/Desktop/BlockchainApp/app/file.txt"))
 
 def get_k_blocks_from_blockchain(start,k):
     get_blocks_address = "{}/get_k_blocks".format(CONNECTED_NODE_ADDRESS)
     values = {'start': start, 'k': k}
     data = json.dumps(values)
-    headers = {'Content-type': 'application/json'}
+    headers = {'Content-type': 'application/json',
+               'Cache-Control': 'no-cache'}
     response = requests.post(get_blocks_address, headers=headers, data=data)
 
     if response.status_code == 200:
@@ -177,7 +181,7 @@ def query_status():
                     status = query_status_aux(block['transactions'], date, op_carrier_fl_num)
         else:
             print("Status found in cache")
-
+        clear_cache()
         return render_template('query_status.html', title='Query status of a flight', result=status)
 
     if request.method == "GET":
@@ -247,6 +251,7 @@ def query_delay():
         else:
             info = 'No matches!'
         #response = requests.get('http://127.0.0.1:5000/query_delay', params=params)
+        clear_cache()
         return render_template('query_delay.html',
                                title='Query delay',
                                delay=info)
@@ -315,8 +320,9 @@ def count_flights():
             count = count + count_2
 
         status = "Number of flights: {}".format(count)
-
+        clear_cache()
         return render_template('count_fights.html', title='Flights connecting city A to city B', result=status)
+
 
     if request.method == "GET":
         return render_template('count_fights.html', title='Flights connecting city A to city B')
