@@ -3,7 +3,7 @@ import os
 import numpy as np
 import math
 
-name = "disk.log"
+name = "disk1.log"
 sample=[]
 
 if os.path.isfile(name):
@@ -14,4 +14,6 @@ if os.path.isfile(name):
                 sample.append(val)
 
     print(sample)
+    print(len(sample))
+
     print(np.mean(sample))
