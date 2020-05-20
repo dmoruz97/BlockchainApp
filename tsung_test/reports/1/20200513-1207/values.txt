@@ -1,12 +1,21 @@
 variance 29.615591231096523
-
 Name 	    highest 10sec mean 	lowest 10sec mean	Highest Rate	Mean Rate	Mean 	   Count
 tr_general 	17.75 sec 	        11.89 msec 	        0.7 / sec 	    0.11 / sec 	9.34 sec 	191
 
 
 1 test VISIT RATIO
-290 rich 468 disco
+290 rich 468 disco  1.6
 559 rich 948 disco  1.7 visit ratio
 
+disk service time
+N=248 disk requests
+mean 1.7963887539604435 variance: 0.5327390017252353 std: 0.7298897188789791
 
-0.72
+
+X1
+visit ratio 2.71
+cpu utilization 8.9%
+cpu service time 2.44 j/s
+
+X1 Max 0.321
+

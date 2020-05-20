@@ -17,3 +17,6 @@ if os.path.isfile(name):
     print(len(sample))
 
     print(np.mean(sample))
+    print(np.var(sample))
+    print(np.std(sample))
+
