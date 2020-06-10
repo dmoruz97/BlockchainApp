@@ -27,7 +27,7 @@ The expected service time obtained is **9.34 sec** with a variance of **29.61** 
 
 Comparing the measurements obtained with the theoretical lines predicted by the M/G/1 and M/G/1/PS queueing systems we obtained the follow results.
 
-<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/MG1%20-%20MG1PS%20comparison.png?raw=true" width="300">
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/MG1%20-%20MG1PS%20comparison.png?raw=true" width="500" align="center">
 
 The obtained results are not surprising:
 
