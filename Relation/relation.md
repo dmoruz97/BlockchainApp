@@ -71,7 +71,7 @@ We also performed some additional open system benchmark in order to check the va
 
  5. With JMT and the *Mean Value Analysis* (MVA) it is possible to study the queueing network with one class and CPU as load independent station from the graphs below (*Q<sub>1</sub> in red*, *Q<sub>2</sub> in blue*, *Q<sub>3</sub> in green*).
  
- <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/throughput.png?raw=true"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/number%20of%20customers.png?raw=true">
+ <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/throughput.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/number%20of%20customers.png?raw=true" width="300">
 
 <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/residence%20time.png?raw=true"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/utilisation.png?raw=true">
  
