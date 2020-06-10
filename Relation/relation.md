@@ -71,22 +71,26 @@ We also performed some additional open system benchmark in order to check the va
 
  5. With JMT and the *Mean Value Analysis* (MVA) it is possible to study the queueing network with one class and CPU as load independent station from the graphs below (*Q<sub>1</sub> in red*, *Q<sub>2</sub> in blue*, *Q<sub>3</sub> in green*).
  
- <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/throughput.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/number%20of%20customers.png?raw=true" width="300">
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/throughput.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/number%20of%20customers.png?raw=true" width="300">
 
-<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/residence%20time.png?raw=true"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/utilisation.png?raw=true">
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/residence%20time.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/utilisation.png?raw=true" width="300">
  
 ## Optimisations
 Now are presented some possible actions to increase the maximum level of multiprogramming of the system.
 
 - **Action 1**: add a new identical disk (Station 4) which works in parallel with the existing one (Q<sub>4</sub> in yellow).
 
-![Plots of action 1](img.png)
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt2/throughput.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt2/number%20of%20customers.png?raw=true" width="300">
+
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt2/residence%20times.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt2/utilisation.png?raw=true" width="300">
 
 It is possible to see that both the disks (Q<sub>3</sub> and Q<sub>4</sub>) reach an utilisation equal to 80% when there are about *12 users*, a good improvement with respect to the original result.
 
 - **Action 2**: add a third identical disk (Station 5) which works in parallel with the two existing ones (Q<sub>5</sub> in black).
 
-![Plots of action 2](img.png)
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt3/throughput.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt3/number%20of%20customers.png?raw=true" width="300">
+
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt3/residence%20times.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205_opt3/utilisation.png?raw=true" width="300">
 
 It is possible to see that with three disks, the utilisation grows to 80% when there are about *20 users* in the system: a very good improvement.
 However, it is possible to see that the utilisation of the CPU grows faster than the utilisation of the disks, *making the CPU the new bottleneck*.
