@@ -16,7 +16,7 @@ mu = 0.107
 variance = 29.615
 lambda(x) = mu*x
 p(x) = lambda(x)/mu
-W(x) = (p(x) + lambda(x)*mu*variance)/(2*(mu-lambda(x)));
+W(x) = (p(x) + lambda(x)*mu*variance*variance)/(2*(mu-lambda(x)));
 g(x) = W(x) + 1/mu
 plot f(x) title "M/G/1/PS" w lines lc "blue",\
     g(x) title "M/G/1" w lines lc "red",\

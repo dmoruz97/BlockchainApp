@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.2)  26 MAY 2020 16:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.4.2)  27 MAY 2020 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -158,18 +158,18 @@ e
 \gptboxwidth=\skip44
 \gptboxtext=\box28
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 114.
+(Font)              <7> on input line 112.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 114.
+(Font)              <5> on input line 112.
 Package epstopdf Info: Source file: <confronto.eps>
-(epstopdf)                    date: 2020-05-26 16:24:28
-(epstopdf)                    size: 19956 bytes
+(epstopdf)                    date: 2020-05-27 16:22:01
+(epstopdf)                    size: 19539 bytes
 (epstopdf)             Output file: <confronto-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-26 16:24:36
-(epstopdf)                    size: 3770 bytes
+(epstopdf)                    date: 2020-05-27 16:22:04
+(epstopdf)                    size: 3173 bytes
 (epstopdf)             Command: <repstopdf --outfile=confronto-eps-converted-to
 .pdf confronto.eps>
-(epstopdf)             \includegraphics on input line 115.
+(epstopdf)             \includegraphics on input line 113.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -178,7 +178,7 @@ pdfTeX warning: pdflatex (file ./confronto-eps-converted-to.pdf): PDF inclusion
 <confronto-eps-converted-to.pdf, id=1, 289.08pt x 201.75375pt>
 File: confronto-eps-converted-to.pdf Graphic file (type pdf)
 <use confronto-eps-converted-to.pdf>
-Package pdftex.def Info: confronto-eps-converted-to.pdf  used on input line 115
+Package pdftex.def Info: confronto-eps-converted-to.pdf  used on input line 113
 .
 (pdftex.def)             Requested size: 289.07928pt x 201.75325pt.
 ) [1
@@ -196,7 +196,7 @@ Here is how much of TeX's memory you used:
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb>
-Output written on sample.pdf (1 page, 26976 bytes).
+Output written on sample.pdf (1 page, 24516 bytes).
 PDF statistics:
  19 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream
