@@ -27,8 +27,7 @@ The expected service time obtained is **9.34 sec** with a variance of **29.61** 
 
 Comparing the measurements obtained with the theoretical lines predicted by the M/G/1 and M/G/1/PS queueing systems we obtained the follow results.
 
-![MG1_MG1PS_comparison](https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/MG1%20-%20MG1PS%20comparison.png?raw=true)
-<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/MG1%20-%20MG1PS%20comparison.png?raw=true" width="500" align="center">
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/MG1%20-%20MG1PS%20comparison.png?raw=true" width="500">
 
 The obtained results are not surprising:
 
@@ -38,7 +37,7 @@ The obtained results are not surprising:
 
  3. In the image below there is our proposal for the queueing network model of the application. There are three stations: **Q<sub>1</sub>** which is an infinite server (modelling the thinking time of the requests), **Q<sub>2</sub>** which represents the CPU (Front-end + Blockchain Server) and **Q<sub>3</sub>** which is the physical disk.
 
-![Queueing network](img.png)
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/queueing%20network.png?raw=true" width="500">
 
 The proposed routing decision is based on the server implementation and by how the single requests are handled: there are types of request that deterministically do not access the disk, requests that make zero to M disk requests, and lastly requests that make deterministically access the disk M times (M is related to the number of blocks stored in the blockchain).
 
@@ -72,7 +71,9 @@ We also performed some additional open system benchmark in order to check the va
 
  5. With JMT and the *Mean Value Analysis* (MVA) it is possible to study the queueing network with one class and CPU as load independent station from the graphs below (*Q<sub>1</sub> in red*, *Q<sub>2</sub> in blue*, *Q<sub>3</sub> in green*).
  
- ![Plots from JMT](img.png)
+ <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/throughput.png?raw=true"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/number%20of%20customers.png?raw=true">
+
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/residence%20time.png?raw=true"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%205/utilisation.png?raw=true">
  
 ## Optimisations
 Now are presented some possible actions to increase the maximum level of multiprogramming of the system.
