@@ -63,8 +63,7 @@ By choosing a reasonable thinking time (*Z=10 sec*), the bounds of throughput an
 
 where $\overline{D}$ is the summation of all the service demands (reference station excluded).
 
-<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%204/throughput.png?raw=true" width="500">
-<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%204/response.png?raw=true" width="500">
+<img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%204/throughput.png?raw=true" width="300"> <img src="https://github.com/narder-davide/BlockchainApp/blob/master/Relation/images/Point%204/response.png?raw=true" width="300">
 
 
 With the operational analysis it is possible to determine the maximum level of multiprogramming which corresponds to **N=4.75**.
