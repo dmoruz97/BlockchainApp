@@ -7,6 +7,14 @@ In this report are presented the plots and the measurements obtained with the Ts
 Each result reported below corresponds to the average of several benchmarking tests (about 10 per result) each one with a duration of 30 minutes.
 Each test was performed with two computers: one in which was running the Blockchain application and one in which was running the Tsung benchmarking tool to test the performance of the application.
 
+#### Blockchain application logic
+Initially, our application was developed by transferring the whole blockchain from the disk to the server in order to perform the client requests.
+Since this approach (even with a reduced set of mined blocks) led to performance degradation at a glance we opted for a "cached" solution: the first request requires only the last K mined blocks from the blockchain to execute the task, then they are maintained in the application memory.
+If the application needs other blocks (cache miss or logic failure happen), these blocks are loaded proportional to a factor *i*, which corresponds to the number of requests already performed:
+- 1<sup>st</sup> request -> last K blocks loaded
+- 2<sup>nd</sup> request -> other 2*K blocks loaded
+- n<sup>th</sup> request -> other n*K blocks loaded
+
 ## Benchmarking tests
 In this section are explained and illustrated the Tsung configurations for the benchmarking tests, the results obtained, some comparisons with theoretical results, several analysis and computations to determine the most important parameters of the queueing network and the study with JMT in order to make decisions to optimise or increase the system performance.
 
